@@ -858,6 +858,19 @@ button{border:none;cursor:pointer;font-family:inherit}
   .alertas-phones-grid{grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
   .aphone-frame{height:320px}
 }
+/* Grillas inline responsivas */
+.grid-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-4col{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:768px){
+  .grid-3col{grid-template-columns:1fr}
+  .grid-4col{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .grid-4col{grid-template-columns:1fr}
+  /* Badges del dashboard */
+  .dash-badge-tl{top:-14px;left:12px !important;right:12px;text-align:center;justify-content:center}
+  .dash-badge-br{bottom:-14px;right:12px !important;left:12px;text-align:center;justify-content:center}
+}
 
 /* ─ CLIENTES ───────────────────────────── */
 #clientes{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 50%,var(--bg) 100%)}
@@ -1405,6 +1418,13 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
   .min-card{width:calc(80vw) !important}
   .est-card{width:calc(80vw) !important}
   .capa-card{width:calc(85vw) !important}
+  .pb-card{width:calc(85vw) !important}
+  /* Contacto: reducir padding vertical */
+  .contact-grid{padding:52px 0}
+  /* Dashboard img wrapper: sin padding lateral en mobile para maximizar imagen */
+  .dash-img-wrap{padding:0 !important}
+  /* Video stats: menos gap en pantalla muy angosta */
+  .video-stats{gap:24px}
 }
 </style>
 </head>
@@ -1769,7 +1789,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
 
   <!-- 3 pilares bajo la galería -->
   <div class="wrap" style="padding-bottom:96px;padding-top:64px">
-    <div class="fi" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <div class="fi grid-3col">
       <div style="background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px">
         <div style="font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">WhatsApp · Alerta inmediata</div>
         <div style="font-family:var(--mono);font-size:1rem;font-weight:800;color:#fff;margin-bottom:10px">El supervisor sabe antes de actuar</div>
@@ -1809,14 +1829,14 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
           <img src="Reporte Ejecutivo PowerBi.png" alt="Reporte de controles SOMNI — Power BI en tiempo real" style="width:100%;display:block" loading="lazy"/>
         </picture>
       </div>
-      <div style="position:absolute;top:-14px;left:28px;background:rgba(13,27,46,.94);border:1px solid rgba(37,129,252,.45);border-radius:999px;padding:7px 18px;backdrop-filter:blur(12px);display:flex;align-items:center;gap:8px">
+      <div class="dash-badge-tl" style="position:absolute;top:-14px;left:28px;background:rgba(13,27,46,.94);border:1px solid rgba(37,129,252,.45);border-radius:999px;padding:7px 18px;backdrop-filter:blur(12px);display:flex;align-items:center;gap:8px">
         <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
         <span style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;letter-spacing:.06em">Datos reales · Operación activa Chile</span>
       </div>
     </div>
 
     <!-- 4 conceptos clave con definiciones SOMNI -->
-    <div class="fi" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="fi grid-4col">
       <div class="plat-concept">
         <div class="plat-concept-tag">Calificación</div>
         <div class="plat-concept-title">Score</div>
@@ -1940,7 +1960,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
     </div>
 
     <!-- Imagen principal con marco premium -->
-    <div class="fi" style="position:relative;max-width:1020px;margin:0 auto;padding:0 24px">
+    <div class="fi dash-img-wrap" style="position:relative;max-width:1020px;margin:0 auto;padding:0 24px">
 
       <!-- Halo exterior -->
       <div style="position:absolute;inset:-2px;border-radius:24px;background:linear-gradient(135deg,rgba(37,129,252,.4),rgba(37,129,252,.05) 40%,transparent 70%);z-index:0;pointer-events:none"></div>
@@ -1954,7 +1974,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
       </div>
 
       <!-- Badge superior izquierdo -->
-      <div style="position:absolute;top:-18px;left:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.5);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
+      <div class="dash-badge-tl" style="position:absolute;top:-18px;left:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.5);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
         <div style="display:flex;align-items:center;gap:8px">
           <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
           <span style="font-family:var(--mono);font-size:.68rem;font-weight:700;color:#fff;letter-spacing:.06em">Sistema activo · Monitoreo en tiempo real</span>
@@ -1962,7 +1982,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
       </div>
 
       <!-- Badge inferior derecho -->
-      <div style="position:absolute;bottom:-18px;right:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.3);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
+      <div class="dash-badge-br" style="position:absolute;bottom:-18px;right:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.3);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
         <div style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--w60);letter-spacing:.06em">
           Disponible en <span style="color:#fff">Web · Android · iOS</span> · Sin descarga
         </div>
