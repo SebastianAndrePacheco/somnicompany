@@ -550,30 +550,22 @@ button{border:none;cursor:pointer;font-family:inherit}
 .uk-wrap{
   position:relative;
   overflow:hidden;
-  padding:44px 0 32px; /* espacio vertical para el scale */
+  padding:44px 0 32px;
 }
-/* Fade lateral — profundidad "conveyor" */
+/* Fade lateral desktop */
 .uk-wrap::before,.uk-wrap::after{
   content:'';position:absolute;top:0;width:100px;height:100%;z-index:3;pointer-events:none;
 }
 .uk-wrap::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
 .uk-wrap::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
-@media(max-width:768px){
-  .uk-wrap::before,.uk-wrap::after{width:24px}
-}
 
-/* Track base */
-.uk-track{display:flex;gap:20px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
-
-/* Track sin overflow — la transformación mueve las cards */
+/* Track desktop */
 .uk-track{
   display:flex;gap:20px;align-items:center;
   transition:transform .65s cubic-bezier(.4,0,.2,1);
-  will-change:transform;
 }
 
-/* ── BASE DE TODAS LAS CARDS DE CARRUSEL ── */
-/* ── BASE INACTIVA: todas las cards del carrusel ── */
+/* Cards desktop — inactivas */
 .step,.min-card,.capa-card,.est-card{
   opacity:.3;
   transform:scale(.82);
@@ -581,12 +573,12 @@ button{border:none;cursor:pointer;font-family:inherit}
   cursor:pointer;
   flex-shrink:0;
 }
-/* Anchos fijos por tipo — esencial para el cálculo de centrado */
 .step     { width:230px; }
 .min-card { width:280px; }
 .capa-card{ width:340px; }
 .est-card { width:280px; }
-/* ── CARD ACTIVA: escala y glow pronunciados ── */
+
+/* Cards activas desktop */
 .step.uk-on,
 .min-card.uk-on,
 .capa-card.uk-on,
@@ -599,7 +591,6 @@ button{border:none;cursor:pointer;font-family:inherit}
   z-index:4;
 }
 
-/* Botones — fuera del área de cards, debajo de los dots */
 .uk-btn{display:none}
 
 /* Dots */
@@ -607,11 +598,81 @@ button{border:none;cursor:pointer;font-family:inherit}
 .uk-dot{width:7px;height:7px;border-radius:50%;background:var(--w20);cursor:pointer;transition:.35s}
 .uk-dot.uk-on{background:var(--blue);width:24px;border-radius:4px}
 
+/* ── MOBILE: scroll nativo con snap ── */
+@media(max-width:768px){
+  .uk-wrap{
+    overflow-x:auto;
+    overflow-y:visible;
+    padding:20px 0 16px;
+    scrollbar-width:none;
+  }
+  .uk-wrap::-webkit-scrollbar{display:none}
+  .uk-wrap::before,.uk-wrap::after{display:none}
+  .uk-track{
+    transform:none !important;
+    transition:none;
+    gap:12px;
+    padding:8px 20px 12px;
+    scroll-snap-type:x mandatory;
+    overflow-x:auto;
+    overflow-y:visible;
+    scrollbar-width:none;
+    align-items:stretch;
+  }
+  .uk-track::-webkit-scrollbar{display:none}
+  /* Todas las cards: tamaño cómodo, sin escala, completamente visibles */
+  .step,.min-card,.capa-card,.est-card{
+    opacity:1 !important;
+    transform:none !important;
+    scroll-snap-align:center;
+    width:82vw !important;
+    max-width:340px;
+    flex-shrink:0;
+  }
+  /* Card activa en mobile: solo highlight sutil, sin elevar */
+  .step.uk-on,
+  .min-card.uk-on,
+  .capa-card.uk-on,
+  .est-card.uk-on{
+    transform:none !important;
+    border-color:var(--blue-border) !important;
+    background:rgba(37,129,252,.08) !important;
+    box-shadow:0 0 0 1px rgba(37,129,252,.3);
+  }
+}
+
 /* ─ STEPS FLOW ─────────────────────────────── */
 /* Padding lateral = permite centrar 1ª y última card */
 /* ── CARRUSEL BENEFICIOS PLATAFORMA ──────── */
 .pb-track{display:flex;gap:20px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
 .pb-card{flex-shrink:0;width:300px;background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:40px 32px;position:relative;overflow:hidden;cursor:pointer;opacity:.3;transform:scale(.87);transition:all .62s cubic-bezier(.4,0,.2,1)}
+@media(max-width:768px){
+  .pb-track{
+    transform:none !important;
+    transition:none;
+    gap:12px;
+    padding:8px 20px 12px;
+    scroll-snap-type:x mandatory;
+    overflow-x:auto;
+    overflow-y:visible;
+    scrollbar-width:none;
+    align-items:stretch;
+  }
+  .pb-track::-webkit-scrollbar{display:none}
+  .pb-card{
+    opacity:1 !important;
+    transform:none !important;
+    scroll-snap-align:center;
+    width:82vw !important;
+    max-width:340px;
+  }
+  .pb-card.uk-on{
+    transform:none !important;
+    border-color:var(--blue-border) !important;
+    background:rgba(37,129,252,.08) !important;
+    box-shadow:0 0 0 1px rgba(37,129,252,.3);
+  }
+}
 .pb-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(37,129,252,.12),transparent 60%);opacity:0;transition:opacity .4s}
 .pb-card.uk-on{opacity:1;transform:scale(1.06) translateY(-12px);border-color:var(--blue-border);background:rgba(37,129,252,.06);box-shadow:0 28px 72px rgba(0,0,0,.5),0 0 0 1px rgba(37,129,252,.25)}
 .pb-card.uk-on::before{opacity:1}
@@ -2892,6 +2953,10 @@ function ukGo(id, idx, fromAuto) {
   if (!fromAuto && s.startAuto) s.startAuto();
 }
 
+function isMobileCarousel() {
+  return window.matchMedia('(max-width:768px)').matches;
+}
+
 function ukRender(id) {
   const s = ukState[id];
   if (!s) return;
@@ -2908,28 +2973,67 @@ function ukRender(id) {
       .forEach((d, i) => d.classList.toggle('uk-on', i === s.active));
   }
 
-  // Centrar: calcular posición del item activo y trasladar el track
-  requestAnimationFrame(() => {
-    if (!track.parentElement) return;
-    const wrap = track.parentElement;
-    const gap = 16;
-    const cardW = items[0] ? items[0].offsetWidth : 240;
-    const wrapW = wrap.offsetWidth;
-    const cardCenter = s.active * (cardW + gap) + cardW / 2;
-    const tx = (wrapW / 2) - cardCenter;
-    track.style.willChange = 'transform';
-    track.style.transform = `translateX(${tx}px)`;
-    track.addEventListener('transitionend', () => { track.style.willChange = 'auto'; }, { once: true });
-  });
+  if (isMobileCarousel()) {
+    // Mobile: scroll nativo hacia la card activa
+    const card = items[s.active];
+    if (card) {
+      const trackRect = track.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const scrollTarget = track.scrollLeft + (cardRect.left - trackRect.left) - (track.offsetWidth - card.offsetWidth) / 2;
+      track.scrollTo({ left: scrollTarget, behavior: 'smooth' });
+    }
+  } else {
+    // Desktop: transform centrado
+    requestAnimationFrame(() => {
+      if (!track.parentElement) return;
+      const wrap = track.parentElement;
+      const gap = 16;
+      const cardW = items[0] ? items[0].offsetWidth : 240;
+      const wrapW = wrap.offsetWidth;
+      const cardCenter = s.active * (cardW + gap) + cardW / 2;
+      const tx = (wrapW / 2) - cardCenter;
+      track.style.willChange = 'transform';
+      track.style.transform = `translateX(${tx}px)`;
+      track.addEventListener('transitionend', () => { track.style.willChange = 'auto'; }, { once: true });
+    });
+  }
 }
 
 // Arrancar todos al cargar la página
 window.addEventListener('load', () => {
-  ukInit('pb',    'pb-track',    'pb-dots',    2, 5500); // beneficios — lectura pausada
-  ukInit('steps', 'steps-track', 'steps-dots', 2, 5000); // 5 pasos
-  ukInit('min',   'min-track',   'min-dots',   2, 5000); // características
-  ukInit('capa',  'capa-track',  'capa-dots',  1, 5500); // dispositivos
-  ukInit('est',   'est-track',   'est-dots',   1, 6000); // estándares — más tiempo
+  ukInit('pb',    'pb-track',    'pb-dots',    2, 5500);
+  ukInit('steps', 'steps-track', 'steps-dots', 2, 5000);
+  ukInit('min',   'min-track',   'min-dots',   2, 5000);
+  ukInit('capa',  'capa-track',  'capa-dots',  1, 5500);
+  ukInit('est',   'est-track',   'est-dots',   1, 6000);
+
+  // Mobile: sincronizar dots con scroll nativo
+  ['pb-track','steps-track','min-track','capa-track','est-track'].forEach(trackId => {
+    const track = document.getElementById(trackId);
+    if (!track) return;
+    const id = Object.keys(ukState).find(k => ukState[k].trackId === trackId);
+    if (!id) return;
+    let scrollTimer;
+    track.addEventListener('scroll', () => {
+      if (!isMobileCarousel()) return;
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        const items = Array.from(track.children);
+        const center = track.scrollLeft + track.offsetWidth / 2;
+        let closest = 0, minDist = Infinity;
+        items.forEach((item, i) => {
+          const dist = Math.abs(item.offsetLeft + item.offsetWidth / 2 - center);
+          if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        ukState[id].active = closest;
+        items.forEach((item, i) => item.classList.toggle('uk-on', i === closest));
+        if (ukState[id].dotsId) {
+          document.querySelectorAll(`#${ukState[id].dotsId} .uk-dot`)
+            .forEach((d, i) => d.classList.toggle('uk-on', i === closest));
+        }
+      }, 80);
+    }, { passive: true });
+  });
 });
 
 /* TABS DE PRODUCTO */
