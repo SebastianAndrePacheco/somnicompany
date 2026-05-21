@@ -1,0 +1,3150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- SEO primario -->
+<title>SOMNI — Gestión Predictiva de Fatiga para Operaciones de Alto Riesgo</title>
+<meta name="description" content="SOMNI es el sistema SaaS de IA que previene accidentes por fatiga y somnolencia en minería, transporte e industria. Test PVT, modelo circadiano MAIRA y alertas en tiempo real. Hecho en Chile."/>
+<meta name="keywords" content="gestión fatiga operacional, somnolencia conducción, DMS Chile, prevención accidentes fatiga, software seguridad minería, control fatiga conductores, PVT test, SOMNI"/>
+<meta name="author" content="SOMNI Company"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://somnicompany.com/"/>
+
+<!-- Open Graph (LinkedIn, WhatsApp, redes) -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://somnicompany.com/"/>
+<meta property="og:title" content="SOMNI — Gestión Predictiva de Fatiga · Hecho en Chile"/>
+<meta property="og:description" content="Sistema SaaS que previene accidentes por fatiga y somnolencia en operaciones de alto riesgo. 2.745 usuarios activos · 28 empresas · 112.598 controles realizados."/>
+<meta property="og:image" content="https://somnicompany.com/somni-og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="es_CL"/>
+<meta property="og:site_name" content="SOMNI Company"/>
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="SOMNI — Gestión Predictiva de Fatiga"/>
+<meta name="twitter:description" content="Sistema SaaS de IA para prevención de fatiga operacional en industrias de alto riesgo. Chile."/>
+
+<!-- JSON-LD Datos Estructurados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://somnicompany.com/#organization",
+      "name": "SOMNI Company",
+      "url": "https://somnicompany.com",
+      "logo": "https://somnicompany.com/SOMNI blnco y celeste.png",
+      "description": "Sistema predictivo SaaS de IA para la gestión y prevención de fatiga y somnolencia operacional en industrias de alto riesgo.",
+      "foundingLocation": "Rancagua, Chile",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Nueva Einstein 290, Of. 808",
+        "addressLocality": "Rancagua",
+        "addressCountry": "CL"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+56-9-6845-1264",
+          "contactType": "sales",
+          "availableLanguage": "Spanish"
+        }
+      ],
+      "email": "contacto@somnicompany.com",
+      "sameAs": [
+        "https://linkedin.com/company/somnicompany"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://somnicompany.com/#software",
+      "name": "SOMNI",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "description": "Plataforma SaaS para gestión predictiva de fatiga y somnolencia operacional. Incluye Test PVT, modelo IA circadiano MAIRA y alertas en tiempo real por Web, correo y WhatsApp.",
+      "offers": {
+        "@type": "Offer",
+        "description": "Prueba piloto gratuita por 30 días",
+        "price": "0",
+        "priceCurrency": "CLP"
+      },
+      "provider": {
+        "@id": "https://somnicompany.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://somnicompany.com/#website",
+      "url": "https://somnicompany.com",
+      "name": "SOMNI Company",
+      "inLanguage": "es-CL",
+      "publisher": {
+        "@id": "https://somnicompany.com/#organization"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Rendimiento: preconnect crítico -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://api.web3forms.com"/>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+
+<!-- Fonts con display=swap para no bloquear render -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="Icono SOMNI.png"/>
+<link rel="apple-touch-icon" href="Icono SOMNI.png"/>
+
+<!-- Google Analytics 4 — reemplazar G-XXXXXXXXXX con el ID real -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0D1B2E;
+  --bg-alt:#0F2035;
+  --bg2:rgba(13,27,46,1);
+  --blue:#2581FC;
+  --blue2:#1a6fe0;
+  --blue-dim:rgba(37,129,252,.18);
+  --blue-border:rgba(37,129,252,.32);
+  --w:rgba(255,255,255,1);
+  --w80:rgba(255,255,255,.85);
+  --w60:rgba(255,255,255,.65);
+  --w40:rgba(255,255,255,.42);
+  --w20:rgba(255,255,255,.22);
+  --w10:rgba(255,255,255,.1);
+  --w06:rgba(255,255,255,.07);
+  --w04:rgba(255,255,255,.05);
+  --border:rgba(255,255,255,.12);
+  --r:14px;--rs:10px;
+  --ease:cubic-bezier(.4,0,.2,1);
+  --mono:'Montserrat',sans-serif;
+  --sans:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--bg);color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6;background-image:radial-gradient(ellipse 120% 60% at 50% -10%,rgba(37,129,252,.13) 0%,transparent 70%)}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{border:none;cursor:pointer;font-family:inherit}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
+
+/* ─ UTILS ─────────────────────────────── */
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 36px}
+.sec{padding:112px 0}
+.sec-sm{padding:72px 0}
+.tag{display:inline-block;font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.h1{font-family:var(--mono);font-size:clamp(2.6rem,6vw,5rem);font-weight:900;line-height:1.05;letter-spacing:-.05em}
+.h2{font-family:var(--mono);font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:800;line-height:1.15;letter-spacing:-.04em}
+.h3{font-family:var(--mono);font-size:1.1rem;font-weight:700;line-height:1.3;letter-spacing:-.02em}
+.grad{background:linear-gradient(130deg,#fff 10%,#93c5fd 55%,var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.body{font-size:.95rem;color:var(--w60);line-height:1.78}
+.center{text-align:center}
+/* fade-in animations */
+.fi{opacity:0;transform:translateY(22px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.fl{opacity:0;transform:translateX(-24px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.fr{opacity:0;transform:translateX(24px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.fi.on,.fl.on,.fr.on{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}
+
+/* ─ ANNOUNCEMENT BAR ──────────────────── */
+.ann-bar{
+  background:linear-gradient(90deg,rgba(37,129,252,.18) 0%,rgba(37,129,252,.08) 50%,rgba(37,129,252,.18) 100%);
+  border-bottom:1px solid var(--blue-border);
+  padding:9px 36px;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  position:fixed;top:0;left:0;right:0;z-index:902;height:38px;
+  font-family:var(--mono);font-size:.68rem;font-weight:600;
+  color:var(--w80);letter-spacing:.02em;
+}
+.ann-bar a{
+  background:var(--blue);color:#fff;
+  padding:5px 14px;border-radius:999px;
+  font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  transition:.2s;white-space:nowrap;
+}
+.ann-bar a:hover{background:var(--blue2)}
+.ann-bar-close{
+  position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  background:none;border:none;color:var(--w40);cursor:pointer;
+  font-size:.9rem;padding:4px;transition:.2s;font-family:var(--mono);
+}
+.ann-bar-close:hover{color:#fff}
+.ann-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;animation:blink 2s ease-in-out infinite;flex-shrink:0}
+
+/* ─ TABS DE PRODUCTO (estilo Buk) ─────── */
+.tabs-section{padding:96px 0}
+.tabs-nav{display:flex;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:0;background:rgba(13,27,46,.6);flex-wrap:wrap}
+.tab-btn{
+  flex:1;padding:14px 12px;
+  font-family:var(--mono);font-size:.72rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--w40);background:none;border:none;
+  cursor:pointer;transition:all .25s;
+  border-right:1px solid var(--border);
+  white-space:nowrap;min-width:0;
+}
+.tab-btn:last-child{border-right:none}
+.tab-btn:hover{color:var(--w80);background:var(--w04)}
+.tab-btn.active{color:#fff;background:var(--blue-dim);border-bottom:2px solid var(--blue)}
+.tabs-content{margin-top:0;border:1px solid var(--border);border-top:none;border-radius:0 0 12px 12px;overflow:hidden}
+.tab-panel{display:none;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.tab-panel.active{display:grid}
+.tab-panel-text{padding:52px 48px;background:rgba(13,27,46,.4)}
+.tab-panel-text .tag{margin-bottom:12px}
+.tab-panel-text h3{font-family:var(--mono);font-size:clamp(1.3rem,2.4vw,2rem);font-weight:800;line-height:1.2;letter-spacing:-.03em;margin-bottom:16px;color:#fff}
+.tab-panel-text p{font-size:.9rem;color:var(--w60);line-height:1.78;margin-bottom:24px}
+.tab-feats{display:flex;flex-direction:column;gap:10px}
+.tf{display:flex;align-items:center;gap:10px;font-size:.84rem;color:var(--w80)}
+.tf::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.tab-panel-visual{background:linear-gradient(135deg,rgba(37,129,252,.1),rgba(13,27,46,.9));display:flex;align-items:center;justify-content:center;padding:40px;min-height:320px;position:relative;overflow:hidden;border-left:1px solid var(--border)}
+.tab-panel-visual::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(37,129,252,.18),transparent 65%);pointer-events:none}
+.tab-visual-card{background:rgba(13,27,46,.85);border:1px solid var(--border-blue);border-radius:12px;padding:24px;width:100%;max-width:340px;backdrop-filter:blur(10px);position:relative;z-index:1}
+.tvc-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.tvc-title{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--w80);letter-spacing:.08em;text-transform:uppercase}
+.tvc-live{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:.62rem;font-weight:700;color:#22c55e}
+.tvc-live::before{content:'';width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;animation:blink 1.6s ease-in-out infinite}
+.tvc-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:.8rem}
+.tvc-row:last-child{border-bottom:none}
+.tvc-row-key{color:var(--w40);font-family:var(--mono);font-size:.68rem}
+.tvc-row-val{color:var(--w80);font-weight:600}
+.tvc-row-val.ok{color:#22c55e}
+.tvc-row-val.warn{color:#f59e0b}
+.tvc-row-val.risk{color:#ef4444}
+.tvc-bar{margin-top:14px}
+.tvc-bar-label{font-family:var(--mono);font-size:.62rem;color:var(--w40);margin-bottom:6px;display:flex;justify-content:space-between}
+.tvc-bar-track{height:5px;background:var(--w10);border-radius:3px;overflow:hidden}
+.tvc-bar-fill{height:100%;border-radius:3px;animation:bar-in 1.5s ease-out forwards}
+@keyframes bar-in{from{width:0}to{width:var(--pct)}}
+
+/* ─ CARRUSEL ESTILO BUK ────────────────── */
+.carousel-section{padding:96px 0;overflow:hidden}
+.carousel-stage{
+  position:relative;
+  display:flex;align-items:center;justify-content:center;
+  padding:40px 0 20px;
+  /* las cards laterales sobresalen */
+  margin:0 -60px;
+}
+/* Flecha absoluta izquierda/derecha */
+.carousel-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:10;
+  width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--border);background:rgba(13,27,46,.9);
+  color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;font-weight:700;
+  transition:.25s;backdrop-filter:blur(10px);
+}
+.carousel-arrow:hover{background:var(--blue);border-color:var(--blue)}
+.carousel-arrow-l{left:60px}
+.carousel-arrow-r{right:60px}
+/* Track */
+.carousel-track{
+  display:flex;gap:20px;align-items:center;
+  transition:transform .55s cubic-bezier(.4,0,.2,1);
+  width:100%;
+}
+/* Cards — 3 visibles */
+.carousel-card{
+  flex-shrink:0;
+  width:calc(33.333% - 14px);
+  min-width:280px;
+  border-radius:16px;padding:40px 36px;
+  transition:all .55s cubic-bezier(.4,0,.2,1);
+  position:relative;
+}
+/* Card lateral: faded */
+.carousel-card{
+  background:rgba(13,27,46,.6);
+  border:1px solid var(--border);
+  opacity:.55;
+  transform:scale(.93);
+}
+/* Card central: elevada y destacada */
+.carousel-card.center{
+  background:linear-gradient(135deg,rgba(37,129,252,.18) 0%,rgba(13,27,46,.95) 100%);
+  border:1px solid var(--blue-border);
+  opacity:1;
+  transform:scale(1.05) translateY(-12px);
+  box-shadow:0 32px 80px rgba(0,0,0,.5),0 0 0 1px rgba(37,129,252,.2);
+}
+.carousel-card-tag{
+  font-family:var(--mono);font-size:.6rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:14px;display:block;
+}
+.carousel-card-metric{
+  font-family:var(--mono);font-size:3.8rem;font-weight:900;
+  line-height:1;margin-bottom:8px;
+  background:linear-gradient(130deg,#fff 30%,#60a5fa);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.carousel-card-desc{
+  font-size:.84rem;color:var(--w60);line-height:1.65;margin-bottom:20px;
+}
+.carousel-card-quote{
+  font-size:.8rem;color:var(--w70,rgba(255,255,255,.7));
+  line-height:1.65;font-style:italic;
+  border-left:3px solid var(--blue);padding-left:14px;
+}
+/* Dots */
+.carousel-dots{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:28px}
+.cdot{width:8px;height:8px;border-radius:50%;background:var(--w20);cursor:pointer;transition:.3s}
+.cdot.active{background:var(--blue);width:24px;border-radius:4px}
+
+/* ─ BUTTONS ────────────────────────────── */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:700;border-radius:9px;transition:all .22s;white-space:nowrap;font-size:.84rem;padding:12px 24px}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 0 24px rgba(37,129,252,.3)}
+.btn-primary:hover{background:var(--blue2);box-shadow:0 0 36px rgba(37,129,252,.5);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--border);color:var(--w60)}
+.btn-ghost:hover{border-color:var(--w20);color:#fff;background:var(--w06)}
+.btn-lg{padding:14px 32px;font-size:.9rem;border-radius:11px}
+.btn-xl{padding:16px 36px;font-size:.96rem;border-radius:12px}
+
+/* ─ NAV ─────────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 36px;border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.nav.scrolled{background:rgba(13,27,46,.94);backdrop-filter:blur(20px);border-color:var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-logo img{height:32px;display:block}
+.nav-logo-text{font-family:var(--mono);font-size:1.4rem;font-weight:900;letter-spacing:-.04em;display:none}
+.nav-links{display:flex;gap:2px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:.73rem;font-weight:600;color:var(--w60);padding:7px 12px;border-radius:7px;transition:all .2s;letter-spacing:.01em}
+.nav-links a:hover{color:#fff;background:var(--w06)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;flex-shrink:0}
+.hamburger span{width:20px;height:2px;background:#fff;border-radius:1px;transition:.3s}
+
+/* ─ MOBILE MENU ─────────────────────────── */
+.mob{position:fixed;inset:0;z-index:880;background:rgba(13,27,46,.97);backdrop-filter:blur(20px);transform:translateX(100%);transition:transform .38s var(--ease);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.mob.open{transform:none}
+.mob a{font-family:var(--mono);font-size:1.25rem;font-weight:700;color:var(--w60);padding:12px 36px;width:100%;text-align:center;transition:.2s}
+.mob a:hover{color:#fff}
+.mob-x{position:absolute;top:18px;right:18px;background:var(--w06);border:1px solid var(--border);border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--w60);font-size:1.1rem;font-family:var(--mono)}
+
+/* ─ HERO ──────────────────────────────────── */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:80px}
+#c{position:absolute;inset:0;z-index:0;width:100%;height:100%}
+.hero-glow{position:absolute;top:-15%;left:50%;transform:translateX(-50%);width:1400px;height:900px;background:radial-gradient(ellipse,rgba(37,129,252,.22) 0%,rgba(37,129,252,.08) 38%,transparent 68%);z-index:1;pointer-events:none}
+/* Layout 2 columnas */
+.hero-inner{
+  position:relative;z-index:2;
+  padding:72px 36px 80px;
+  width:100%;max-width:1200px;margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+/* ── Columna texto ── */
+.hero-text-col{
+  animation:h-text-in 1s cubic-bezier(.22,1,.36,1) .1s both;
+}
+@keyframes h-text-in{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+/* ── Stats: full-width centrados ── */
+.hero-stats{
+  grid-column:1 / -1;grid-row:2;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:14px;
+  overflow:hidden;
+  width:100%;
+  animation:h-text-in 1s cubic-bezier(.22,1,.36,1) .4s both;
+}
+.hs{
+  background:rgba(13,27,46,.88);
+  padding:24px 16px;
+  display:flex;flex-direction:column;
+  align-items:center;text-align:center;gap:6px;
+}
+.hs-val{font-family:var(--mono);font-size:1.9rem;font-weight:900;line-height:1;color:#fff}
+.hs-val em{color:var(--blue);font-style:normal}
+.hs-lbl{font-size:.62rem;color:var(--w40);line-height:1.4;max-width:120px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(37,129,252,.09);border:1px solid var(--blue-border);border-radius:999px;padding:6px 16px;font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#93c5fd;margin-bottom:28px}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.6)}}
+.hero-h1{margin-bottom:20px}
+.hero-sub{font-size:1rem;color:var(--w60);max-width:460px;line-height:1.72;margin-bottom:32px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+/* ── Columna logo animado ── */
+.hero-viz-col{grid-column:2;grid-row:1;display:flex;align-items:center;justify-content:center;animation:h-viz-in 1.1s cubic-bezier(.22,1,.36,1) .3s both}
+@keyframes h-viz-in{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:none}}
+.hviz{position:relative;width:460px;height:460px;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:visible}
+/* Glow central */
+.hviz-glow{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(37,129,252,.35) 0%,rgba(37,129,252,.12) 45%,transparent 72%);animation:glow-breath 3.5s ease-in-out infinite}
+@keyframes glow-breath{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.18);opacity:1}}
+/* Anillos orbitales */
+.hviz-ring{position:absolute;border-radius:50%;top:50%;left:50%}
+.hviz-r1{width:220px;height:220px;margin:-110px 0 0 -110px;border:1px dashed rgba(37,129,252,.35);animation:spin-cw 10s linear infinite}
+.hviz-r1::before{content:'';position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:#2581FC;box-shadow:0 0 14px 4px rgba(37,129,252,.9),0 0 28px 8px rgba(37,129,252,.4)}
+.hviz-r1::after{content:'';position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:rgba(37,129,252,.55);box-shadow:0 0 8px rgba(37,129,252,.6)}
+.hviz-r2{width:320px;height:320px;margin:-160px 0 0 -160px;border:1px dashed rgba(37,129,252,.2);animation:spin-ccw 18s linear infinite}
+.hviz-r2::before{content:'';position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:7px;height:7px;border-radius:50%;background:rgba(96,165,250,.9);box-shadow:0 0 12px 3px rgba(96,165,250,.7)}
+.hviz-r2::after{content:'';position:absolute;right:-3px;top:50%;transform:translateY(-50%);width:5px;height:5px;border-radius:50%;background:rgba(37,129,252,.5);box-shadow:0 0 8px rgba(37,129,252,.5)}
+.hviz-r3{width:420px;height:420px;margin:-210px 0 0 -210px;border:1px solid rgba(37,129,252,.1);animation:spin-cw 35s linear infinite}
+.hviz-r3::before{content:'';position:absolute;top:-3px;left:50%;transform:translateX(-50%);width:6px;height:6px;border-radius:50%;background:rgba(37,129,252,.7);box-shadow:0 0 10px rgba(37,129,252,.6)}
+.hviz-r0{width:240px;height:240px;margin:-120px 0 0 -120px;border:1px solid rgba(37,129,252,.2);border-top-color:rgba(96,165,250,.9);animation:spin-cw 1.8s linear infinite}
+.hviz-r0::before{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:#60a5fa;box-shadow:0 0 22px 6px rgba(96,165,250,1),0 0 44px 12px rgba(37,129,252,.7)}
+@keyframes spin-cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-ccw{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+/* Escáner cónico */
+.hviz-scanner{position:absolute;width:220px;height:220px;margin:-110px 0 0 -110px;top:50%;left:50%;border-radius:50%;background:conic-gradient(from 0deg,rgba(37,129,252,.3) 0deg,rgba(37,129,252,.08) 55deg,transparent 80deg);animation:spin-cw 4s linear infinite}
+/* Marco hexagonal */
+.hviz-hex{position:absolute;width:220px;height:220px;z-index:9;animation:spin-cw 20s linear infinite}
+.hviz-hex::before,.hviz-hex::after{content:'';position:absolute;inset:0;border-radius:32px;border:1px solid rgba(37,129,252,.25)}
+.hviz-hex::after{transform:rotate(45deg);border-color:rgba(96,165,250,.15);animation:spin-ccw 14s linear infinite}
+/* Ícono central */
+.hviz-icon{position:relative;z-index:10;width:200px;height:200px;display:flex;align-items:center;justify-content:center;animation:icon-float 4s ease-in-out infinite}
+.hviz-icon img{width:100%;height:auto;border-radius:26px;animation:icon-glow 4s ease-in-out infinite}
+@keyframes icon-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes icon-glow{0%,100%{filter:drop-shadow(0 0 20px rgba(37,129,252,.7)) drop-shadow(0 0 50px rgba(37,129,252,.4))}50%{filter:drop-shadow(0 0 38px rgba(37,129,252,1)) drop-shadow(0 0 90px rgba(96,165,250,.85)) drop-shadow(0 0 16px rgba(255,255,255,.2))}}
+/* Pulsos — dentro de .hviz, overflow:visible los deja salir hacia afuera */
+.hviz-pulse{position:absolute;border-radius:50%;border:1px solid rgba(37,129,252,.5);width:200px;height:200px;
+  top:50%;left:50%;transform:translate(-50%,-50%) scale(.7);
+  z-index:0;pointer-events:none;
+  animation:pulse-full 4.5s cubic-bezier(.1,.5,.3,1) infinite}
+.hviz-pulse-2{animation-delay:1.5s;border-color:rgba(96,165,250,.35)}
+.hviz-pulse-3{animation-delay:3s;border-color:rgba(37,129,252,.2)}
+@keyframes pulse-full{
+  0%  {transform:translate(-50%,-50%) scale(.7);opacity:.75}
+  40% {opacity:.2}
+  100%{transform:translate(-50%,-50%) scale(12);opacity:0}
+}
+/* Tags flotantes */
+.hviz-tag{position:absolute;background:rgba(7,12,40,.9);border:1px solid rgba(37,129,252,.35);border-radius:6px;padding:5px 11px;font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.08em;color:#93c5fd;backdrop-filter:blur(8px);white-space:nowrap;z-index:11}
+.hviz-tag-1{top:8%;right:6%;animation:tag-drift 4s ease-in-out infinite}
+.hviz-tag-2{bottom:12%;left:6%;animation:tag-drift 5s ease-in-out infinite reverse}
+.hviz-tag-3{top:50%;right:3%;animation:tag-drift 6s ease-in-out infinite .8s}
+.hviz-tag-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#22c55e;margin-right:5px;box-shadow:0 0 6px #22c55e;animation:blink 1.6s ease-in-out infinite}
+@keyframes tag-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+/* Scroll hint */
+.scroll-hint{display:none}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--blue),transparent)}
+.scroll-lbl{font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--w40)}
+@keyframes bob{from{transform:translateX(-50%) translateY(0)}to{transform:translateX(-50%) translateY(7px)}}
+
+/* ─ TRUST BAR ─────────────────────────────── */
+#trust{padding:40px 0;background:#ffffff;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1);overflow:hidden}
+.trust-lbl{text-align:center;font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.35);margin-bottom:28px}
+.trust-outer{overflow:hidden;position:relative}
+.trust-outer::before,.trust-outer::after{content:'';position:absolute;top:0;width:120px;height:100%;z-index:2;pointer-events:none}
+.trust-outer::before{left:0;background:linear-gradient(to right,#ffffff,transparent)}
+.trust-outer::after{right:0;background:linear-gradient(to left,#ffffff,transparent)}
+.trust-track{display:flex;gap:72px;align-items:center;animation:slide 30s linear infinite;width:max-content}
+.trust-track:hover{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.trust-logo{
+  /* Caja fija: todos los logos ocupan exactamente el mismo espacio */
+  height:30px;
+  width:110px;
+  flex-shrink:0;display:block;
+  object-fit:contain;
+  object-position:center;
+  filter:none;
+  opacity:.72;
+  transition:opacity .3s;
+}
+.trust-logo:hover{opacity:1}
+
+/* ─ MÉTRICAS REALES ──────────────────────── */
+#metricas-reales{
+  padding:52px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:rgba(13,27,46,.5);
+}
+.mreal-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:32px;align-items:center;
+}
+.mreal-card{
+  display:flex;flex-direction:column;align-items:center;gap:18px;
+  text-align:center;
+}
+.mreal-num{
+  border-radius:16px;padding:22px 36px;
+  min-width:180px;
+  box-shadow:0 12px 40px rgba(0,0,0,.35);
+  display:flex;align-items:center;justify-content:center;
+}
+.mreal-val{
+  font-family:var(--mono);font-size:2.8rem;font-weight:900;
+  color:#fff;letter-spacing:-.04em;line-height:1;
+}
+.mreal-label{
+  font-family:var(--mono);font-size:.88rem;font-weight:600;
+  color:var(--w60);letter-spacing:.04em;
+}
+@media(max-width:768px){
+  .mreal-grid{grid-template-columns:1fr;gap:20px}
+  .mreal-num{min-width:140px;padding:18px 28px}
+  .mreal-val{font-size:2.2rem}
+}
+
+/* ─ PROBLEMA ──────────────────────────────── */
+#problema{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.9) 50%,var(--bg) 100%)}
+.prob-banner{background:rgba(37,129,252,.08);border:1px solid var(--blue-border);border-radius:var(--r);padding:18px 28px;text-align:center;margin-bottom:60px;font-family:var(--mono);font-size:1rem;font-weight:700;color:var(--w80);letter-spacing:-.01em}
+.prob-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+.prob-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:32px 26px;transition:.3s}
+.prob-card:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.prob-num{font-family:var(--mono);font-size:2.4rem;font-weight:900;line-height:1;color:#fff;margin-bottom:10px}
+.prob-num em{color:var(--blue);font-style:normal}
+.prob-desc{font-size:.85rem;color:var(--w60);line-height:1.6}
+.prob-sources{text-align:center;font-size:.72rem;color:var(--w40);margin-bottom:36px;letter-spacing:.04em}
+/* Frase diferenciadora — protagonismo total */
+.prob-close{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(37,129,252,.12) 0%,rgba(37,129,252,.06) 50%,rgba(13,27,46,.8) 100%);
+  border:1px solid var(--blue-border);
+  border-left:4px solid var(--blue);
+  border-radius:var(--r);
+  padding:44px 52px;
+  text-align:center;
+}
+.prob-close::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 0%,rgba(37,129,252,.18) 0%,transparent 65%);
+  pointer-events:none;
+}
+.prob-close-label{
+  display:inline-block;
+  font-family:var(--mono);font-size:.6rem;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:var(--blue);
+  background:rgba(37,129,252,.1);
+  border:1px solid var(--blue-border);
+  border-radius:999px;padding:5px 14px;
+  margin-bottom:20px;
+}
+.prob-close-text{
+  font-family:var(--mono);
+  font-size:clamp(1.1rem,2vw,1.5rem);
+  font-weight:700;
+  color:#fff;
+  line-height:1.55;
+  letter-spacing:-.02em;
+  position:relative;z-index:1;
+}
+
+/* ─ QUÉ ES SOMNI ─────────────────────────── */
+#somni{background:var(--bg)}
+.somni-header{text-align:center;margin-bottom:64px}
+.somni-sub{font-size:1.05rem;color:var(--w60);max-width:580px;margin:16px auto 0;line-height:1.72}
+/* ══ SISTEMA UNIVERSAL DE CARRUSEL ══ */
+.uk-wrap{
+  position:relative;
+  overflow:hidden;
+  padding:44px 0 32px; /* espacio vertical para el scale */
+}
+/* Fade lateral — profundidad "conveyor" */
+.uk-wrap::before,.uk-wrap::after{
+  content:'';position:absolute;top:0;width:100px;height:100%;z-index:3;pointer-events:none;
+}
+.uk-wrap::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
+.uk-wrap::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
+
+/* Track base */
+.uk-track{display:flex;gap:20px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+
+/* Track sin overflow — la transformación mueve las cards */
+.uk-track{
+  display:flex;gap:20px;align-items:center;
+  transition:transform .65s cubic-bezier(.4,0,.2,1);
+  will-change:transform;
+}
+
+/* ── BASE DE TODAS LAS CARDS DE CARRUSEL ── */
+/* ── BASE INACTIVA: todas las cards del carrusel ── */
+.step,.min-card,.capa-card,.est-card{
+  opacity:.3;
+  transform:scale(.82);
+  transition:all .62s cubic-bezier(.4,0,.2,1);
+  cursor:pointer;
+  flex-shrink:0;
+}
+/* Anchos fijos por tipo — esencial para el cálculo de centrado */
+.step     { width:230px; }
+.min-card { width:280px; }
+.capa-card{ width:340px; }
+.est-card { width:280px; }
+/* ── CARD ACTIVA: escala y glow pronunciados ── */
+.step.uk-on,
+.min-card.uk-on,
+.capa-card.uk-on,
+.est-card.uk-on{
+  opacity:1;
+  transform:scale(1.04) translateY(-6px);
+  border-color:var(--blue-border) !important;
+  background:rgba(37,129,252,.1) !important;
+  box-shadow:0 28px 72px rgba(0,0,0,.5), 0 0 0 1px rgba(37,129,252,.3);
+  z-index:4;
+}
+
+/* Botones — fuera del área de cards, debajo de los dots */
+.uk-btn{display:none}
+
+/* Dots */
+.uk-dots{display:flex;gap:7px;justify-content:center;margin-top:24px}
+.uk-dot{width:7px;height:7px;border-radius:50%;background:var(--w20);cursor:pointer;transition:.35s}
+.uk-dot.uk-on{background:var(--blue);width:24px;border-radius:4px}
+
+/* ─ STEPS FLOW ─────────────────────────────── */
+/* Padding lateral = permite centrar 1ª y última card */
+/* ── CARRUSEL BENEFICIOS PLATAFORMA ──────── */
+.pb-track{display:flex;gap:20px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+.pb-card{flex-shrink:0;width:300px;background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:40px 32px;position:relative;overflow:hidden;cursor:pointer;opacity:.3;transform:scale(.87);transition:all .62s cubic-bezier(.4,0,.2,1)}
+.pb-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(37,129,252,.12),transparent 60%);opacity:0;transition:opacity .4s}
+.pb-card.uk-on{opacity:1;transform:scale(1.06) translateY(-12px);border-color:var(--blue-border);background:rgba(37,129,252,.06);box-shadow:0 28px 72px rgba(0,0,0,.5),0 0 0 1px rgba(37,129,252,.25)}
+.pb-card.uk-on::before{opacity:1}
+.pb-icon{width:52px;height:52px;border-radius:14px;background:var(--blue-dim);border:1px solid var(--blue-border);display:flex;align-items:center;justify-content:center;color:var(--blue);margin-bottom:20px}
+.pb-icon svg{width:22px;height:22px}
+.pb-num{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.22em;color:var(--blue);text-transform:uppercase;margin-bottom:10px}
+.pb-title{font-family:var(--mono);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.25;margin-bottom:14px;letter-spacing:-.02em}
+.pb-text{font-size:.84rem;color:var(--w60);line-height:1.7;margin-bottom:20px}
+.pb-tag{display:inline-block;font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#93c5fd;background:var(--blue-dim);border:1px solid var(--blue-border);border-radius:999px;padding:5px 12px}
+
+/* ─ CONCEPTOS PLATAFORMA ─────────────────── */
+.plat-concept{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;transition:.3s;position:relative;overflow:hidden}
+.plat-concept::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--blue),transparent)}
+.plat-concept:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.plat-concept-tag{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.plat-concept-title{font-family:var(--mono);font-size:1.3rem;font-weight:900;color:#fff;margin-bottom:12px;letter-spacing:-.02em}
+.plat-concept-body{font-size:.8rem;color:var(--w60);line-height:1.65}
+
+.steps-row{display:flex;gap:16px;position:relative;align-items:stretch;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+/* Línea de conexión continua */
+.steps-row::before{content:'';display:none}
+.step{
+  background:var(--w04);border:1px solid var(--border);
+  padding:32px 20px 28px;position:relative;z-index:1;
+  display:flex;flex-direction:column;gap:0;
+  border-radius:var(--r);
+  width:220px; /* ancho fijo para centrado consistente */
+}
+/* .step.uk-on definido en bloque de carruseles universal arriba */
+/* Número grande */
+.step-num{
+  font-family:var(--mono);font-size:3.8rem;font-weight:900;
+  line-height:1;letter-spacing:-.06em;
+  background:linear-gradient(135deg,rgba(37,129,252,.9) 0%,rgba(96,165,250,.5) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:18px;display:block;
+}
+/* Ícono del paso */
+.step-icon{
+  width:40px;height:40px;border-radius:10px;
+  background:var(--blue-dim);border:1px solid var(--blue-border);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:16px;flex-shrink:0;
+}
+.step-icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.step-title{font-family:var(--mono);font-size:.9rem;font-weight:800;margin-bottom:10px;color:#fff;line-height:1.3}
+.step-body{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.65}
+/* Flecha entre pasos */
+.step::after{
+  content:'›';
+  position:absolute;right:-12px;top:50px;
+  font-size:1.4rem;color:var(--blue);opacity:.5;
+  z-index:3;line-height:1;
+}
+.step:last-child::after{display:none}
+.step-line{display:none}
+.somni-close{
+  text-align:center;margin-top:52px;
+  font-family:var(--mono);
+  font-size:clamp(1.1rem,2vw,1.45rem);
+  font-weight:800;
+  letter-spacing:-.02em;
+  line-height:1.5;
+  color:#fff;
+  position:relative;
+  padding:36px 48px;
+  background:linear-gradient(135deg,rgba(37,129,252,.1) 0%,rgba(37,129,252,.04) 100%);
+  border:1px solid var(--blue-border);
+  border-radius:var(--r);
+  overflow:hidden;
+}
+.somni-close::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 0%,rgba(37,129,252,.2) 0%,transparent 60%);
+  pointer-events:none;
+}
+
+/* ─ PLATAFORMA (DEMO) ────────────────────── */
+#plataforma{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 50%,var(--bg) 100%)}
+.plat-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;align-items:center}
+/* iMac mockup */
+.imac-wrap{position:relative;display:flex;flex-direction:column;align-items:center}
+.imac-body{background:#162238;border-radius:14px 14px 4px 4px;border:2px solid #1e3352;box-shadow:0 40px 100px rgba(0,0,0,.7),0 0 0 1px rgba(37,129,252,.1);width:100%;overflow:hidden;position:relative}
+.imac-menubar{background:#0f1d30;padding:8px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid #1e3352}
+.imac-dot{width:10px;height:10px;border-radius:50%}
+.imac-screen-area{background:#070C49;padding:0;overflow:hidden}
+/* dashboard recreation */
+.dash{display:flex;height:260px;font-family:var(--mono)}
+.dash-sidebar{width:160px;background:#0a0e1f;border-right:1px solid rgba(255,255,255,.08);padding:16px 12px;flex-shrink:0;display:flex;flex-direction:column;gap:4px}
+.dash-logo{margin-bottom:14px}
+.dash-logo-text{font-family:var(--mono);font-size:1.1rem;font-weight:900;color:#fff;letter-spacing:-.04em}
+.dash-logo-text em{color:var(--blue);font-style:normal}
+.dash-nav-item{padding:6px 8px;border-radius:5px;font-size:.62rem;font-weight:600;color:rgba(255,255,255,.45);letter-spacing:.04em;cursor:default}
+.dash-nav-item.active{background:rgba(37,129,252,.18);color:#fff}
+.dash-main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.dash-topbar{background:#0d1228;border-bottom:1px solid rgba(255,255,255,.08);padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+.dash-topbar-title{font-size:.8rem;font-weight:800;color:#fff;letter-spacing:-.01em}
+.dash-topbar-badge{background:rgba(37,129,252,.2);border:1px solid rgba(37,129,252,.35);border-radius:4px;padding:2px 8px;font-size:.58rem;font-weight:700;color:var(--blue)}
+.dash-body{flex:1;padding:12px 16px;display:flex;flex-direction:column;gap:10px}
+.dash-filters{display:flex;gap:8px}
+.dash-filter{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:4px 10px;font-size:.58rem;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:4px}
+.dash-filter span{color:rgba(255,255,255,.8);font-weight:600}
+.dash-chart-area{flex:1;display:flex;align-items:flex-end;gap:5px;padding-bottom:4px;position:relative}
+.dash-legend{display:flex;gap:12px;position:absolute;top:0;left:0}
+.dash-leg-item{display:flex;align-items:center;gap:4px;font-size:.52rem;color:rgba(255,255,255,.5)}
+.dash-leg-dot{width:6px;height:6px;border-radius:50%}
+.dash-bar-grp{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;min-width:0}
+.dash-bar-stack{display:flex;flex-direction:column;align-items:center;width:100%;border-radius:2px 2px 0 0;overflow:hidden}
+.dash-bar-g{background:#22c55e;width:100%}
+.dash-bar-r{background:#ef4444;width:100%}
+.dash-bar-lbl{font-size:.48rem;color:rgba(255,255,255,.4);margin-top:2px;letter-spacing:.02em}
+.dash-tabs{background:#0a0e1f;border-top:1px solid rgba(255,255,255,.08);padding:0 16px;display:flex;gap:0}
+.dash-tab{padding:6px 10px;font-size:.55rem;font-weight:600;color:rgba(255,255,255,.4);border-bottom:2px solid transparent;letter-spacing:.04em;cursor:default}
+.dash-tab.active{color:var(--blue);border-color:var(--blue)}
+/* iMac stand */
+.imac-neck{width:24px;height:28px;background:linear-gradient(to bottom,#2a2d36,#1e2130);margin:0 auto}
+.imac-base{width:140px;height:10px;background:#1e2130;border-radius:0 0 8px 8px;margin:0 auto}
+/* Phone mockup */
+.phone-wrap{position:absolute;bottom:-20px;right:-16px;z-index:2}
+.phone-frame{width:100px;background:#111318;border-radius:14px;border:2px solid #2a2d36;box-shadow:0 20px 60px rgba(0,0,0,.7);overflow:hidden}
+.phone-notch{background:#111318;height:16px;display:flex;align-items:center;justify-content:center}
+.phone-notch-inner{width:28px;height:5px;background:#1e2130;border-radius:3px}
+.phone-topbar{background:#2581FC;padding:6px 8px;display:flex;align-items:center;justify-content:space-between}
+.phone-topbar-txt{font-size:.5rem;font-weight:800;color:#fff;letter-spacing:.04em}
+.phone-screen{background:#f0f4ff;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
+.phone-logo-txt{font-family:var(--mono);font-size:.65rem;font-weight:900;color:#070C49;letter-spacing:-.04em;text-align:center}
+.phone-logo-txt em{color:var(--blue);font-style:normal}
+.phone-welcome{font-size:.42rem;color:#4a5568;text-align:center;line-height:1.4;max-width:80px}
+.phone-step{display:flex;align-items:flex-start;gap:4px;width:100%}
+.phone-step-n{width:12px;height:12px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:.38rem;font-weight:800;color:#fff;flex-shrink:0}
+.phone-step-txt{font-size:.4rem;color:#2d3748;line-height:1.3;padding-top:1px}
+.phone-btn{background:#2581FC;color:#fff;border-radius:4px;padding:5px 0;width:100%;text-align:center;font-size:.45rem;font-weight:800;letter-spacing:.06em;margin-top:3px}
+.phone-home-bar{height:10px;background:#f0f4ff;display:flex;align-items:center;justify-content:center}
+.phone-home-dot{width:22px;height:3px;background:#cbd5e0;border-radius:2px}
+/* Texto de plataforma */
+.plat-text{display:flex;flex-direction:column;gap:20px}
+.plat-text .h2{margin-bottom:8px}
+.app-feat-list{display:flex;flex-direction:column;gap:9px;margin-top:8px}
+.app-feat{display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:rgba(255,255,255,.7)}
+.app-feat-mark{width:18px;height:18px;border-radius:5px;background:var(--blue-dim);border:1px solid var(--blue-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.app-feat-mark svg{width:9px;height:9px;stroke:var(--blue);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;animation:livepulse 1.8s ease-in-out infinite;display:inline-block}
+@keyframes livepulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ─ MINERÍA / CARACTERÍSTICAS ───────────── */
+#mineria{background:var(--bg)}
+.min-grid{display:flex;gap:16px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+.min-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:30px 26px;transition:all .48s cubic-bezier(.4,0,.2,1);flex-shrink:0;width:calc(33.333% - 11px);cursor:pointer}
+.min-card:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.min-card-title{font-family:var(--mono);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.min-card-body{font-size:.85rem;color:var(--w60);line-height:1.65}
+.min-close{text-align:center;margin-top:40px;font-family:var(--mono);font-size:.88rem;color:var(--w60);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.7}
+
+/* ─ BASE CIENTÍFICA ────────────────────── */
+#ciencia{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 50%,var(--bg) 100%)}
+.cien-quote{background:rgba(37,129,252,.07);border:1px solid var(--blue-border);border-left:3px solid var(--blue);border-radius:var(--r);padding:24px 28px;margin-bottom:56px;max-width:760px;margin-left:auto;margin-right:auto;text-align:center}
+.cien-quote p{font-family:var(--mono);font-size:.95rem;font-weight:600;color:var(--w80);line-height:1.65;font-style:italic}
+.cien-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.cien-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:30px 24px;transition:.3s}
+.cien-card:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.cien-source{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.cien-author{font-family:var(--mono);font-size:.72rem;color:var(--w40);margin-bottom:14px}
+.cien-card-title{font-family:var(--mono);font-size:.88rem;font-weight:800;color:#fff;margin-bottom:10px;line-height:1.3}
+.cien-card-body{font-size:.8rem;color:var(--w60);line-height:1.6}
+.cien-foot{text-align:center;font-size:.75rem;color:var(--w40);line-height:1.6;font-style:italic}
+
+/* ─ ALERTAS ────────────────────────────── */
+#alertas{background:var(--bg)}
+.alerta-intro{text-align:center;margin-bottom:60px}
+.alerta-sub{font-size:1rem;color:var(--w60);margin-top:14px}
+.alertas-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.alerta-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:32px}
+.alerta-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.alerta-card-title{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--w60)}
+.badge-riesgo{background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.4);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fca5a5}
+.badge-ok{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#86efac}
+.alerta-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--border);font-size:.82rem}
+.alerta-row:last-of-type{border-bottom:none}
+.alerta-row-key{color:var(--w40);font-family:var(--mono);font-size:.72rem;letter-spacing:.06em}
+.alerta-row-val{color:var(--w80);font-weight:600;text-align:right;max-width:60%}
+.alerta-row-val.red{color:#fca5a5}
+.alerta-channels{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.ch-badge{background:var(--w06);border:1px solid var(--border);border-radius:999px;padding:4px 12px;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--w60);letter-spacing:.06em}
+.alerta-nota{font-size:.8rem;color:var(--w40);margin-top:14px;text-align:right;font-style:italic}
+.canales-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.canal-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;transition:.3s;display:flex;flex-direction:column;gap:0}
+.canal-card:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.canal-title{font-family:var(--mono);font-size:.88rem;font-weight:800;color:#fff;margin-bottom:8px}
+.canal-body{font-size:.82rem;color:var(--w60);line-height:1.6;margin-bottom:16px}
+/* Screenshot real del canal */
+.canal-screenshot{
+  margin-top:auto;border-radius:10px;overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.4);
+  max-height:280px;display:flex;align-items:flex-start;overflow:hidden;
+}
+.canal-screenshot img{width:100%;display:block;object-fit:cover;object-position:top}
+
+/* ─ GALERÍA DE ALERTAS ─────────────────── */
+.alertas-phones-wrap{
+  background:linear-gradient(135deg,rgba(7,12,73,.2) 0%,rgba(5,8,15,1) 100%);
+  padding:60px 0;overflow:hidden;
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+/* Grid 4 teléfonos iguales */
+.alertas-phones-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding:0 40px;
+  max-width:1200px;
+  margin:0 auto;
+  align-items:end; /* alinea la base de todos los teléfonos */
+}
+.aphone-solo{
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.aphone-frame{
+  border-radius:24px;overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.55),0 0 0 1px rgba(37,129,252,.18);
+  background:#000;width:100%;
+  height:460px; /* altura fija idéntica */
+  flex-shrink:0;
+}
+.aphone-frame img{
+  width:100%;height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:top;
+}
+.aphone-label{
+  font-family:var(--mono);font-size:.6rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--w40);text-align:center;
+  height:22px; /* altura fija para todos los labels */
+  display:flex;align-items:center;justify-content:center;
+}
+.aphone-label-risk{
+  color:#ef4444 !important;
+  background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);
+  border-radius:999px;padding:3px 10px;
+  height:22px;
+}
+@media(max-width:1024px){
+  .alertas-phones-grid{grid-template-columns:repeat(2,1fr);padding:0 20px}
+}
+@media(max-width:600px){
+  .alertas-phones-grid{grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
+  .aphone-frame{height:320px}
+}
+
+/* ─ CLIENTES ───────────────────────────── */
+#clientes{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 50%,var(--bg) 100%)}
+/* Título de clientes en blanco sobre fondo oscuro */
+#clientes .sec-hd h2,#clientes .sec-hd p{color:inherit}
+.cli-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;background:transparent;border:none;border-radius:0;padding:0}
+.cli-cell{
+  background:#ffffff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:12px;
+  padding:24px 20px;
+  display:flex;align-items:center;justify-content:center;
+  min-height:96px;
+  transition:border-color .25s,box-shadow .25s;
+}
+.cli-cell:hover{border-color:rgba(37,129,252,.35);box-shadow:0 4px 20px rgba(37,129,252,.12)}
+/* Logos en colores corporativos originales */
+.cli-cell img{
+  max-height:48px;
+  max-width:150px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  filter:none;
+  opacity:1;
+  transition:opacity .3s;
+}
+.cli-cell:hover img{opacity:1}
+/* Logos específicos agrandados */
+.cli-cell.cli-lg img{
+  max-height:68px;
+  max-width:170px;
+}
+
+/* ─ REDES Y PREMIOS ─────────────────────── */
+#premios{background:var(--bg)}
+.premios-intro{text-align:center;margin-bottom:52px}
+.premios-sub{font-size:.95rem;color:var(--w60);margin-top:12px;line-height:1.7;max-width:520px;margin-left:auto;margin-right:auto}
+.premios-logos{display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap;margin-bottom:44px;padding:36px 48px;background:#ffffff;border:1px solid rgba(0,0,0,.08);border-radius:var(--r)}
+.premio-logo img{
+  height:36px;width:auto;
+  filter:none;
+  opacity:.85;
+  transition:opacity .3s;
+  display:block;
+}
+.premio-logo:hover img{opacity:1}
+.premios-badges{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.p-badge{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:24px 18px;text-align:center;transition:.3s}
+.p-badge:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.p-badge-title{font-family:var(--mono);font-size:.75rem;font-weight:800;color:#fff;margin-bottom:6px;line-height:1.3}
+.p-badge-body{font-size:.72rem;color:var(--w40);line-height:1.5}
+
+/* ─ ESTÁNDARES ─────────────────────────── */
+#estandares{background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 50%,var(--bg) 100%)}
+.est-grid{display:flex;gap:16px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+/* Card base */
+.est-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px 24px;transition:all .48s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;flex-shrink:0;width:calc(25% - 12px);display:flex;flex-direction:column;gap:0}
+.est-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:.35s var(--ease)}
+.est-card:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.est-card:hover::after{transform:scaleX(1)}
+/* Logo normativa */
+.est-logo{height:36px;display:flex;align-items:center;margin-bottom:18px}
+.est-logo img{height:36px;width:auto;max-width:80px;object-fit:contain;filter:brightness(0) invert(1);opacity:.7;transition:opacity .3s}
+.est-logo-text{font-family:var(--mono);font-size:.95rem;font-weight:900;letter-spacing:.06em;color:#fff;opacity:.7;transition:opacity .3s}
+.est-card:hover .est-logo img,.est-card:hover .est-logo-text{opacity:1}
+/* Badge normativa */
+.est-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(37,129,252,.12);border:1px solid rgba(37,129,252,.25);border-radius:4px;padding:3px 8px;font-family:var(--mono);font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;width:fit-content}
+.est-badge-dot{width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
+/* Textos */
+.est-title{font-family:var(--mono);font-size:.88rem;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3}
+.est-body{font-size:.8rem;color:var(--w60);line-height:1.65;flex:1}
+/* Pill de cumplimiento */
+.est-comply{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.08em;color:#22c55e}
+.est-comply-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;flex-shrink:0}
+
+/* ─ CAPA ADICIONAL ─────────────────────── */
+#capa{background:var(--bg)}
+.capa-header{text-align:center;margin-bottom:20px}
+.capa-note{display:inline-block;background:rgba(37,129,252,.08);border:1px solid var(--blue-border);border-radius:999px;padding:7px 18px;font-family:var(--mono);font-size:.68rem;font-weight:700;color:#93c5fd;letter-spacing:.1em;margin-bottom:20px}
+.capa-tagline{text-align:center;font-size:.9rem;color:var(--w60);max-width:520px;margin:0 auto 52px;line-height:1.7}
+.capa-grid{display:flex;gap:16px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
+.capa-card{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:all .48s cubic-bezier(.4,0,.2,1);flex-shrink:0;width:calc(33.333% - 11px)}
+.capa-card:hover{border-color:var(--blue-border);transform:translateY(-3px)}
+/* IMAGEN DE PRODUCTO — estilo Apple/Samsara */
+.capa-img{
+  position:relative;
+  height:240px;
+  background:linear-gradient(180deg,#f0f5ff 0%,#e8eef8 100%);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  padding:20px;
+}
+/* Fade inferior — transición suave de claro a oscuro */
+.capa-img::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:60px;z-index:1;
+  background:linear-gradient(to bottom,transparent,rgba(13,21,38,.9));
+  pointer-events:none;
+}
+/* Glow sutil detrás del producto */
+.capa-img::before{
+  content:'';position:absolute;inset:20%;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(37,129,252,.12),transparent 70%);
+  pointer-events:none;
+}
+.capa-img img{
+  width:auto;
+  max-width:100%;
+  max-height:200px;
+  object-fit:contain;
+  display:block;
+  position:relative;z-index:0;
+  transition:transform .45s var(--ease);
+  filter:drop-shadow(0 8px 24px rgba(0,0,0,.18));
+}
+.capa-card:hover .capa-img img{
+  transform:scale(1.06) translateY(-4px);
+  filter:drop-shadow(0 16px 40px rgba(37,129,252,.22)) drop-shadow(0 8px 24px rgba(0,0,0,.2));
+}
+/* Bloques DMS / ADAS compactos */
+.dms-adas-block{
+  background:var(--w03);border:1px solid var(--border);
+  border-radius:8px;padding:10px 14px;margin-bottom:8px;
+}
+.dab-label{
+  font-family:var(--mono);font-size:.65rem;font-weight:800;
+  color:var(--blue);letter-spacing:.06em;margin-bottom:4px;
+}
+.dab-text{font-size:.78rem;color:var(--w60);line-height:1.5}
+.dab-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.dab-badge{
+  font-family:var(--mono);font-size:.6rem;font-weight:700;
+  letter-spacing:.08em;padding:4px 10px;
+  background:var(--blue-dim);border:1px solid var(--blue-border);
+  border-radius:999px;color:#93c5fd;white-space:nowrap;
+}
+
+/* Doble imagen DMS+ADAS — misma altura que .capa-img (240px) */
+.capa-img-duo{display:flex;align-items:center;gap:0;padding:16px 12px;height:240px;}
+.capa-img-half{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;
+  height:100%;
+}
+.capa-img-half img{
+  max-height:160px;max-width:100%;
+  object-fit:contain;
+  filter:drop-shadow(0 6px 18px rgba(0,0,0,.18));
+  transition:transform .4s var(--ease);
+}
+.capa-card:hover .capa-img-half img{transform:scale(1.05) translateY(-3px)}
+.capa-img-label{
+  font-family:var(--mono);font-size:.6rem;font-weight:800;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--blue);background:var(--blue-dim);
+  border:1px solid var(--blue-border);
+  border-radius:999px;padding:3px 10px;
+}
+.capa-img-sep{
+  width:1px;height:140px;
+  background:linear-gradient(to bottom,transparent,rgba(37,129,252,.3),transparent);
+  flex-shrink:0;margin:0 4px;
+}
+.capa-body{padding:28px}
+.capa-tag{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;display:block}
+.capa-card-title{font-family:var(--mono);font-size:.95rem;font-weight:800;color:#fff;margin-bottom:10px;line-height:1.3}
+.capa-card-body{font-size:.8rem;color:var(--w60);line-height:1.6;margin-bottom:14px}
+.capa-feats{display:flex;flex-direction:column;gap:6px}
+.capa-feat{font-size:.77rem;color:var(--w60);padding-left:14px;position:relative;line-height:1.45}
+.capa-feat::before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;border-radius:50%;background:var(--blue)}
+
+/* ─ VIDEO SOMNI ────────────────────────── */
+.video-hero{display:flex;flex-direction:column;gap:32px;align-items:center}
+.video-frame{
+  position:relative;width:100%;max-width:900px;
+  border-radius:18px;overflow:hidden;
+  box-shadow:0 48px 120px rgba(0,0,0,.7),0 0 0 1px rgba(37,129,252,.15);
+  background:#000;
+}
+.video-overlay{
+  position:absolute;bottom:16px;right:16px;z-index:5;
+}
+.video-sound-btn{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(13,27,46,.85);border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;padding:8px 16px;cursor:pointer;
+  color:#fff;transition:.22s;backdrop-filter:blur(10px);
+}
+.video-sound-btn:hover{background:rgba(37,129,252,.4);border-color:var(--blue)}
+.video-stats{
+  display:flex;gap:48px;align-items:center;justify-content:center;
+  flex-wrap:wrap;
+}
+.vs{text-align:center}
+.vs-val{font-family:var(--mono);font-size:2.2rem;font-weight:900;line-height:1;color:#fff;letter-spacing:-.04em}
+.vs-lbl{font-size:.72rem;color:var(--w40);margin-top:6px;font-family:var(--mono);letter-spacing:.06em}
+
+/* ─ CASO DE ÉXITO ──────────────────────── */
+#caso{background:linear-gradient(180deg,rgba(15,32,53,.95),var(--bg))}
+.caso-banner{background:rgba(37,129,252,.08);border:1px solid var(--blue-border);border-radius:var(--r);padding:12px 24px;display:inline-block;font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
+.caso-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.caso-left h2{margin-bottom:16px}
+.caso-left p{color:var(--w60);line-height:1.78;margin-bottom:28px}
+.caso-quote{background:var(--w04);border:1px solid var(--border);border-left:3px solid var(--blue);border-radius:var(--r);padding:24px 26px;margin-bottom:24px}
+.caso-quote p{font-size:.88rem;color:var(--w80);line-height:1.7;font-style:italic;margin-bottom:12px}
+.caso-quote cite{font-family:var(--mono);font-size:.68rem;color:var(--w40);font-style:normal;letter-spacing:.06em}
+.caso-metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.caso-met{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 22px;text-align:center;transition:.3s}
+.caso-met:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.caso-met-val{font-family:var(--mono);font-size:2.6rem;font-weight:900;line-height:1;color:#fff;letter-spacing:-.04em}
+.caso-met-val em{color:var(--blue);font-style:normal}
+.caso-met-lbl{font-size:.75rem;color:var(--w40);margin-top:8px;line-height:1.4}
+
+/* ─ TESTIMONIOS ────────────────────────── */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testi-card{
+  background:var(--w04);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:36px 32px 28px;
+  display:flex;flex-direction:column;gap:0;
+  position:relative;overflow:hidden;
+  transition:.3s;
+}
+.testi-card:hover{border-color:var(--blue-border);background:rgba(37,129,252,.05)}
+.testi-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,transparent,var(--blue),transparent);
+}
+.testi-quote-icon{
+  font-family:Georgia,serif;font-size:5rem;line-height:.7;
+  color:var(--blue);opacity:.35;margin-bottom:16px;
+  font-weight:900;
+}
+.testi-text{
+  font-size:.9rem;color:var(--w80);line-height:1.75;
+  flex:1;margin-bottom:28px;font-style:italic;
+}
+.testi-text strong{
+  color:#fff;font-style:normal;font-weight:700;
+}
+.testi-footer{
+  display:flex;align-items:center;gap:16px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+}
+.testi-logo{
+  height:28px;width:auto;max-width:80px;
+  object-fit:contain;flex-shrink:0;
+  filter:none;opacity:.75;
+}
+.testi-person{display:flex;flex-direction:column;gap:3px}
+.testi-name{
+  font-family:var(--mono);font-size:.78rem;font-weight:700;
+  color:#fff;
+}
+.testi-role{font-size:.72rem;color:var(--w40);line-height:1.4}
+@media(max-width:1024px){.testi-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.testi-grid{grid-template-columns:1fr}}
+
+/* ─ PILOTO CTA ─────────────────────────── */
+#piloto{padding:100px 0}
+.piloto-card{background:var(--w04);border:1px solid var(--blue-border);border-radius:18px;padding:72px 56px;text-align:center;position:relative;overflow:hidden}
+.piloto-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% -15%,rgba(37,129,252,.16),transparent 60%);pointer-events:none}
+.piloto-card .h2{margin-bottom:16px}
+.piloto-card p{font-size:.95rem;color:var(--w60);max-width:500px;margin:0 auto 36px;line-height:1.72}
+.piloto-checks{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.pc{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.8rem;font-weight:600;color:var(--w80)}
+.pc-mark{width:18px;height:18px;border-radius:50%;background:var(--blue-dim);border:1px solid var(--blue-border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pc-mark svg{width:8px;height:8px;stroke:var(--blue);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.piloto-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.piloto-note{margin-top:18px;font-size:.73rem;color:var(--w40);font-style:italic}
+
+/* ─ CONTACTO ───────────────────────────── */
+#contacto{padding:0 0 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;padding:100px 0}
+.contact-info .h2{margin-bottom:16px}
+.contact-info .body{margin-bottom:32px}
+.contact-data{display:flex;flex-direction:column;gap:12px}
+.cd{display:flex;align-items:flex-start;gap:12px;padding:14px 18px;background:var(--w04);border:1px solid var(--border);border-radius:var(--rs);font-size:.86rem;color:var(--w60);transition:.25s}
+.cd:hover{border-color:var(--blue-border);color:#fff}
+.cd-ico{width:34px;height:34px;border-radius:8px;background:var(--blue-dim);border:1px solid var(--blue-border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cd-ico svg{width:14px;height:14px;stroke:var(--blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cd-meta{font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--w40);display:block;margin-bottom:2px}
+.cform{background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:40px}
+.cform-title{font-family:var(--mono);font-size:1.05rem;font-weight:800;margin-bottom:4px}
+.cform-sub{font-size:.8rem;color:var(--w40);margin-bottom:28px}
+.fg{margin-bottom:16px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--w60);margin-bottom:7px}
+input[type=text],input[type=email],select,textarea{width:100%;padding:11px 15px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:9px;color:#fff;font-family:var(--sans);font-size:.86rem;transition:.22s;outline:none;-webkit-appearance:none}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.25)}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);background:rgba(37,129,252,.05)}
+select{cursor:pointer}
+select option{background:var(--bg);color:#fff}
+textarea{resize:vertical;min-height:96px}
+.fsub{width:100%;padding:13px;background:var(--blue);color:#fff;font-family:var(--mono);font-size:.84rem;font-weight:700;border-radius:9px;border:none;cursor:pointer;letter-spacing:.04em;transition:.22s}
+.fsub:hover{background:var(--blue2);box-shadow:0 0 24px rgba(37,129,252,.4)}
+
+/* ─ CORFO ──────────────────────────────── */
+.corfo-bar{
+  background:rgba(7,12,73,.18);
+  border-top:1px solid rgba(37,129,252,.2);
+  border-bottom:1px solid rgba(37,129,252,.2);
+  padding:24px 0;
+}
+.corfo-inner{
+  display:flex;align-items:center;gap:28px;flex-wrap:wrap;
+}
+.corfo-logo-wrap{flex-shrink:0}
+.corfo-logo{
+  height:52px;width:auto;
+  filter:brightness(0) invert(1);
+  opacity:.85;
+}
+.corfo-fallback{
+  align-items:center;justify-content:center;
+  width:120px;height:52px;
+}
+.corfo-text-logo{
+  font-family:var(--mono);font-size:1.6rem;font-weight:900;
+  color:#fff;letter-spacing:.04em;
+}
+.corfo-divider{
+  width:1px;height:44px;
+  background:rgba(255,255,255,.15);
+  flex-shrink:0;
+}
+.corfo-info{
+  display:flex;flex-direction:column;gap:4px;flex:1;min-width:200px;
+}
+.corfo-ley{
+  font-family:var(--mono);font-size:.82rem;font-weight:800;
+  color:#fff;letter-spacing:.06em;
+}
+.corfo-desc{
+  font-size:.78rem;color:var(--w60);line-height:1.5;max-width:560px;
+}
+.corfo-link{
+  font-family:var(--mono);font-size:.72rem;font-weight:700;
+  color:var(--blue);border:1px solid var(--blue-border);
+  border-radius:999px;padding:7px 18px;
+  white-space:nowrap;flex-shrink:0;
+  transition:.22s;background:var(--blue-dim);
+}
+.corfo-link:hover{background:var(--blue);color:#fff}
+@media(max-width:768px){
+  /* Announcement bar — una línea limpia en móvil */
+  .ann-bar{
+    flex-wrap:wrap;padding:8px 16px;gap:8px;
+    font-size:.62rem;text-align:center;height:auto;
+  }
+  .ann-bar a{font-size:.6rem;padding:4px 10px}
+  .ann-bar-close{position:static;transform:none;margin-left:auto}
+  /* Corfo */
+  .corfo-divider{display:none}
+  .corfo-info{flex:100%}
+  .corfo-link{width:100%;text-align:center;display:block}
+  /* Hero orbital en móvil — aún más compacto */
+  .hviz{width:220px;height:220px}
+  .hviz-r3{width:210px;height:210px;margin:-105px 0 0 -105px}
+  .hviz-r2{width:160px;height:160px;margin:-80px 0 0 -80px}
+  .hviz-r1{width:120px;height:120px;margin:-60px 0 0 -60px}
+  .hviz-r0{width:130px;height:130px;margin:-65px 0 0 -65px}
+  .hviz-scanner{width:120px;height:120px;margin:-60px 0 0 -60px}
+  .hviz-hex{width:115px;height:115px}
+  .hviz-icon{width:96px;height:96px}
+  .hviz-glow{width:140px;height:140px}
+  .hviz-tag-1{top:2%;right:2%}
+  .hviz-tag-2{bottom:4%;left:0%}
+  .hviz-tag-3{top:44%;right:0%}
+}
+
+/* ─ FOOTER ─────────────────────────────── */
+footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:52px;margin-bottom:52px}
+.foot-brand img{height:30px;margin-bottom:16px;display:block}
+.foot-brand-text{font-family:var(--mono);font-size:.82rem;color:#fff;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.foot-brand p{font-size:.8rem;color:var(--w40);line-height:1.7;max-width:240px;margin-bottom:18px}
+.foot-social{display:flex;gap:8px}
+.fsoc{width:32px;height:32px;border-radius:7px;background:var(--w06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--w60);font-family:var(--mono);font-size:.72rem;font-weight:700;transition:.22s}
+.fsoc:hover{background:var(--blue-dim);border-color:var(--blue-border);color:var(--blue)}
+.foot-col h4{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+.foot-col a{display:block;font-size:.8rem;color:var(--w40);margin-bottom:9px;transition:.2s}
+.foot-col a:hover{color:#fff}
+.foot-bot{padding-top:24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-bot p{font-size:.72rem;color:var(--w40)}
+.foot-badges{display:flex;gap:8px}
+.fbadge{font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);background:var(--blue-dim);border:1px solid var(--blue-border);border-radius:999px;padding:4px 10px}
+
+/* ─ WHATSAPP FLOTANTE ───────────────────── */
+.wa-btn{
+  position:fixed;bottom:24px;right:24px;z-index:801;
+  width:52px;height:52px;border-radius:50%;
+  background:#25d366;
+  box-shadow:0 4px 20px rgba(37,211,102,.5);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .25s,box-shadow .25s;
+  text-decoration:none;
+}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.7)}
+.wa-btn svg{width:26px;height:26px;fill:#fff}
+.wa-tooltip{
+  position:absolute;right:62px;top:50%;transform:translateY(-50%);
+  background:rgba(13,27,46,.95);color:#fff;
+  font-family:var(--mono);font-size:.68rem;font-weight:600;
+  padding:6px 12px;border-radius:8px;white-space:nowrap;
+  border:1px solid rgba(37,211,102,.3);
+  opacity:0;pointer-events:none;transition:opacity .2s;
+}
+.wa-btn:hover .wa-tooltip{opacity:1}
+
+/* ─ AI CHATS ────────────────────────────── */
+/* Agente izquierdo — Experta en Riesgos */
+.chat-wrap-l{position:fixed;bottom:24px;left:24px;z-index:800;display:flex;flex-direction:column;align-items:flex-start}
+/* Agente derecho — Experta SOMNI Platform — separado del WhatsApp */
+.chat-wrap-r{position:fixed;bottom:24px;right:96px;z-index:800;display:flex;flex-direction:column;align-items:flex-end}
+/* Botón con avatar foto circular */
+.chat-btn{
+  width:60px;height:60px;border-radius:50%;border:3px solid rgba(37,129,252,.6);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:.28s;box-shadow:0 8px 28px rgba(0,0,0,.6),0 0 0 2px rgba(37,129,252,.2);
+  overflow:hidden;padding:0;background:#0D1B2E;
+}
+.chat-btn img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.chat-btn:hover{transform:scale(1.08);box-shadow:0 12px 36px rgba(0,0,0,.7),0 0 0 3px rgba(37,129,252,.5)}
+.chat-btn-l{background:var(--blue);box-shadow:0 8px 28px rgba(37,129,252,.4)}
+.chat-btn-l:hover{transform:scale(1.08);box-shadow:0 12px 36px rgba(37,129,252,.6)}
+.chat-btn-r{background:#111827;border:1px solid var(--border)}
+.chat-btn-r:hover{transform:scale(1.08);border-color:var(--blue-border)}
+.chat-btn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.chat-notif{position:absolute;top:-2px;right:-2px;width:15px;height:15px;border-radius:50%;background:#ef4444;border:2px solid var(--bg);font-family:var(--mono);font-size:.52rem;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center}
+.chat-lbl{font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--w40);margin-top:6px;text-align:center;width:52px}
+.chat-win{width:300px;background:rgba(10,20,38,.98);border:1px solid var(--border);border-radius:14px;box-shadow:0 20px 70px rgba(0,0,0,.7),0 0 0 1px rgba(37,129,252,.08);overflow:hidden;display:flex;flex-direction:column;max-height:420px;margin-bottom:10px;animation:win-in .28s var(--ease)}
+.chat-win.hidden{display:none}
+@keyframes win-in{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.win-head{padding:12px 16px;background:rgba(37,129,252,.08);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:9px}
+.win-head-ico{width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.win-head-ico svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.win-head-info strong{font-family:var(--mono);font-size:.78rem;font-weight:700;display:block;color:#fff}
+.win-head-info span{font-family:var(--mono);font-size:.62rem;color:#86efac;display:flex;align-items:center;gap:4px}
+.win-head-info span::before{content:'';width:5px;height:5px;border-radius:50%;background:#22c55e;display:inline-block}
+.win-x{margin-left:auto;background:none;border:none;color:var(--w40);cursor:pointer;font-size:.85rem;padding:3px;transition:.2s;font-family:var(--mono)}
+.win-x:hover{color:#fff}
+.win-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:9px}
+.win-msgs::-webkit-scrollbar{width:2px}
+.win-msgs::-webkit-scrollbar-thumb{background:var(--blue-border);border-radius:1px}
+.msg{max-width:88%;padding:9px 13px;border-radius:11px;font-size:.79rem;line-height:1.5}
+.msg-b{background:var(--w06);border:1px solid var(--border);color:var(--w80);border-bottom-left-radius:3px;align-self:flex-start}
+.msg-u{background:var(--blue);color:#fff;border-bottom-right-radius:3px;align-self:flex-end}
+.msg-typing{display:flex;gap:4px;align-items:center;padding:9px 13px;background:var(--w06);border:1px solid var(--border);border-radius:11px;border-bottom-left-radius:3px;align-self:flex-start;width:48px}
+.msg-typing span{width:5px;height:5px;border-radius:50%;background:var(--w40);animation:typ .7s ease-in-out infinite}
+.msg-typing span:nth-child(2){animation-delay:.13s}
+.msg-typing span:nth-child(3){animation-delay:.26s}
+@keyframes typ{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:1;transform:scale(1.25)}}
+.win-quick{padding:7px 12px;display:flex;gap:5px;flex-wrap:wrap;border-top:1px solid var(--border)}
+.wq{background:none;border:1px solid var(--blue-border);border-radius:999px;padding:4px 9px;font-family:var(--mono);font-size:.6rem;font-weight:600;color:#93c5fd;cursor:pointer;transition:.2s}
+.wq:hover{background:var(--blue-dim)}
+.win-foot{padding:9px 12px;border-top:1px solid var(--border);display:flex;gap:7px;align-items:center}
+.win-inp{flex:1;background:var(--w06);border:1px solid var(--border);border-radius:7px;padding:8px 12px;color:#fff;font-family:var(--sans);font-size:.76rem;outline:none;transition:.2s}
+.win-inp:focus{border-color:var(--blue-border)}
+.win-inp::placeholder{color:rgba(255,255,255,.25)}
+.win-send{width:30px;height:30px;border-radius:7px;background:var(--blue);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
+.win-send:hover{background:var(--blue2)}
+.win-send svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ─ RESPONSIVE ──────────────────────────── */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:24px;text-align:center}
+  .hero-text-col{grid-column:1;grid-row:1;padding-bottom:0}
+  .hero-eyebrow{margin:0 auto}
+  .hero-cta{justify-content:center}
+  /* Orbital visible en tablet — más pequeño, debajo del texto */
+  .hero-viz-col{
+    grid-column:1;grid-row:2;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hviz{width:280px;height:280px}
+  .hviz-r3{width:260px;height:260px;margin:-130px 0 0 -130px}
+  .hviz-r2{width:200px;height:200px;margin:-100px 0 0 -100px}
+  .hviz-r1{width:148px;height:148px;margin:-74px 0 0 -74px}
+  .hviz-r0{width:160px;height:160px;margin:-80px 0 0 -80px}
+  .hviz-scanner{width:148px;height:148px;margin:-74px 0 0 -74px}
+  .hviz-hex{width:140px;height:140px}
+  .hviz-icon{width:120px;height:120px}
+  .hviz-glow{width:180px;height:180px}
+  .hviz-tag{font-size:.52rem;padding:4px 8px}
+  .hero-stats{grid-column:1;grid-row:3;grid-template-columns:repeat(2,1fr);max-width:100%}
+  .nav-links,.nav-right{display:none}
+  .hamburger{display:flex}
+  .prob-grid{grid-template-columns:repeat(2,1fr)}
+  .cien-grid{grid-template-columns:repeat(2,1fr)}
+  /* Carruseles en tablet: ancho de card ajustado */
+  .step{width:calc(50% - 8px) !important}
+  .min-card{width:calc(50% - 8px) !important}
+  .est-card{width:calc(50% - 8px) !important}
+  .capa-card{width:calc(80%) !important}
+  .plat-grid{grid-template-columns:1fr}
+  .caso-inner{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .capa-grid{grid-template-columns:1fr 1fr}
+  .premios-badges{grid-template-columns:repeat(3,1fr)}
+  .hero-stats{grid-template-columns:repeat(2,1fr);max-width:440px}
+  .alertas-grid{grid-template-columns:1fr}
+  .cli-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:768px){
+  .carousel-card{width:calc(85vw)}
+  .tab-panel{grid-template-columns:1fr}
+  .tab-panel-visual{display:none}
+  .tabs-nav{flex-wrap:wrap}
+  .tab-btn{flex:0 0 50%;border-bottom:1px solid var(--border)}
+  .wrap{padding:0 20px}
+  .nav{padding:0 20px;top:auto} /* la barra de anuncio es variable en móvil */
+  .sec{padding:72px 0}
+  #hero{padding-top:90px}
+  .steps-row{grid-template-columns:1fr 1fr;gap:10px}
+  .step::after{display:none}
+  .step:nth-child(4){border-right:none}
+  .min-grid{grid-template-columns:1fr 1fr}
+  .caso-metrics{grid-template-columns:1fr 1fr}
+  .canales-grid{grid-template-columns:1fr}
+  .piloto-card{padding:44px 28px}
+  .cli-grid{grid-template-columns:repeat(3,1fr)}
+  .premios-badges{grid-template-columns:repeat(2,1fr)}
+  .capa-grid{grid-template-columns:1fr}
+  .chat-wrap-l{left:14px;bottom:18px}
+  .chat-wrap-r{right:14px;bottom:18px}
+  .chat-win{width:270px}
+}
+@media(max-width:480px){
+  .h1{font-size:2.3rem}
+  .prob-grid{grid-template-columns:1fr}
+  .cli-grid{grid-template-columns:repeat(2,1fr)}
+  .cien-grid{grid-template-columns:1fr}
+  .est-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bot{flex-direction:column;text-align:center}
+  .premios-badges{grid-template-columns:1fr 1fr}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  /* Mobile: cards casi full width */
+  .step{width:calc(85vw) !important}
+  .min-card{width:calc(80vw) !important}
+  .est-card{width:calc(80vw) !important}
+  .capa-card{width:calc(85vw) !important}
+}
+</style>
+</head>
+<body>
+<a href="#somni" class="skip-nav" style="position:absolute;top:-100px;left:0;background:#2581FC;color:#fff;padding:8px 16px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.82rem;border-radius:0 0 8px 0;z-index:9999;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-100px'">Saltar al contenido</a>
+
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <img src="SOMNI blnco y celeste.png" alt="SOMNI" onerror="this.style.display='none';document.querySelector('.nav-logo-text').style.display='block'"/>
+    <span class="nav-logo-text">SoMNi</span>
+  </div>
+  <div class="nav-links">
+    <a href="#somni">Qué es SOMNI</a>
+    <a href="#alertas">Alertas</a>
+    <a href="#plataforma">Dashboard</a>
+    <a href="#ciencia">Base científica</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#estandares">Estándares</a>
+    <a href="#capa">Capa adicional</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer"
+       class="btn btn-ghost" style="display:flex;align-items:center;gap:7px">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
+      Acceso Plataforma
+    </a>
+    <a href="#piloto" class="btn btn-primary">Solicitar Piloto</a>
+  </div>
+  <div class="hamburger" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mob" id="mob">
+  <div class="mob-x" onclick="toggleMob()">X</div>
+  <a href="#somni" onclick="toggleMob()">Qué es SOMNI</a>
+  <a href="#alertas" onclick="toggleMob()">Alertas</a>
+  <a href="#plataforma" onclick="toggleMob()">Dashboard</a>
+  <a href="#ciencia" onclick="toggleMob()">Base científica</a>
+  <a href="#clientes" onclick="toggleMob()">Clientes</a>
+  <a href="#estandares" onclick="toggleMob()">Estándares</a>
+  <a href="#capa" onclick="toggleMob()">Capa adicional</a>
+  <a href="#faq" onclick="toggleMob()">FAQ</a>
+  <a href="#contacto" onclick="toggleMob()">Contacto</a>
+  <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer"
+     class="btn btn-ghost btn-lg" style="margin-top:14px" onclick="toggleMob()">Acceso Plataforma</a>
+  <a href="#piloto" class="btn btn-primary btn-lg" style="margin-top:8px" onclick="toggleMob()">Solicitar Piloto</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="c"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+
+    <!-- COLUMNA IZQUIERDA: TEXTO -->
+    <div class="hero-text-col">
+      <div class="hero-eyebrow">
+        <span class="hero-dot"></span>
+        Plataforma SaaS · Tecnología Predictiva de Fatiga
+      </div>
+      <h1 class="h1 hero-h1">
+        Donde otros <span class="grad">reaccionan,</span><br/>
+        nosotros nos<br/>anticipamos.
+      </h1>
+      <p class="hero-sub">Tecnología predictiva de gestión de fatiga y somnolencia para operaciones de alto riesgo.</p>
+      <div class="hero-cta">
+        <a href="#somni" class="btn btn-primary btn-xl">Ver más</a>
+        <a href="video.html" class="btn btn-ghost btn-xl">Ver en acción</a>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: logo orbital -->
+    <div class="hero-viz-col">
+      <div class="hviz">
+        <div class="hviz-pulse"></div>
+        <div class="hviz-pulse hviz-pulse-2"></div>
+        <div class="hviz-pulse hviz-pulse-3"></div>
+        <div class="hviz-glow"></div>
+        <div class="hviz-ring hviz-r3"></div>
+        <div class="hviz-ring hviz-r2"></div>
+        <div class="hviz-ring hviz-scanner"></div>
+        <div class="hviz-ring hviz-r1"></div>
+        <div class="hviz-ring hviz-r0"></div>
+        <div class="hviz-hex"></div>
+        <div class="hviz-icon">
+          <img src="Icono SOMNI.png" alt="SOMNI" loading="eager"/>
+        </div>
+        <div class="hviz-tag hviz-tag-1"><span class="hviz-tag-dot"></span>IA activa · 98% precisión</div>
+        <div class="hviz-tag hviz-tag-2"><span class="hviz-tag-dot"></span>Predicción 100%</div>
+        <div class="hviz-tag hviz-tag-3"><span class="hviz-tag-dot"></span>Alertas 24/7</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-hint">
+    <span class="scroll-lbl">Descubrir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MÉTRICAS REALES -->
+<section id="metricas-reales">
+  <div class="wrap">
+    <div class="mreal-grid fi">
+      <div class="mreal-card">
+        <div class="mreal-num" style="background:linear-gradient(135deg,#2581FC,#1a6fe0);box-shadow:0 12px 40px rgba(37,129,252,.45)">
+          <span class="mreal-val" data-target="2745">0</span>
+        </div>
+        <div class="mreal-label">Usuarios activos</div>
+      </div>
+      <div class="mreal-card">
+        <div class="mreal-num" style="background:linear-gradient(135deg,#0ea5e9,#0284c7);box-shadow:0 12px 40px rgba(14,165,233,.4)">
+          <span class="mreal-val" data-target="28">0</span>
+        </div>
+        <div class="mreal-label">Empresas activas</div>
+      </div>
+      <div class="mreal-card">
+        <div class="mreal-num" style="background:linear-gradient(135deg,#070C49,#0f1d6e);border:1px solid rgba(37,129,252,.4);box-shadow:0 12px 40px rgba(7,12,73,.6)">
+          <span class="mreal-val" data-format="112.598">112.598</span>
+        </div>
+        <div class="mreal-label">Test recibidos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section id="problema" class="sec">
+  <div class="wrap">
+    <div class="prob-banner fi">La fatiga no se ve. Los accidentes sí.</div>
+    <div class="center" style="margin-bottom:52px">
+      <span class="tag fi d1">Problema no gobernado</span>
+      <h2 class="h2 fi d2">La industria opera sin medir<br/>el riesgo real de sus operadores.</h2>
+    </div>
+    <div class="prob-grid">
+      <div class="prob-card fi d1">
+        <div class="prob-num">1 <em>de cada</em> 5</div>
+        <div class="prob-desc">accidentes graves de tránsito involucra fatiga o somnolencia como factor causal.</div>
+      </div>
+      <div class="prob-card fi d2">
+        <div class="prob-num">17<em>h = </em>0.5<em>g/L</em></div>
+        <div class="prob-desc">El deterioro cognitivo tras 17 horas sin dormir equivale a manejar bajo los efectos del alcohol.</div>
+      </div>
+      <div class="prob-card fi d3">
+        <div class="prob-num">Hasta <em>4×</em></div>
+        <div class="prob-desc">más riesgo de accidente con menos de 5 horas de sueño en el turno anterior.</div>
+      </div>
+      <div class="prob-card fi d4">
+        <div class="prob-num"><em>&lt;</em>5<em>%</em></div>
+        <div class="prob-desc">de las operaciones mide objetivamente el nivel de alerta de sus operadores antes de iniciar turno.</div>
+      </div>
+    </div>
+    <p class="prob-sources fi">NHTSA &nbsp;·&nbsp; AAA Foundation for Traffic Safety &nbsp;·&nbsp; Dawson &amp; Reid, Nature (1997) &nbsp;·&nbsp; Diagnóstico operativo SOMNI</p>
+    <div class="prob-close fi">
+      <div class="prob-close-label">Diferenciador SOMNI</div>
+      <div class="prob-close-text">
+        La <span class="grad">única plataforma</span> que mide el riesgo de fatiga de forma objetiva,
+        predice quién no debería iniciar turno
+        y entrega <span class="grad">evidencia auditable</span> ante cualquier inspección o siniestro.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ ES SOMNI -->
+<section id="somni" class="sec">
+  <div class="wrap">
+    <div class="somni-header fi">
+      <span class="tag">Qué es SOMNI</span>
+      <h2 class="h2">Sistema Predictivo de control SaaS<br/>para evitar incidentes por fatiga y somnolencia,<br/>basado en datos e IA.</h2>
+    </div>
+    <div class="uk-wrap" id="sw-wrap">
+      <div class="steps-row" id="steps-track">
+      <!-- 01 -->
+      <div class="step">
+        <span class="step-num">01</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+        </div>
+        <div class="step-title">Autoevaluación PWA</div>
+        <div class="step-body">El colaborador completa una encuesta rápida desde su smartphone antes de iniciar el turno.</div>
+      </div>
+      <!-- 02 -->
+      <div class="step">
+        <span class="step-num">02</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 15.5 14"/></svg>
+        </div>
+        <div class="step-title">Test PVT objetivo</div>
+        <div class="step-body">Test de psicovigilancia que mide el tiempo de reacción y genera una métrica reproducible.</div>
+      </div>
+      <!-- 03 -->
+      <div class="step">
+        <span class="step-num">03</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div class="step-title">Modelo circadiano IA</div>
+        <div class="step-body">El modelo predice el riesgo individual combinando ritmos circadianos y datos de comportamiento.</div>
+      </div>
+      <!-- 04 -->
+      <div class="step">
+        <span class="step-num">04</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <div class="step-title">Alerta al supervisor</div>
+        <div class="step-body">Si el nivel de alerta es deficiente, el supervisor recibe notificación inmediata vía web, correo y WhatsApp.</div>
+      </div>
+      <!-- 05 -->
+      <div class="step">
+        <span class="step-num">05</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="step-title">KPI en Plataforma</div>
+        <div class="step-body">Todo queda registrado. Dashboard con trazabilidad por colaborador y reportes ejecutivos auditables.</div>
+      </div>
+      </div>
+      <div class="uk-dots" id="steps-dots"></div>
+    </div>
+    <p class="somni-close fi">
+      SOMNI convierte el estado de alerta en un indicador
+      <span class="grad">gestionable, trazable y auditable.</span>
+    </p>
+  </div>
+</section>
+
+<!-- BENEFICIOS PLATAFORMA — carrusel ejecutivo world class -->
+<section id="plat-beneficios" style="padding:100px 0;background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.95) 100%)">
+  <div class="wrap">
+    <div class="sec-hd fi" style="margin-bottom:52px">
+      <span class="tag">Sistema SOMNI</span>
+      <h2 class="h2">Cinco capacidades que<br/><span class="grad">cambian la forma de operar.</span></h2>
+    </div>
+  </div>
+  <div class="uk-wrap" id="pb-wrap">
+    <div class="pb-track" id="pb-track">
+
+      <!-- 1. Dashboard -->
+      <div class="pb-card">
+        <div class="pb-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 17h7M14 20h5"/></svg>
+        </div>
+        <div class="pb-num">01</div>
+        <h3 class="pb-title">Dashboard en vivo</h3>
+        <p class="pb-text">Toda su flota visible en una pantalla. Estado de alerta de cada operador, filtros por jornada y área, acceso desde web, tablet o smartphone — en tiempo real.</p>
+        <div class="pb-tag">Supervisión · Tiempo real</div>
+      </div>
+
+      <!-- 2. Alertas -->
+      <div class="pb-card">
+        <div class="pb-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <div class="pb-num">02</div>
+        <h3 class="pb-title">Alertas instantáneas</h3>
+        <p class="pb-text">El supervisor recibe notificación simultánea por Web, correo y WhatsApp en menos de 2 minutos. El sistema actúa donde esté el supervisor — siempre.</p>
+        <div class="pb-tag">Web · Correo · WhatsApp</div>
+      </div>
+
+      <!-- 3. App -->
+      <div class="pb-card">
+        <div class="pb-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+        </div>
+        <div class="pb-num">03</div>
+        <h3 class="pb-title">App sin descarga</h3>
+        <p class="pb-text">El operador controla su nivel de alerta desde su propio smartphone. Sin hardware, sin instalación. Compatible con Android e iOS, funciona offline.</p>
+        <div class="pb-tag">PWA · Android · iOS</div>
+      </div>
+
+      <!-- 4. Analítica -->
+      <div class="pb-card">
+        <div class="pb-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="pb-num">04</div>
+        <h3 class="pb-title">Analítica predictiva</h3>
+        <p class="pb-text">Del evento aislado al patrón que permite anticiparse. Historial por conductor, tendencias de riesgo por turno y reportes ejecutivos con un clic.</p>
+        <div class="pb-tag">KPIs · Tendencias · Reportes</div>
+      </div>
+
+      <!-- 5. Auditoría -->
+      <div class="pb-card">
+        <div class="pb-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="pb-num">05</div>
+        <h3 class="pb-title">Evidencia auditable</h3>
+        <p class="pb-text">Cada control con timestamp inmutable. Trazabilidad total ante SERNAGEOMIN, mutuales de seguridad e inspecciones corporativas. Cero observaciones.</p>
+        <div class="pb-tag">SERNAGEOMIN · Mutuales · 100%</div>
+      </div>
+
+    </div>
+    <div class="uk-dots" id="pb-dots"></div>
+  </div>
+</section>
+
+<!-- ALERTAS — Rediseño disruptivo world class -->
+<section id="alertas" style="padding:0;overflow:hidden;background:var(--bg)">
+
+  <!-- Bloque de copy disruptivo -->
+  <div style="padding:100px 0 80px;background:linear-gradient(180deg,rgba(15,32,53,.9) 0%,var(--bg) 100%)">
+    <div class="wrap">
+      <div class="fi" style="max-width:840px;margin:0 auto;text-align:center">
+        <span class="tag" style="display:inline-block;margin-bottom:20px">Alertas · Inteligencia Operacional</span>
+        <h2 style="font-family:var(--mono);font-size:clamp(2.4rem,5vw,4.2rem);font-weight:900;line-height:1.05;letter-spacing:-.05em;color:#fff;margin-bottom:28px">
+          La fatiga no avisa.<br/><span class="grad">SOMNI sí.</span>
+        </h2>
+        <p style="font-size:1rem;color:var(--w60);line-height:1.8;max-width:620px;margin:0 auto 36px">
+          Su supervisor recibe la alerta directamente en su WhatsApp — cuando un operador presenta riesgo o inicia turno sin haber completado su control de fatiga. Sin esperar. Sin informes tardíos. Sin accidentes evitables.
+        </p>
+        <!-- Diferenciador -->
+        <div style="display:inline-flex;align-items:center;gap:12px;background:rgba(37,129,252,.08);border:1px solid rgba(37,129,252,.3);border-left:4px solid var(--blue);border-radius:12px;padding:18px 28px;text-align:left;max-width:600px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span style="font-family:var(--mono);font-size:.86rem;font-weight:700;color:#fff;line-height:1.55">De la detección al supervisor: <em style="color:#60a5fa;font-style:normal">menos de 2 minutos.</em> Siempre.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 pantallazos independientes — mismo tamaño -->
+  <div class="alertas-phones-wrap fi">
+    <div class="alertas-phones-grid">
+
+      <div class="aphone-solo">
+        <div class="aphone-label">WhatsApp · Sin controles</div>
+        <div class="aphone-frame">
+          <picture><source srcset="alerta-sin-controles.webp" type="image/webp"/><img src="Alerta NO controles real_ SOMNI.png" alt="Alerta SOMNI sin controles" loading="lazy"/></picture>
+        </div>
+      </div>
+
+      <div class="aphone-solo">
+        <div class="aphone-label aphone-label-risk">WhatsApp · Con riesgo</div>
+        <div class="aphone-frame">
+          <picture><source srcset="alerta-con-riesgo.webp" type="image/webp"/><img src="Alerta WSP real de SOMNI.png" alt="Alerta SOMNI con riesgo" loading="lazy"/></picture>
+        </div>
+      </div>
+
+      <div class="aphone-solo">
+        <div class="aphone-label">Resultado · Con riesgo</div>
+        <div class="aphone-frame">
+          <picture><source srcset="resultado-encuesta.webp" type="image/webp"/><img src="resultado-encuesta-somni.png.PNG" alt="Resultado encuesta fatiga con riesgo" loading="lazy"/></picture>
+        </div>
+      </div>
+
+      <div class="aphone-solo">
+        <div class="aphone-label">Correo · Reporte jornada</div>
+        <div class="aphone-frame">
+          <picture><source srcset="correo-jornada.webp" type="image/webp"/><img src="correo-jornada-somni.png.PNG" alt="Correo reporte jornada SOMNI" loading="lazy"/></picture>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3 pilares bajo la galería -->
+  <div class="wrap" style="padding-bottom:96px;padding-top:64px">
+    <div class="fi" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px">
+        <div style="font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">WhatsApp · Alerta inmediata</div>
+        <div style="font-family:var(--mono);font-size:1rem;font-weight:800;color:#fff;margin-bottom:10px">El supervisor sabe antes de actuar</div>
+        <div style="font-size:.82rem;color:var(--w60);line-height:1.65">Alerta instantánea al supervisor con nombre del operador, resultado del control y acción sugerida. Menos de 2 minutos desde el control.</div>
+      </div>
+      <div style="background:rgba(37,129,252,.07);border:1px solid var(--blue-border);border-radius:var(--r);padding:28px 24px">
+        <div style="font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">Correo · Reporte automático</div>
+        <div style="font-family:var(--mono);font-size:1rem;font-weight:800;color:#fff;margin-bottom:10px">Sin pedirlo, el reporte llega</div>
+        <div style="font-size:.82rem;color:var(--w60);line-height:1.65">Al inicio y cierre de cada jornada, SOMNI envía el estado de controles al supervisor: quién realizó el test, quién no, y cuál fue el resultado.</div>
+      </div>
+      <div style="background:var(--w04);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px">
+        <div style="font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">Resultado · Por operador</div>
+        <div style="font-family:var(--mono);font-size:1rem;font-weight:800;color:#fff;margin-bottom:10px">Evidencia lista para auditoría</div>
+        <div style="font-size:.82rem;color:var(--w60);line-height:1.65">Cada control queda registrado con estado, horas de sueño y consejo de acción. Trazable ante SERNAGEOMIN y mutuales sin trabajo adicional.</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- PLATAFORMA / APP -->
+<section id="plataforma" class="sec">
+  <div class="wrap">
+
+    <!-- Encabezado -->
+    <div class="sec-hd fi" style="margin-bottom:52px">
+      <span class="tag">Gestión en línea · Dashboard</span>
+      <h2 class="h2">Reporte de controles<br/><span class="grad">en tiempo real.</span></h2>
+      <p style="color:var(--w60);margin-top:14px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.72">Dashboard web en tiempo real, para que los Supervisores revisen resultados y detalle de los controles, niveles de riesgo y analítica predictiva. Todo en un mismo sistema.</p>
+    </div>
+
+    <!-- Power BI a pantalla completa -->
+    <div class="fi" style="position:relative;max-width:1000px;margin:0 auto 56px">
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.65),0 0 0 1px rgba(37,129,252,.15)">
+        <picture>
+          <source srcset="reporte-ejecutivo.webp" type="image/webp"/>
+          <img src="Reporte Ejecutivo PowerBi.png" alt="Reporte de controles SOMNI — Power BI en tiempo real" style="width:100%;display:block" loading="lazy"/>
+        </picture>
+      </div>
+      <div style="position:absolute;top:-14px;left:28px;background:rgba(13,27,46,.94);border:1px solid rgba(37,129,252,.45);border-radius:999px;padding:7px 18px;backdrop-filter:blur(12px);display:flex;align-items:center;gap:8px">
+        <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
+        <span style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;letter-spacing:.06em">Datos reales · Operación activa Chile</span>
+      </div>
+    </div>
+
+    <!-- 4 conceptos clave con definiciones SOMNI -->
+    <div class="fi" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <div class="plat-concept">
+        <div class="plat-concept-tag">Calificación</div>
+        <div class="plat-concept-title">Score</div>
+        <div class="plat-concept-body">Nivel de alerta individual de cada colaborador al completar su control PVT. Permite identificar quién no debería iniciar turno.</div>
+      </div>
+      <div class="plat-concept">
+        <div class="plat-concept-tag">Desempeño</div>
+        <div class="plat-concept-title">Ranking</div>
+        <div class="plat-concept-body">Comparativa del desempeño por colaborador y jornada en el tiempo. Identifica patrones de riesgo por persona y turno.</div>
+      </div>
+      <div class="plat-concept">
+        <div class="plat-concept-tag">Histórico</div>
+        <div class="plat-concept-title">Tendencia</div>
+        <div class="plat-concept-body">Evolución del riesgo de fatiga por mes, área y turno. Permite anticipar períodos críticos y tomar decisiones preventivas.</div>
+      </div>
+      <div class="plat-concept">
+        <div class="plat-concept-tag">Cumplimiento</div>
+        <div class="plat-concept-title">Protocolo</div>
+        <div class="plat-concept-body">Trazabilidad del cumplimiento de controles con timestamp. Evidencia estructurada para SERNAGEOMIN, mutuales y auditorías corporativas.</div>
+      </div>
+    </div>
+
+  </div>
+  <div style="display:none"><!-- legacy plat-mockup removed --><div class="imac-wrap" id="plat-mockup">
+          <div class="imac-body">
+            <div class="imac-menubar">
+              <div class="imac-dot" style="background:#ff5f57"></div>
+              <div class="imac-dot" style="background:#febc2e"></div>
+              <div class="imac-dot" style="background:#28c840"></div>
+            </div>
+            <div class="imac-screen-area">
+              <div class="dash">
+                <!-- Sidebar -->
+                <div class="dash-sidebar">
+                  <div class="dash-logo">
+                    <div class="dash-logo-text">S<em>O</em>MNI</div>
+                  </div>
+                  <div class="dash-nav-item">Sistema de turno</div>
+                  <div class="dash-nav-item">Nivel de criticidad</div>
+                  <div class="dash-nav-item">Jornada</div>
+                  <div class="dash-nav-item active">Nombre</div>
+                  <div class="dash-nav-item" style="margin-top:auto;color:rgba(255,255,255,.25)">Cerrar sesión</div>
+                </div>
+                <!-- Main content -->
+                <div class="dash-main">
+                  <div class="dash-topbar">
+                    <div class="dash-topbar-title">Histórico</div>
+                    <div class="dash-topbar-badge">Filtrar por fecha</div>
+                  </div>
+                  <div class="dash-body">
+                    <div class="dash-legend">
+                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:#22c55e"></div>Sin riesgo</div>
+                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:#ef4444"></div>Con riesgo</div>
+                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:var(--blue)"></div>Calificación promedio</div>
+                    </div>
+                    <div class="dash-chart-area" style="margin-top:18px">
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:18px"></div><div class="dash-bar-g" style="height:44px"></div></div><div class="dash-bar-lbl">oct</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:22px"></div><div class="dash-bar-g" style="height:58px"></div></div><div class="dash-bar-lbl">nov</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:16px"></div><div class="dash-bar-g" style="height:65px"></div></div><div class="dash-bar-lbl">dic</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:20px"></div><div class="dash-bar-g" style="height:72px"></div></div><div class="dash-bar-lbl">ene</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:14px"></div><div class="dash-bar-g" style="height:68px"></div></div><div class="dash-bar-lbl">feb</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:18px"></div><div class="dash-bar-g" style="height:76px"></div></div><div class="dash-bar-lbl">mar</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:28px"></div><div class="dash-bar-g" style="height:80px"></div></div><div class="dash-bar-lbl">abr</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:24px"></div><div class="dash-bar-g" style="height:74px"></div></div><div class="dash-bar-lbl">may</div></div>
+                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:36px"></div><div class="dash-bar-g" style="height:62px"></div></div><div class="dash-bar-lbl">jun</div></div>
+                    </div>
+                  </div>
+                  <div class="dash-tabs">
+                    <div class="dash-tab">Calificación</div>
+                    <div class="dash-tab">Riesgo</div>
+                    <div class="dash-tab">Desempeño</div>
+                    <div class="dash-tab">Cumplimiento</div>
+                    <div class="dash-tab active">Histórico</div>
+                    <div class="dash-tab">Cronograma</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imac-neck"></div>
+          <div class="imac-base"></div>
+          <!-- Phone overlay -->
+          <div class="phone-wrap">
+            <div class="phone-frame">
+              <div class="phone-notch"><div class="phone-notch-inner"></div></div>
+              <div class="phone-topbar">
+                <div class="phone-topbar-txt">Inicio</div>
+                <div style="width:24px;height:6px;background:rgba(255,255,255,.3);border-radius:2px"></div>
+              </div>
+              <div class="phone-screen">
+                <div style="margin:2px 0 1px;font-size:.42rem;color:#4a5568;text-align:center">Bienvenido a</div>
+                <div class="phone-logo-txt">S<em>O</em>MNI</div>
+                <div class="phone-welcome">Esta a punto de comenzar un control de fatiga.</div>
+                <div style="width:100%;height:1px;background:#e2e8f0;margin:2px 0"></div>
+                <div class="phone-step"><div class="phone-step-n">1</div><div class="phone-step-txt">Responder cuestionario fatiga</div></div>
+                <div class="phone-step"><div class="phone-step-n">2</div><div class="phone-step-txt">Realizar control fatiga de 3 minutos</div></div>
+                <div class="phone-step"><div class="phone-step-n">3</div><div class="phone-step-txt">Recibir estado de riesgo y consejos</div></div>
+                <div class="phone-btn">INICIAR CONTROL</div>
+              </div>
+              <div class="phone-home-bar"><div class="phone-home-dot"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- Sección minería eliminada — contenido integrado en Qué es SOMNI y Plataforma -->
+
+<!-- DASHBOARD SHOWCASE — estándar mundial -->
+<section id="dashboard-showcase" style="padding:110px 0;background:var(--bg);overflow:hidden;position:relative">
+  <!-- Glow radial de fondo -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(37,129,252,.1) 0%,transparent 65%);pointer-events:none"></div>
+
+  <div class="wrap" style="position:relative;z-index:1">
+
+    <!-- Encabezado -->
+    <div class="sec-hd fi" style="margin-bottom:60px">
+      <span class="tag">Gestión en línea · Dashboard</span>
+      <h2 class="h2">Una sola plataforma.<br/><span class="grad">Visibilidad total de su operación.</span></h2>
+      <p style="color:var(--w60);margin-top:14px;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.75">Dashboard web en tiempo real, para que los Supervisores revisen resultados y detalle de los controles, niveles de riesgo y analítica predictiva. Todo en un mismo sistema.</p>
+    </div>
+
+    <!-- Imagen principal con marco premium -->
+    <div class="fi" style="position:relative;max-width:1020px;margin:0 auto;padding:0 24px">
+
+      <!-- Halo exterior -->
+      <div style="position:absolute;inset:-2px;border-radius:24px;background:linear-gradient(135deg,rgba(37,129,252,.4),rgba(37,129,252,.05) 40%,transparent 70%);z-index:0;pointer-events:none"></div>
+
+      <!-- Imagen -->
+      <div style="position:relative;z-index:1;border-radius:20px;overflow:hidden;box-shadow:0 60px 140px rgba(0,0,0,.75),0 0 0 1px rgba(37,129,252,.2)">
+        <picture>
+          <source srcset="plataforma-gestion.webp" type="image/webp"/>
+          <img src="Plataforma Gestión SOMNI.png" alt="Dashboard SOMNI — Plataforma de Gestión web en tiempo real" style="width:100%;display:block" loading="lazy"/>
+        </picture>
+      </div>
+
+      <!-- Badge superior izquierdo -->
+      <div style="position:absolute;top:-18px;left:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.5);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
+          <span style="font-family:var(--mono);font-size:.68rem;font-weight:700;color:#fff;letter-spacing:.06em">Sistema activo · Monitoreo en tiempo real</span>
+        </div>
+      </div>
+
+      <!-- Badge inferior derecho -->
+      <div style="position:absolute;bottom:-18px;right:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.3);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
+        <div style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--w60);letter-spacing:.06em">
+          Disponible en <span style="color:#fff">Web · Android · iOS</span> · Sin descarga
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- VIDEO SOMNI EN ACCIÓN — después de las métricas reales -->
+<section id="video-somni" style="padding:80px 0 96px;background:linear-gradient(180deg,rgba(13,27,46,.5) 0%,var(--bg) 100%)">
+  <div class="wrap">
+    <div class="sec-hd fi" style="margin-bottom:44px">
+      <span class="tag">SOMNI en Acción</span>
+      <h2 class="h2">Vea cómo funciona<br/><span class="grad">en una operación real.</span></h2>
+      <p style="color:var(--w60);margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto">Un recorrido por el sistema que está cambiando la seguridad industrial — desde la detección de fatiga hasta la alerta al supervisor.</p>
+    </div>
+    <div class="video-hero fi">
+      <div class="video-frame" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;box-shadow:0 40px 100px rgba(0,0,0,.65),0 0 0 1px rgba(37,129,252,.15)">
+        <iframe
+          src="https://www.youtube.com/embed/37kNgqBdLmM?rel=0&modestbranding=1&color=white"
+          title="SOMNI en acción — gestión predictiva de fatiga"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:16px">
+        </iframe>
+      </div>
+      <div class="video-stats">
+        <div class="vs"><div class="vs-val">3<span style="color:var(--blue)">min</span></div><div class="vs-lbl">Duración del control</div></div>
+        <div class="vs"><div class="vs-val">&lt;2<span style="color:var(--blue)">s</span></div><div class="vs-lbl">Tiempo de detección</div></div>
+        <div class="vs"><div class="vs-val">98<span style="color:var(--blue)">%</span></div><div class="vs-lbl">Precisión del sistema</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BASE CIENTÍFICA -->
+<section id="ciencia" class="sec">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:44px">
+      <span class="tag fi">Base Científica</span>
+      <h2 class="h2 fi" style="margin-top:4px">La medición que usa la NASA,<br/>ahora en su faena.</h2>
+    </div>
+    <div class="cien-quote fi">
+      <p>"Somni se sustenta en 40 años de investigación en alerta neuroconductual,<br/>no en heurísticas de mercado."</p>
+    </div>
+    <div class="cien-grid">
+      <div class="cien-card fi d1">
+        <div class="cien-source">University of Pennsylvania</div>
+        <div class="cien-author">Dr. David F. Dinges · 1980s</div>
+        <div class="cien-card-title">Psychomotor Vigilance Test (PVT)</div>
+        <div class="cien-card-body">Creador del PVT, considerado el Golden Standard mundial para medir alerta cognitiva. Sin efectos de aprendizaje, sin sesgo cultural.</div>
+      </div>
+      <div class="cien-card fi d2">
+        <div class="cien-source">NASA · Estación Espacial Internacional</div>
+        <div class="cien-author">Reaction Self Test · ISS</div>
+        <div class="cien-card-title">Test oficial de astronautas</div>
+        <div class="cien-card-body">El PVT es el test oficial de alerta neurobehavioral de astronautas. 24 astronautas evaluados con 2.856 mediciones en misiones de 6 meses.</div>
+      </div>
+      <div class="cien-card fi d3">
+        <div class="cien-source">Modelo de los Dos Procesos</div>
+        <div class="cien-author">Borbély · 1982</div>
+        <div class="cien-card-title">Base teórica del modelo MAIRA</div>
+        <div class="cien-card-body">Explica la fatiga como interacción entre presión homeostática del sueño y ritmo circadiano. Núcleo del modelo predictivo MAIRA de SOMNI.</div>
+      </div>
+      <div class="cien-card fi d4">
+        <div class="cien-source">PUC Valparaíso · Chile</div>
+        <div class="cien-author">Validación local · Mayo 2025</div>
+        <div class="cien-card-title">Validación metodológica PUCV</div>
+        <div class="cien-card-body">Carta formal de validación metodológica de Somni ML3/MAIRA emitida por la PUCV. Firmada por el Dr. Juan Francisco Zamora, IA Advisor académico.</div>
+      </div>
+    </div>
+    <p class="cien-foot fi">Complementado con escalas KSS (Karolinska) y Samn-Perelli como contrastes subjetivos validados internacionalmente.</p>
+  </div>
+</section>
+
+<!-- CLIENTES -->
+<section id="clientes" class="sec">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:52px">
+      <span class="tag fi">Clientes</span>
+      <h2 class="h2 fi" style="margin-top:4px">La confianza de los líderes<br/>de la industria.</h2>
+    </div>
+    <div class="cli-grid fi">
+      <div class="cli-cell"><img src="Cliente Bachelet Laboratoires.jpg" alt="Bachelet Laboratoires" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente Axinntus.png" alt="Axinntus" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente EPC Groupe.png" alt="EPC Groupe" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Indemin.png" alt="Indemin" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente SKF.png" alt="SKF" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Ferrovial.png" alt="Ferrovial" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente R&amp;Q.png" alt="R&amp;Q Ingenieria" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente MECSA.jfif" alt="MECSA" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente CoasinLogicalis.png" alt="Coasin Logicalis" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Bucalemu.png" alt="Bucalemu" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente LEN.jfif" alt="LEN" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Geovita.png" alt="Geovita" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Berliam.png" alt="Berliam" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente 2CR.png" alt="2CR" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Schwager.png" alt="Schwager" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente TEV.png" alt="TEV" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente ST.png" alt="ST" loading="lazy"/></div>
+      <div class="cli-cell cli-lg"><img src="Cliente Veltis.png" alt="Veltis" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Steel.png" alt="Steel" loading="lazy"/></div>
+      <div class="cli-cell"><img src="Cliente Inversiones con Impacto.jfif" alt="Inversiones con Impacto" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS REALES -->
+<section id="testimonios" style="padding:100px 0;background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.9) 50%,var(--bg) 100%)">
+  <div class="wrap">
+    <div class="sec-hd fi" style="margin-bottom:64px">
+      <span class="tag">Testimonios</span>
+      <h2 class="h2">Lo que dicen quienes<br/><span class="grad">ya decidieron anticiparse.</span></h2>
+    </div>
+    <div class="testi-grid fi">
+
+      <!-- SKF -->
+      <div class="testi-card">
+        <div class="testi-quote-icon">"</div>
+        <p class="testi-text">SOMNI fortaleció nuestra gestión preventiva al <strong>detectar a tiempo la fatiga, reducir riesgos y reforzar el compromiso con la seguridad</strong> y salud ocupacional.</p>
+        <div class="testi-footer">
+          <img src="Cliente SKF.png" alt="SKF" class="testi-logo" loading="lazy"/>
+          <div class="testi-person">
+            <span class="testi-name">Andrea Díaz Licuime</span>
+            <span class="testi-role">Coordinadora SSOMA Zona Norte · SKF Chilena S.A.I.C.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Steel -->
+      <div class="testi-card">
+        <div class="testi-quote-icon">"</div>
+        <p class="testi-text">Con SOMNI en el contrato CV207 - DRT gestionamos la fatiga con reportes diarios que <strong>previenen riesgos y mantienen altos estándares de seguridad, sin eventos registrados.</strong></p>
+        <div class="testi-footer">
+          <img src="Cliente Steel.png" alt="Steel" class="testi-logo" loading="lazy"/>
+          <div class="testi-person">
+            <span class="testi-name">Departamento de Prevención de Riesgos</span>
+            <span class="testi-role">División Radomiro Tomic · Steel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coasin Logicalis -->
+      <div class="testi-card">
+        <div class="testi-quote-icon">"</div>
+        <p class="testi-text">En el proyecto EPC-113 elegimos SOMNI por su eficacia en el control de fatiga y somnolencia. <strong>Tras más de dos años, se ha consolidado como una alianza confiable y efectiva.</strong></p>
+        <div class="testi-footer">
+          <img src="Cliente CoasinLogicalis.png" alt="Coasin Logicalis" class="testi-logo" loading="lazy"/>
+          <div class="testi-person">
+            <span class="testi-name">Carlos Marín Escobar</span>
+            <span class="testi-role">Jefe Dto. Prevención · Contrato EPC N° 113, Proyecto Nuevo Nivel Mina — División Minería, Energía e Industrias</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REDES Y PREMIOS -->
+<section id="premios" class="sec">
+  <div class="wrap">
+    <div class="premios-intro fi">
+      <span class="tag">Redes y Premios</span>
+      <h2 class="h2" style="margin-top:4px">Parte del ecosistema de<br/>innovación de Chile.</h2>
+      <p class="premios-sub">SOMNI es una empresa de tecnología chilena respaldada por los principales organismos de fomento productivo e innovación del país.</p>
+    </div>
+    <div class="premios-logos fi">
+      <div class="premio-logo"><img src="Corfo.png" alt="CORFO" loading="lazy"/></div>
+      <div class="premio-logo"><img src="ProChile.png" alt="ProChile" loading="lazy"/></div>
+      <div class="premio-logo"><img src="Aster.png" alt="Aster por Magical" loading="lazy"/></div>
+    </div>
+    <div class="premios-badges fi">
+      <div class="p-badge">
+        <div class="p-badge-title">Impulsa O'Higgins</div>
+        <div class="p-badge-body">SSAF de Corfo, Pro O'Higgins</div>
+      </div>
+      <div class="p-badge">
+        <div class="p-badge-title">Innova Región Atacama</div>
+        <div class="p-badge-body">Corfo</div>
+      </div>
+      <div class="p-badge">
+        <div class="p-badge-title">Ignite 2</div>
+        <div class="p-badge-body">Startup Chile</div>
+      </div>
+      <div class="p-badge">
+        <div class="p-badge-title">Aster</div>
+        <div class="p-badge-body">Magical Startups</div>
+      </div>
+      <div class="p-badge">
+        <div class="p-badge-title">Crea y Valida</div>
+        <div class="p-badge-body">Corfo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTÁNDARES INTERNACIONALES -->
+<section id="estandares" class="sec">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:56px">
+      <span class="tag fi">Cumplimiento normativo</span>
+      <h2 class="h2 fi" style="margin-top:4px">Diseñado para cumplir los estándares<br/>más exigentes de la industria.</h2>
+      <p class="fi" style="color:var(--w60);margin-top:14px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.72">SOMNI es la única plataforma en Chile que cubre de forma integrada los requisitos de Codelco, SERNAGEOMIN e ISO 45001 — sin hardware adicional.</p>
+    </div>
+    <div class="uk-wrap" id="est-wrap">
+      <div class="est-grid" id="est-track">
+
+        <!-- Card 1: Codelco SIGO-ECC -->
+        <div class="est-card fi d1">
+          <div class="est-logo"><span class="est-logo-text">CODELCO</span></div>
+          <div class="est-badge"><span class="est-badge-dot"></span>SIGO-ECC · RF27</div>
+          <div class="est-title">Estándar de Control Crítico</div>
+          <div class="est-body">SOMNI actúa como barrera preventiva en el bowtie SIGO-ECC-003 de Codelco, cubriendo la amenaza "operador fatigado o somnoliento" con medición objetiva PVT y alertas trazables al supervisor.</div>
+          <div class="est-comply"><span class="est-comply-dot"></span>CUMPLIMIENTO TOTAL · RF27</div>
+        </div>
+
+        <!-- Card 2: DS132 / DS76 SERNAGEOMIN -->
+        <div class="est-card fi d2">
+          <div class="est-logo"><span class="est-logo-text">SERNAGEOMIN</span></div>
+          <div class="est-badge"><span class="est-badge-dot"></span>DS132 · DS76</div>
+          <div class="est-title">Normativa Minera Chilena</div>
+          <div class="est-body">Genera evidencia auditable con timestamp para fiscalizaciones SERNAGEOMIN y mutuales. Cada control, alerta y test queda registrado con identificación del operador y hora exacta.</div>
+          <div class="est-comply"><span class="est-comply-dot"></span>AUDITORÍA 100% TRAZABLE</div>
+        </div>
+
+        <!-- Card 3: ISO 45001 -->
+        <div class="est-card fi d3">
+          <div class="est-logo"><span class="est-logo-text">ISO 45001</span></div>
+          <div class="est-badge"><span class="est-badge-dot"></span>ISO 45001:2018</div>
+          <div class="est-title">Seguridad y Salud Ocupacional</div>
+          <div class="est-body">Compatible con sistemas de gestión ISO 45001. SOMNI aporta los 5 componentes exigidos por el estándar para un programa de fatiga: política, medición, alertas, trazabilidad e indicadores KPI.</div>
+          <div class="est-comply"><span class="est-comply-dot"></span>5 / 5 COMPONENTES</div>
+        </div>
+
+        <!-- Card 4: ICMM -->
+        <div class="est-card fi d4">
+          <div class="est-logo"><span class="est-logo-text">ICMM</span></div>
+          <div class="est-badge"><span class="est-badge-dot"></span>Fatigue Risk Management</div>
+          <div class="est-title">Estándar Internacional Minero</div>
+          <div class="est-body">Alineado con el Marco de Gestión de Fatiga del International Council on Mining & Metals (ICMM), aplicable en operaciones de cualquier país. Sin hardware, sin integraciones complejas.</div>
+          <div class="est-comply"><span class="est-comply-dot"></span>APLICABLE EN CUALQUIER PAÍS</div>
+        </div>
+
+      </div><!-- /est-track -->
+      <div class="uk-dots" id="est-dots"></div>
+    </div><!-- /est-wrap -->
+  </div>
+</section>
+
+<!-- CAPA ADICIONAL -->
+<section id="capa" class="sec">
+  <div class="wrap">
+    <div class="capa-header fi">
+      <span class="tag">Capa Adicional</span>
+      <div class="capa-note">SOMNI es el núcleo · El dispositivo en cabina es el multiplicador</div>
+      <h2 class="h2">Para operaciones que requieren<br/>monitoreo continuo en ruta.</h2>
+    </div>
+    <p class="capa-tagline fi">SOMNI se complementa con dispositivos de cabina que extienden la cobertura al interior del vehículo.</p>
+    <div class="uk-wrap" id="capa-wrap">
+      <div class="capa-grid" id="capa-track">
+      <div class="capa-card">
+        <!-- Dos fotos ADAS + DMS lado a lado -->
+        <div class="capa-img capa-img-duo">
+          <div class="capa-img-half">
+            <span class="capa-img-label">ADAS</span>
+            <img src="device-camara.jpg.png" alt="ADAS Asistencia a la conducción" loading="lazy"/>
+          </div>
+          <div class="capa-img-sep"></div>
+          <div class="capa-img-half">
+            <span class="capa-img-label">DMS</span>
+            <img src="device-dms.jpg.png" alt="DMS Monitoreo del conductor" loading="lazy"/>
+          </div>
+        </div>
+        <div class="capa-body">
+          <span class="capa-tag">DMS + ADAS · Cabina Inteligente</span>
+          <div class="capa-card-title">Monitoreo del conductor<br/>y asistencia a la conducción</div>
+
+          <!-- ADAS primero — imagen izquierda -->
+          <div class="dms-adas-block">
+            <div class="dab-label">ADAS — Advanced Driver Assistance</div>
+            <div class="dab-text">Monitorea el entorno de la conducción: alerta de colisión frontal (FCW), salida involuntaria de carril (LDW) y detección de vehículos en punto ciego (BSD).</div>
+          </div>
+
+          <!-- DMS segundo — imagen derecha -->
+          <div class="dms-adas-block">
+            <div class="dab-label">DMS — Driver Monitoring System</div>
+            <div class="dab-text">Analiza al conductor en tiempo real: detecta microsueños, parpadeo anormal, cabeceo y distracción visual. Alerta sonora y visual inmediata.</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="capa-card">
+        <div class="capa-img"><img src="device-monitor.jpg.jpg" alt="Monitor CarPlay Android Auto" loading="lazy"/></div>
+        <div class="capa-body">
+          <span class="capa-tag">Monitor BSD + CarPlay 10.1"</span>
+          <div class="capa-card-title">Monitor multifunción de cabina</div>
+          <div class="capa-card-body">4 cámaras AHD, detección de punto ciego, grabación en bucle y conectividad CarPlay / Android Auto.</div>
+          <div class="capa-feats">
+            <div class="capa-feat">4 cámaras HD · visión 360° parcial</div>
+            <div class="capa-feat">BSD: detección peatones y vehículos</div>
+            <div class="capa-feat">Grabación 1080p en bucle</div>
+            <div class="capa-feat">CarPlay y Android Auto inalámbrico</div>
+            <div class="capa-feat">IP69K · Rango -20°C a 70°C</div>
+          </div>
+        </div>
+      </div>
+      <div class="capa-card">
+        <div class="capa-img"><img src="device-360.jpg.webp" alt="Sistema 360 maquinaria pesada" loading="lazy"/></div>
+        <div class="capa-body">
+          <span class="capa-tag">Sistema 360° Maquinaria</span>
+          <div class="capa-card-title">Visión panorámica para maquinaria pesada</div>
+          <div class="capa-card-body">Vista bird's-eye 360° para excavadoras y maquinaria. IA con FCW + BSD, gestión remota 4G y calibración en 1 minuto.</div>
+          <div class="capa-feats">
+            <div class="capa-feat">Vista bird's-eye 360° sin puntos ciegos</div>
+            <div class="capa-feat">FCW + BSD con IA de rango completo</div>
+            <div class="capa-feat">Gestión remota vía plataforma 4G</div>
+            <div class="capa-feat">IP69K · Temperatura -20°C a 70°C</div>
+            <div class="capa-feat">Integrable con GPS, radar y DMS</div>
+          </div>
+        </div>
+      </div>
+      </div><!-- /capa-track -->
+      <div class="uk-dots" id="capa-dots"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CASO DE ÉXITO -->
+<section id="caso" class="sec">
+  <div class="wrap">
+    <div class="caso-inner">
+      <div class="caso-left fl">
+        <div class="caso-banner">Caso de éxito</div>
+        <h2 class="h2">Resultados reales en operación industrial de alto riesgo.</h2>
+        <p class="body" style="margin-top:14px">Una operación minera de mediana escala implementó SOMNI en su flota completa. En 6 meses, los resultados transformaron su cultura de seguridad.</p>
+        <div class="caso-quote">
+          <p>"SOMNI cambió radicalmente cómo gestionamos la seguridad. Pasamos de reaccionar a prevenir. Ahora tenemos evidencia auditable ante cualquier inspección. Las alertas WhatsApp fueron el diferenciador."</p>
+          <cite>Gerente de Seguridad Operacional · Operación Minera, Chile</cite>
+        </div>
+        <a href="#piloto" class="btn btn-primary btn-lg">Solicitar piloto en mi operación</a>
+      </div>
+      <div class="fr">
+        <div class="caso-metrics">
+          <div class="caso-met">
+            <div class="caso-met-val"><em>-</em>87<em>%</em></div>
+            <div class="caso-met-lbl">Incidentes por fatiga en 6 meses</div>
+          </div>
+          <div class="caso-met">
+            <div class="caso-met-val">0</div>
+            <div class="caso-met-lbl">Fatalidades desde la implementación</div>
+          </div>
+          <div class="caso-met">
+            <div class="caso-met-val">48<em>h</em></div>
+            <div class="caso-met-lbl">Implementación sin hardware</div>
+          </div>
+          <div class="caso-met">
+            <div class="caso-met-val">100<em>%</em></div>
+            <div class="caso-met-lbl">Trazabilidad ante auditorías</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" style="padding:96px 0;background:linear-gradient(180deg,var(--bg) 0%,rgba(15,32,53,.9) 50%,var(--bg) 100%)">
+  <div class="wrap">
+    <div class="sec-hd fi" style="margin-bottom:52px">
+      <span class="tag">Preguntas Frecuentes</span>
+      <h2 class="h2">Todo lo que necesita<br/><span class="grad">saber antes de decidir.</span></h2>
+    </div>
+    <div class="faq-list fi">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿SOMNI requiere instalar hardware en los vehículos?<span class="faq-icon">+</span></button><div class="faq-a">No. Funciona 100% desde el smartphone del operador sin cámaras ni sensores. Accede vía PWA en 3 minutos antes del turno. El hardware DMS/ADAS es una capa opcional.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda la implementación?<span class="faq-icon">+</span></button><div class="faq-a">48 horas: configuración, onboarding de supervisores y capacitación de operadores. Sin interrumpir la operación. El piloto de 30 días incluye soporte dedicado y reporte de impacto.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Funciona sin internet en zonas remotas?<span class="faq-icon">+</span></button><div class="faq-a">Sí. Opera offline y sincroniza al recuperar señal — esencial para faenas mineras en altura o zonas sin cobertura.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cumple con normativa chilena de seguridad?<span class="faq-icon">+</span></button><div class="faq-a">Sí. Cumple DS132, DS76, estándares SIGO-ECC Codelco (RF27, bowtie de fatiga). Genera evidencia auditable con timestamp para fiscalizaciones SERNAGEOMIN y mutuales.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿En qué se diferencia de un sistema DMS con cámara?<span class="faq-icon">+</span></button><div class="faq-a">SOMNI actúa ANTES del turno (predictivo). Los DMS actúan DURANTE la conducción (reactivo). Usa el Test PVT validado por NASA y la Universidad de Pennsylvania — el único estándar científico internacional de alerta cognitiva.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cuánto cuesta SOMNI?<span class="faq-icon">+</span></button><div class="faq-a">El piloto de 30 días es gratuito y sin compromisos. Los planes se adaptan al tamaño de dotación. Complete el formulario y un ejecutivo le presenta una propuesta en menos de 24 horas.</div></div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿SOMNI requiere hardware?","acceptedAnswer":{"@type":"Answer","text":"No, funciona desde el smartphone del operador."}},{"@type":"Question","name":"¿Cuánto tarda la implementación?","acceptedAnswer":{"@type":"Answer","text":"48 horas sin interrumpir la operación."}},{"@type":"Question","name":"¿Funciona sin internet?","acceptedAnswer":{"@type":"Answer","text":"Sí, opera offline y sincroniza al recuperar señal."}},{"@type":"Question","name":"¿Cumple normativa chilena?","acceptedAnswer":{"@type":"Answer","text":"Sí, DS132, DS76, SIGO-ECC Codelco y SERNAGEOMIN."}},{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Piloto 30 días gratuito. Planes adaptados a cada operación."}}]}</script>
+
+<!-- CSS FAQ -->
+<style>
+.faq-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:860px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{width:100%;background:var(--w04);border:none;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;font-family:var(--mono);font-size:.9rem;font-weight:700;color:#fff;text-align:left;transition:.25s}
+.faq-q:hover{background:rgba(37,129,252,.06)}
+.faq-q.open{background:rgba(37,129,252,.08);color:#60a5fa}
+.faq-icon{font-size:1.3rem;font-weight:400;flex-shrink:0;transition:transform .25s;color:var(--blue)}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 28px 22px;font-size:.88rem;color:var(--w60);line-height:1.75;background:rgba(37,129,252,.04)}
+.faq-a.open{display:block}
+</style>
+
+<!-- PILOTO CTA -->
+<section id="piloto">
+  <div class="wrap">
+    <div class="piloto-card fi">
+      <span class="tag" style="display:inline-block;margin-bottom:14px">Prueba Piloto</span>
+      <h2 class="h2">Su operación puede ser<br/><span class="grad">la próxima historia de éxito.</span></h2>
+      <p>Implemente SOMNI sin costo inicial. En 30 días verá los resultados.</p>
+      <div class="piloto-checks">
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Sin inversión inicial</div>
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Listo en 48 horas</div>
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Sin hardware requerido</div>
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Soporte dedicado</div>
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Reporte ejecutivo al mes</div>
+        <div class="pc"><div class="pc-mark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Sin compromisos</div>
+      </div>
+      <div class="piloto-ctas">
+        <a href="#contacto" class="btn btn-primary btn-xl">Iniciar Prueba Piloto Gratis</a>
+        <a href="video.html" class="btn btn-ghost btn-xl">Ver Demostración</a>
+      </div>
+      <p class="piloto-note">Disponible para operaciones con dotación mínima de 10 personas. Proceso confidencial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="fl">
+        <span class="tag">Contacto</span>
+        <h2 class="h2">Hablemos sobre<br/>su operación.</h2>
+        <p class="body" style="margin-top:12px;margin-bottom:28px">Cuéntenos los desafíos de seguridad de su faena. Nuestros expertos le mostrarán cómo SOMNI puede ayudarle.</p>
+        <div class="contact-data">
+          <div class="cd">
+            <div class="cd-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><span class="cd-meta">Dirección</span>Av. Nueva Einstein 290, Of. 808, Rancagua</div>
+          </div>
+          <div class="cd">
+            <div class="cd-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><span class="cd-meta">Teléfonos</span>+56 9 6845 1264 &nbsp;·&nbsp; +56 9 9760 8599 &nbsp;·&nbsp; +51 9 9708 4021</div>
+          </div>
+          <a href="mailto:contacto@somnicompany.com" class="cd">
+            <div class="cd-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><span class="cd-meta">Email</span>contacto@somnicompany.com</div>
+          </a>
+          <a href="https://linkedin.com/company/somnicompany" target="_blank" rel="noopener noreferrer" class="cd">
+            <div class="cd-ico"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+            <div><span class="cd-meta">LinkedIn</span>linkedin.com/company/somnicompany</div>
+          </a>
+        </div>
+      </div>
+      <div class="fr">
+        <div class="cform">
+          <div class="cform-title">Solicite Demo o Piloto</div>
+          <div class="cform-sub">Respuesta en menos de 24 horas hábiles</div>
+          <form onsubmit="w3fSubmit(event)">
+
+            <!-- Resend via Netlify Function -->
+
+            <div class="fg"><label>Nombre</label><input type="text" name="nombre" placeholder="Su nombre" required/></div>
+            <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Empresa" required/></div>
+            <div class="fg"><label>Correo</label><input type="email" name="email" placeholder="correo@empresa.cl" required/></div>
+            <div class="fg"><label>Industria</label>
+              <select name="industria"><option value="">Seleccione</option><option>Minería</option><option>Transporte y Logística</option><option>Construcción</option><option>Oil &amp; Gas</option><option>Forestal / Agroindustria</option><option>Industria y Manufactura</option><option>Energía y Puertos</option><option>Otra</option></select>
+            </div>
+            <div class="fg"><label>Mensaje</label><textarea name="message" placeholder="Cuéntenos sobre su operación y desafíos de seguridad..."></textarea></div>
+            <button type="submit" class="fsub" id="form-btn">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORFO — Ley 21.516 Art.23 -->
+<div class="corfo-bar">
+  <div class="wrap">
+    <div class="corfo-inner">
+      <div class="corfo-logo-wrap">
+        <img src="Corfo.png" alt="CORFO" class="corfo-logo" loading="lazy"
+             onerror="this.style.display='none';this.nextSibling.style.display='flex'"/>
+        <div class="corfo-fallback" style="display:none">
+          <span class="corfo-text-logo">CORFO</span>
+        </div>
+      </div>
+      <div class="corfo-divider"></div>
+      <div class="corfo-info">
+        <span class="corfo-ley">Ley 21.516 · Art. 23</span>
+        <span class="corfo-desc">SOMNI cuenta con financiamiento de CORFO en el marco de la Ley 21.516, artículo 23, que promueve el emprendimiento tecnológico e innovación en Chile.</span>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1S7p6sbcHi1TdUuhqmYFVY59F_gNUqfjV?usp=sharing"
+         target="_blank" rel="noopener noreferrer" class="corfo-link">Ver documentación</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="SOMNI blnco y celeste.png" alt="SOMNI" loading="lazy" onerror="this.style.display='none'"/>
+        <p>Tecnología predictiva de gestión de fatiga para operaciones industriales de alto riesgo. Hecho en Chile.</p>
+        <div class="foot-social">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/company/somnicompany" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com/somnicompany" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://tiktok.com/@somnicompany" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="TikTok">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Sistema</h4>
+        <a href="#somni">Qué es SOMNI</a>
+        <a href="#somni">Test PVT</a>
+        <a href="#alertas">Alertas WhatsApp</a>
+        <a href="#somni">Modelo IA Circadiano</a>
+        <a href="#capa">Tecnología Cabina</a>
+      </div>
+      <div class="foot-col">
+        <h4>Ciencia</h4>
+        <a href="#ciencia">Dr. Dinges · Penn</a>
+        <a href="#ciencia">Referencia NASA</a>
+        <a href="#ciencia">Modelo Borbély</a>
+        <a href="#ciencia">Validación PUCV</a>
+        <a href="#estandares">Estándares</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="#caso">Caso de Éxito</a>
+        <a href="#clientes">Clientes</a>
+        <a href="video.html">Ver Video</a>
+        <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer">Acceso Plataforma</a>
+        <a href="#piloto">Prueba Piloto</a>
+        <a href="#faq">Preguntas Frecuentes</a>
+        <a href="#contacto">Contacto</a>
+        <a href="terminos.html">Términos de Uso</a>
+        <a href="politica-privacidad.html">Privacidad</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <p>© 2025 SOMNI Company. Todos los derechos reservados. &nbsp;·&nbsp; Av. Nueva Einstein 290, Of. 808, Rancagua, Chile &nbsp;·&nbsp; <a href="politica-privacidad.html" style="color:rgba(255,255,255,.4);transition:.2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Política de Privacidad</a></p>
+      <div class="foot-badges">
+        <span class="fbadge">Hecho en Chile</span>
+        <span class="fbadge">SaaS · IA</span>
+        <span class="fbadge">ISO Ready</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="wa-btn"
+   href="https://wa.me/56968451264?text=Hola%20SOMNI%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20su%20sistema%20de%20gesti%C3%B3n%20de%20fatiga."
+   target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+  </svg>
+  <span class="wa-tooltip">Escribir por WhatsApp</span>
+</a>
+
+<!-- AGENTE IZQUIERDO — Experta en Riesgos de Fatiga -->
+<div class="chat-wrap-l">
+  <div class="chat-win hidden" id="cw-l">
+    <div class="win-head" style="background:linear-gradient(135deg,rgba(37,129,252,.15),rgba(13,27,46,.96))">
+      <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(37,129,252,.5)">
+        <picture><source srcset="apr-00.webp" type="image/webp"/><img src="APR_00.png" alt="Experta en Riesgos SOMNI" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top"/></picture>
+      </div>
+      <div class="win-head-info">
+        <strong style="font-size:.8rem">Mariana · Experta en Fatiga</strong>
+        <span style="font-size:.62rem;color:#22c55e;display:flex;align-items:center;gap:4px">
+          <span style="width:5px;height:5px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 5px #22c55e"></span>
+          Especialista en riesgos operacionales
+        </span>
+      </div>
+      <button class="win-x" onclick="closeChat('l')" aria-label="Cerrar chat">✕</button>
+    </div>
+    <div class="win-msgs" id="cm-l">
+      <div class="msg msg-b">Hola. Soy Mariana, experta en gestión de riesgos de fatiga y somnolencia operacional. Puedo explicarle los peligros reales que enfrenta su operación y cómo evaluar el nivel de riesgo de su equipo. ¿Por dónde comenzamos?</div>
+    </div>
+    <div class="win-quick" id="cq-l">
+      <button class="wq" onclick="ukQ('l','¿Que tan peligrosa es la fatiga en operaciones?')">Peligros de la fatiga</button>
+      <button class="wq" onclick="ukQ('l','¿Como detectar fatiga en un operador?')">Como detectarla</button>
+      <button class="wq" onclick="ukQ('l','¿Que es el bowtie y como aplica SOMNI?')">Bowtie y fatiga</button>
+      <button class="wq" onclick="ukQ('l','¿SOMNI cumple con DS132 y SERNAGEOMIN?')">Normativa DS132</button>
+      <button class="wq" onclick="ukQ('l','¿Como cumple SOMNI con el RF27 de Codelco?')">RF27 Codelco</button>
+    </div>
+    <div class="win-foot">
+      <input class="win-inp" id="ci-l" type="text" placeholder="Consulte sobre riesgos de fatiga..." onkeydown="if(event.key==='Enter')ukSend('l')"/>
+      <button class="win-send" onclick="ukSend('l')" aria-label="Enviar mensaje"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2" fill="#fff" stroke="none"/></svg></button>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:flex-start;gap:5px">
+    <button class="chat-btn" onclick="openChat('l')" title="Andrea · Experta en Riesgos de Fatiga">
+      <picture><source srcset="apr-00.webp" type="image/webp"/><img src="APR_00.png" alt="Andrea SOMNI" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top"/></picture>
+    </button>
+    <div class="chat-lbl" style="font-size:.55rem">Experta Riesgos</div>
+  </div>
+</div>
+
+<!-- AGENTE DERECHO — Experta SOMNI Platform -->
+<div class="chat-wrap-r">
+  <div class="chat-win hidden" id="cw-r">
+    <div class="win-head" style="background:linear-gradient(135deg,rgba(13,27,46,.98),rgba(7,12,73,.4))">
+      <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(37,129,252,.5)">
+        <picture><source srcset="apr-02.webp" type="image/webp"/><img src="APR_02.png" alt="Experta SOMNI Platform" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top"/></picture>
+      </div>
+      <div class="win-head-info">
+        <strong style="font-size:.8rem">Elena · Experta SOMNI</strong>
+        <span style="font-size:.62rem;color:#22c55e;display:flex;align-items:center;gap:4px">
+          <span style="width:5px;height:5px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 5px #22c55e"></span>
+          Especialista en plataforma SOMNI
+        </span>
+      </div>
+      <button class="win-x" onclick="closeChat('r')" aria-label="Cerrar chat">✕</button>
+    </div>
+    <div class="win-msgs" id="cm-r">
+      <div class="msg msg-b">Hola. Soy Elena, especialista en la plataforma SOMNI. Le explico cómo funciona el sistema, sus beneficios, funcionalidades y cómo adaptarlo a su operación. ¿Qué le gustaría conocer?</div>
+    </div>
+    <div class="win-quick" id="cq-r">
+      <button class="wq" onclick="ukQ('r','Como funciona SOMNI paso a paso')">Como funciona</button>
+      <button class="wq" onclick="ukQ('r','Quiero solicitar una demo gratuita')">Solicitar demo</button>
+      <button class="wq" onclick="ukQ('r','Cuanto cuesta SOMNI')">Planes y precios</button>
+      <button class="wq" onclick="ukQ('r','Como funciona el piloto gratis')">Piloto gratuito</button>
+      <button class="wq" onclick="ukQ('r','SOMNI funciona en mi industria')">Mi industria</button>
+    </div>
+    <div class="win-foot">
+      <input class="win-inp" id="ci-r" type="text" placeholder="Consulte sobre SOMNI..." onkeydown="if(event.key==='Enter')ukSend('r')"/>
+      <button class="win-send" onclick="ukSend('r')" aria-label="Enviar mensaje"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2" fill="#fff" stroke="none"/></svg></button>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:5px">
+    <button class="chat-btn" onclick="openChat('r')" title="Elena · Experta SOMNI" style="position:relative">
+      <picture><source srcset="apr-02.webp" type="image/webp"/><img src="APR_02.png" alt="Valeria SOMNI" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top"/></picture>
+      <span class="chat-notif" id="notif-r">1</span>
+    </button>
+    <div class="chat-lbl" style="text-align:right;font-size:.55rem">Experta SOMNI</div>
+  </div>
+</div>
+
+<script>
+/* NAV SCROLL */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>44),{passive:true});
+
+/* MOBILE */
+function toggleMob(){const m=document.getElementById('mob');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
+
+/* FAQ accordion */
+function toggleFaq(btn){
+  const a=btn.nextElementSibling;
+  const isOpen=btn.classList.contains('open');
+  document.querySelectorAll('.faq-q.open').forEach(b=>{b.classList.remove('open');b.nextElementSibling.classList.remove('open');});
+  if(!isOpen){btn.classList.add('open');a.classList.add('open');}
+}
+
+/* VIDEO — toggle sonido */
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));
+  if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+scrollY-70,behavior:'smooth'});}
+}));
+
+/* INTERSECTION OBSERVER */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');}),{threshold:.1,rootMargin:'0px 0px -48px 0px'});
+document.querySelectorAll('.fi,.fl,.fr').forEach(el=>io.observe(el));
+
+/* CONTADORES DE MÉTRICAS REALES */
+function animateCounter(el, target, duration) {
+  if (el.dataset.animated) return;
+  el.dataset.animated = '1';
+  const start = performance.now();
+  const step = (now) => {
+    const p = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(ease * target).toLocaleString('es-CL');
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString('es-CL');
+  };
+  requestAnimationFrame(step);
+}
+const metricObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.mreal-val[data-target]').forEach(el => {
+        animateCounter(el, parseInt(el.dataset.target), 1800);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+const mSection = document.getElementById('metricas-reales');
+if (mSection) metricObs.observe(mSection);
+
+/* HERO CANVAS — red neuronal optimizada */
+(function(){
+  const cv=document.getElementById('c'),ctx=cv.getContext('2d');
+  let W,H,pts=[],raf=null,visible=true;
+  const isMobile=window.matchMedia('(max-width:768px)').matches;
+  const N=isMobile?40:65, D=isMobile?100:130, MOUSE_R=150;
+
+  function resize(){
+    W=cv.width=window.innerWidth;
+    H=cv.height=cv.parentElement.offsetHeight||window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize',()=>{resize();pts=[];for(let i=0;i<N;i++)pts.push(new Pt());},{passive:true});
+
+  function Pt(){
+    this.x=Math.random()*W; this.y=Math.random()*H;
+    this.vx=(Math.random()-.5)*.35; this.vy=(Math.random()-.5)*.35;
+    this.r=Math.random()*1.5+.4;
+  }
+  Pt.prototype.u=function(){
+    this.x+=this.vx; this.y+=this.vy;
+    if(this.x<0||this.x>W)this.vx*=-1;
+    if(this.y<0||this.y>H)this.vy*=-1;
+  };
+  for(let i=0;i<N;i++)pts.push(new Pt());
+
+  let mx=-9999,my=-9999;
+  window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;},{passive:true});
+
+  const obs=new IntersectionObserver(entries=>{
+    visible=entries[0].isIntersecting;
+    if(visible&&!raf)raf=requestAnimationFrame(draw);
+  },{threshold:.01});
+  obs.observe(cv.parentElement);
+
+  // Pausar animaciones CSS del hero cuando no es visible
+  const hviz = document.querySelector('.hviz');
+  if (hviz) {
+    const cssObs = new IntersectionObserver(entries => {
+      const paused = !entries[0].isIntersecting;
+      hviz.style.animationPlayState = paused ? 'paused' : '';
+      hviz.querySelectorAll('*').forEach(el => { el.style.animationPlayState = paused ? 'paused' : ''; });
+    }, { threshold: 0.01 });
+    cssObs.observe(hviz);
+  }
+
+  function draw(){
+    if(!visible){raf=null;return;}
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<N;i++)pts[i].u();
+    /* puntos */
+    ctx.fillStyle='rgba(37,129,252,0.7)';
+    ctx.beginPath();
+    for(let i=0;i<N;i++){ctx.moveTo(pts[i].x+pts[i].r,pts[i].y);ctx.arc(pts[i].x,pts[i].y,pts[i].r,0,Math.PI*2);}
+    ctx.fill();
+    /* líneas batched */
+    const D2=D*D;
+    const bands=[{max:D2*.33,a:.18,p:[]},{max:D2*.66,a:.10,p:[]},{max:D2,a:.05,p:[]}];
+    for(let i=0;i<N-1;i++)for(let j=i+1;j<N;j++){
+      const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d2=dx*dx+dy*dy;
+      if(d2<D2){const b=d2<bands[0].max?bands[0]:d2<bands[1].max?bands[1]:bands[2];b.p.push(i,j);}
+    }
+    for(const b of bands){
+      if(!b.p.length)continue;
+      ctx.strokeStyle=`rgba(37,129,252,${b.a})`;ctx.lineWidth=.8;ctx.beginPath();
+      for(let k=0;k<b.p.length;k+=2){ctx.moveTo(pts[b.p[k]].x,pts[b.p[k]].y);ctx.lineTo(pts[b.p[k+1]].x,pts[b.p[k+1]].y);}
+      ctx.stroke();
+    }
+    /* mouse */
+    if(mx>0&&mx<W&&my>0&&my<H){
+      const MR2=MOUSE_R*MOUSE_R;ctx.strokeStyle='rgba(96,165,250,0.25)';ctx.lineWidth=.8;ctx.beginPath();
+      for(let i=0;i<N;i++){const dx=pts[i].x-mx,dy=pts[i].y-my;if(dx*dx+dy*dy<MR2){ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(mx,my);}}
+      ctx.stroke();
+    }
+    raf=requestAnimationFrame(draw);
+  }
+  raf=requestAnimationFrame(draw);
+})();
+
+
+/* DASHBOARD REAL: mostrar si existe la imagen */
+(function(){
+  const img=new Image();
+  img.onload=function(){
+    const real=document.getElementById('plat-img-real');
+    const mock=document.getElementById('plat-mockup');
+    if(real&&mock){real.style.display='block';mock.style.display='none';}
+  };
+  img.src='plataforma-gestion.webp';
+})();
+
+/* FORM — Resend via Netlify Function */
+function w3fSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn  = document.getElementById('form-btn');
+
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  btn.style.background = 'rgba(37,129,252,.4)';
+
+  // Recolectar datos del formulario
+  const payload = {
+    nombre:    form.querySelector('[name="nombre"]')?.value || '',
+    empresa:   form.querySelector('[name="empresa"]')?.value || '',
+    email:     form.querySelector('[name="email"]')?.value || '',
+    industria: form.querySelector('[name="industria"]')?.value || '',
+    mensaje:   form.querySelector('[name="message"]')?.value || ''
+  };
+
+  fetch('/.netlify/functions/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(r => r.json())
+  .then(res => {
+    if (res.success) {
+      btn.textContent = '✓ Mensaje enviado — Le contactaremos pronto';
+      btn.style.background = '#16a34a';
+      form.reset();
+      // Tracking Google Analytics
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'form_submit', { event_category: 'contacto', event_label: payload.empresa });
+      }
+      setTimeout(() => {
+        btn.textContent = 'Enviar mensaje';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 6000);
+    } else {
+      btn.textContent = 'Error — intente nuevamente';
+      btn.style.background = '#dc2626';
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = 'Enviar mensaje'; btn.style.background = ''; }, 4000);
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Error de conexión — intente nuevamente';
+    btn.style.background = '#dc2626';
+    btn.disabled = false;
+    setTimeout(() => { btn.textContent = 'Enviar mensaje'; btn.style.background = ''; }, 4000);
+  });
+}
+
+/* ══ MOTOR UNIVERSAL DE CARRUSELES — AUTO CONTINUO ══ */
+const ukState = {};
+
+function ukInit(id, trackId, dotsId, defaultActive, intervalMs, noScroll) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
+  const items = Array.from(track.children);
+  const count = items.length;
+  if (!count) return;
+
+  ukState[id] = { active: defaultActive ?? Math.floor(count / 2), count, trackId, dotsId, noScroll };
+
+  // Generar dots
+  const dotsEl = dotsId ? document.getElementById(dotsId) : null;
+  if (dotsEl) {
+    dotsEl.innerHTML = '';
+    items.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'uk-dot';
+      d.onclick = () => ukGo(id, i);
+      dotsEl.appendChild(d);
+    });
+  }
+
+  // Click directo en cada card
+  items.forEach((item, i) => item.addEventListener('click', () => ukGo(id, i)));
+
+  ukRender(id);
+
+  // Auto-ciclo continuo — se reinicia si el usuario interactúa
+  function startAuto() {
+    clearInterval(ukState[id].timer);
+    ukState[id].timer = setInterval(() => {
+      const s = ukState[id];
+      ukGo(id, (s.active + 1) % s.count, true); // true = no reiniciar timer
+    }, intervalMs);
+  }
+  startAuto();
+  ukState[id].startAuto = startAuto;
+}
+
+function ukMove(id, _unused, dir) {
+  const s = ukState[id];
+  if (!s) return;
+  ukGo(id, ((s.active + dir) % s.count + s.count) % s.count);
+}
+
+function ukGo(id, idx, fromAuto) {
+  const s = ukState[id];
+  if (!s) return;
+  s.active = idx;
+  ukRender(id);
+  // Si el usuario interactuó manualmente, reiniciar el timer
+  if (!fromAuto && s.startAuto) s.startAuto();
+}
+
+function ukRender(id) {
+  const s = ukState[id];
+  if (!s) return;
+  const track = document.getElementById(s.trackId);
+  if (!track) return;
+  const items = Array.from(track.children);
+
+  // Marcar activo
+  items.forEach((item, i) => item.classList.toggle('uk-on', i === s.active));
+
+  // Dots
+  if (s.dotsId) {
+    document.querySelectorAll(`#${s.dotsId} .uk-dot`)
+      .forEach((d, i) => d.classList.toggle('uk-on', i === s.active));
+  }
+
+  // Centrar: calcular posición del item activo y trasladar el track
+  requestAnimationFrame(() => {
+    if (!track.parentElement) return;
+    const wrap = track.parentElement;
+    const gap = 16;
+    const cardW = items[0] ? items[0].offsetWidth : 240;
+    const wrapW = wrap.offsetWidth;
+    const cardCenter = s.active * (cardW + gap) + cardW / 2;
+    const tx = (wrapW / 2) - cardCenter;
+    track.style.willChange = 'transform';
+    track.style.transform = `translateX(${tx}px)`;
+    track.addEventListener('transitionend', () => { track.style.willChange = 'auto'; }, { once: true });
+  });
+}
+
+// Arrancar todos al cargar la página
+window.addEventListener('load', () => {
+  ukInit('pb',    'pb-track',    'pb-dots',    2, 5500); // beneficios — lectura pausada
+  ukInit('steps', 'steps-track', 'steps-dots', 2, 5000); // 5 pasos
+  ukInit('min',   'min-track',   'min-dots',   2, 5000); // características
+  ukInit('capa',  'capa-track',  'capa-dots',  1, 5500); // dispositivos
+  ukInit('est',   'est-track',   'est-dots',   1, 6000); // estándares — más tiempo
+});
+
+/* TABS DE PRODUCTO */
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* CARRUSEL ESTILO BUK — card central elevada */
+let carCenter = 1; // índice 0-3, la card central activa
+const carCount = 4;
+function moveCarousel(dir) {
+  carCenter = ((carCenter + dir) % carCount + carCount) % carCount;
+  updateCarousel();
+}
+function goToSlide(i) { carCenter = i; updateCarousel(); }
+function updateCarousel() {
+  const cards = document.querySelectorAll('.carousel-card');
+  cards.forEach((c, i) => c.classList.toggle('center', i === carCenter));
+  document.querySelectorAll('.cdot').forEach((d, i) => d.classList.toggle('active', i === carCenter));
+  // Desplaza el track para centrar la card activa
+  const track = document.getElementById('car-track');
+  const cardW = cards[0].offsetWidth + 20;
+  const offset = carCenter * cardW - (track.parentElement.offsetWidth / 2) + (cardW / 2);
+  track.style.transform = 'translateX(-' + Math.max(0, offset) + 'px)';
+}
+
+/* ══ MOTOR DE AGENTES IA SOMNI ══ */
+const chatOpen = { l: false, r: false };
+
+/* ── BASE DE CONOCIMIENTO COMPLETA ── */
+const SOMNI_KB = {
+
+  /* AGENTE IA — respuestas técnicas y científicas */
+  l: [
+    {
+      keys: ['pvt','psicovigilancia','tiempo de reaccion','vigilancia'],
+      resp: 'El Test PVT (Psychomotor Vigilance Test) es el gold standard mundial para medir alerta cognitiva. Fue creado por el Dr. David F. Dinges en la Universidad de Pennsylvania en los años 80 y es el test oficial de la NASA en la Estación Espacial Internacional. En SOMNI, el operador lo realiza en 3 minutos desde su smartphone: responde a estímulos visuales y el sistema mide su tiempo de reacción con precisión de milisegundos. Sin efectos de aprendizaje, sin sesgo cultural. El resultado es una métrica objetiva, reproducible y comparable entre personas.'
+    },
+    {
+      keys: ['maira','modelo circadiano','circadiano','borbely','borbély','homeostasis'],
+      resp: 'MAIRA (Model of Alertness based on Individual Rhythms and Actigraphy) es el motor predictivo de SOMNI. Se basa en el Modelo de los Dos Procesos de Alexander Borbély (1982): combina la presión homeostática del sueño (factor S) con el ritmo circadiano individual (factor C). MAIRA aprende el patrón biológico de cada trabajador y predice su nivel de alerta en cualquier punto futuro del turno. Fue validado metodológicamente en mayo 2025 por el Dr. Juan Francisco Zamora, IA Advisor de la PUC Valparaíso.'
+    },
+    {
+      keys: ['alerta','supervisor','whatsapp','notificacion','aviso'],
+      resp: 'Cuando SOMNI detecta riesgo de fatiga, el supervisor recibe notificación simultánea por tres canales: 1) Dashboard web en tiempo real, 2) Correo electrónico con detalle del control y acción sugerida, 3) Alerta instantánea por WhatsApp con nombre del colaborador, nivel de riesgo y recomendación. Todo ocurre en menos de 2 minutos desde que el operador completa su control. En operaciones reales, SOMNI ha logrado 93% de cumplimiento de protocolo.'
+    },
+    {
+      keys: ['nasa','astronauta','iss','estacion espacial'],
+      resp: 'La NASA utiliza el PVT como test oficial de alerta neurobehavioral para sus astronautas en la ISS. Se han realizado 2.856 mediciones en 24 astronautas durante misiones de 6 meses. Este es el mismo test que implementa SOMNI en operaciones industriales terrestres. La validez de este estándar fue lo que motivó a SOMNI a adoptarlo como núcleo de su sistema de detección.'
+    },
+    {
+      keys: ['precision','exactitud','porcentaje','98','falso positivo'],
+      resp: 'SOMNI ha sido validado con 98% de precisión en la detección de estados de fatiga y riesgo operacional. Esto se obtuvo procesando más de 250.000 eventos reales en operaciones industriales en Chile. La tasa de falsos positivos es inferior al 2%, lo que significa que las alertas son altamente confiables. Hoy SOMNI tiene 2.745 usuarios activos, 28 empresas y 112.598 test recibidos.'
+    },
+    {
+      keys: ['implementacion','instalacion','rapido','cuanto tiempo','48 hora'],
+      resp: 'SOMNI no requiere hardware. La implementación es completamente sin equipamiento: el trabajador usa su propio smartphone. El proceso completo —configuración de cuenta, onboarding de supervisores y capacitación de operadores— se realiza en 48 horas. Sin técnicos en terreno, sin interrumpir la operación. Compatible con Android e iOS, funciona offline en zonas sin señal y sincroniza al recuperar conexión.'
+    },
+    {
+      keys: ['industria','mineria','transporte','construccion','faena','sector'],
+      resp: 'SOMNI está diseñado para cualquier operación de alto riesgo: minería (subterránea y a rajo abierto), transporte de carga y pasajeros, construcción, oil & gas, forestal y manufactura. Actualmente tiene presencia en 28 empresas en Chile. El sistema se adapta a cualquier tipo de turno, jornada y tamaño de dotación desde 5 hasta miles de operadores.'
+    },
+    {
+      keys: ['saas','plataforma','dashboard','app','movil','celular'],
+      resp: 'SOMNI es una plataforma SaaS 100% en la nube. El Dashboard Web permite al supervisor ver en tiempo real el estado de alerta de toda la flota, con filtros por jornada, área y criticidad. La App móvil PWA (no requiere descarga de tienda) permite al operador realizar su autoevaluación y Test PVT. Todo sincroniza instantáneamente. La plataforma tiene módulos de: Calificación, Riesgo, Desempeño, Cumplimiento, Histórico y Cronograma.'
+    },
+    {
+      keys: ['auditable','auditoria','sernageomin','mutual','cumplimiento','trazabilidad'],
+      resp: 'Cada control, test y alerta en SOMNI queda registrado con timestamp, identificación del colaborador y resultado cuantificado. La evidencia es inmutable y exportable en PDF o Excel. SOMNI genera reportería estructurada para fiscalización por SERNAGEOMIN, mutuales de seguridad e inspecciones corporativas. En operaciones que lo han implementado, han logrado 100% de trazabilidad ante auditorías, con cero observaciones.'
+    },
+    {
+      keys: ['corfo','financiamiento','startup chile','aster','prochile'],
+      resp: 'SOMNI está respaldado por los principales organismos de innovación de Chile: CORFO (Innova Región Atacama y Crea y Valida), Startup Chile (Ignite 2), Aster Magical Startups, ProChile y Pro O\'Higgins. Este respaldo institucional valida tanto la tecnología como el modelo de negocio de SOMNI a nivel nacional e internacional.'
+    },
+
+    /* ── CODELCO / ESTÁNDARES / SIGO ── */
+    {
+      keys: ['codelco','sigo','ecc','estandar codelco','sistema gestion operacional'],
+      resp: 'SOMNI es totalmente compatible con los estándares SIGO-ECC de Codelco. El SIGO (Sistema de Gestión Operacional) de Codelco establece Estándares de Control Crítico (ECC) para los eventos de mayor riesgo. El SIGO-ECC-003 aborda específicamente la "Pérdida de Control de Equipos e Instalaciones", donde la fatiga y somnolencia del conductor es una de las causas (amenazas) identificadas en el árbol de causas del bowtie. SOMNI actúa directamente como barrera preventiva sobre esa amenaza específica.'
+    },
+    {
+      keys: ['bowtie','bow tie','corbata','arbol causas','mariposa','barrera','amenaza','consecuencia'],
+      resp: 'La metodología Bowtie (corbata de moño) es el estándar internacional para análisis y gestión de riesgos críticos, adoptado por Codelco y exigido por el SIGO. El bowtie tiene: un Evento Top central (ej: "Pérdida de control de equipo"), amenazas/causas a la izquierda (ej: conductor fatigado o somnoliento), consecuencias a la derecha (choque, volcamiento, fatalidad), y barreras de control a ambos lados. SOMNI opera como una barrera preventiva de alta efectividad sobre la amenaza "operador fatigado o con alerta disminuida", que es una de las principales causas identificadas en los bowtie SIGO-ECC-003-10 y SIGO-ECC-003-25 de Codelco.'
+    },
+    {
+      keys: ['sigo-ecc-003-25','equipo minero','lhd','caex','bulldozer','pala','perforadora','industrial'],
+      resp: 'El SIGO-ECC-003-25 de Codelco es el estándar de control crítico para "Pérdida de Control de Equipos Mineros e Industriales" (camiones CAEX, cargadores LHD, palas, perforadoras, bulldozers, etc.). Una de sus causas (amenazas) del bowtie es explícitamente: "Conductor opera fatigado, somnoliento o con alerta disminuida". Los controles críticos preventivos exigen medición objetiva del estado de alerta antes del turno. SOMNI cumple 100% con este control crítico mediante el Test PVT y el modelo MAIRA, siendo la única solución disponible en Chile con validación científica documentada.'
+    },
+    {
+      keys: ['sigo-ecc-003-10','vehiculo liviano','camioneta','van','bus','transporte personal'],
+      resp: 'El SIGO-ECC-003-10 de Codelco regula la "Pérdida de Control de Vehículos" (camionetas, vans, buses de transporte de personal). Al igual que el estándar de equipos pesados, identifica la fatiga y somnolencia del conductor como amenaza principal en el bowtie. SOMNI es directamente aplicable para esta flota: el operador realiza su control desde el celular antes de iniciar el traslado, y el supervisor recibe la alerta si el resultado indica riesgo. Es especialmente crítico en traslados nocturnos entre instalaciones mineras.'
+    },
+    {
+      keys: ['rf27','rf 27','factor riesgo 27','factor riesgo fatiga','riesgo fatiga','factor riesgo somnolencia'],
+      resp: 'El RF27 (Factor de Riesgo 27) es el estándar SSO de Codelco que define específicamente la gestión del riesgo de fatiga y somnolencia operacional. Establece que la fatiga no es gestionable de forma subjetiva (autopercepción), sino que requiere medición objetiva, reproducible y trazable. SOMNI cumple todos los criterios del RF27: mide con Test PVT (gold standard científico), genera datos trazables con timestamp, emite alertas al supervisor con evidencia auditables, y permite reportería para inspecciones SERNAGEOMIN. SOMNI es la herramienta diseñada para dar cumplimiento técnico al RF27.'
+    },
+    {
+      keys: ['control critico','cc','verificacion campo','life saving rule','lsr','regla vida'],
+      resp: 'En los estándares SIGO de Codelco, los Controles Críticos (CC) son las barreras que deben funcionar para prevenir el Evento Top del bowtie. Para la amenaza de fatiga, los controles críticos exigen: 1) Medición objetiva del nivel de alerta antes del turno, 2) Decisión de aptitud basada en datos (no en autopercepción), 3) Verificación de cumplimiento por parte del supervisor. SOMNI implementa los tres controles críticos de forma digital, automatizada y auditable. La verificación de campo también está incorporada: el sistema alerta al supervisor cuando un trabajador inicia turno sin haber completado su control.'
+    },
+    {
+      keys: ['sernageomin','ds132','ds76','reglamento mineria','reglamento seguridad','normativa minera'],
+      resp: 'SOMNI contribuye al cumplimiento del DS N°132 (Reglamento de Seguridad Minera) y DS N°76 (construcción) en sus artículos relacionados con aptitud psicofísica del personal. El DS132 exige que los trabajadores que operan maquinaria o vehículos en faenas mineras estén en condiciones psicofísicas adecuadas. SOMNI proporciona la evidencia objetiva y auditable requerida para demostrar cumplimiento ante inspecciones de SERNAGEOMIN. En operaciones con SOMNI activo, los clientes han reportado cero observaciones en fiscalizaciones.'
+    },
+    {
+      keys: ['evento top','perdida control','accidente catastrofico','fatalidad','muerte','critico'],
+      resp: 'En la metodología bowtie adoptada por Codelco, el Evento Top de mayor frecuencia en operaciones mineras es la "Pérdida de Control de Equipos e Instalaciones". Sus principales causas incluyen: fallas mecánicas, condiciones del terreno, comunicaciones deficientes y — con alta frecuencia — la fatiga y somnolencia del operador. SOMNI actúa sobre esta última con la mayor efectividad documentada en el mercado chileno: -87% de incidentes por fatiga en operaciones que lo han implementado.'
+    },
+    {
+      keys: ['gestion fatiga','programa fatiga','politica fatiga','plan fatiga','fatigue management'],
+      resp: 'Un Programa de Gestión de Fatiga efectivo —según estándares Codelco SIGO, ICMM y normativa internacional— debe incluir: 1) Política y procedimiento documentado, 2) Medición objetiva del estado de alerta (SOMNI cumple con Test PVT), 3) Sistema de alertas al supervisor (SOMNI: web + correo + WhatsApp), 4) Trazabilidad y auditoría (SOMNI: 100% de registros con timestamp), 5) Indicadores de cumplimiento (SOMNI: dashboard con KPIs). SOMNI es la única plataforma en Chile que cubre los 5 componentes de forma integrada, sin hardware adicional.'
+    },
+
+    {
+      keys: ['default'],
+      resp: 'Entendido. SOMNI es la plataforma SaaS de IA líder en Chile para la prevención de fatiga operacional, alineada con estándares Codelco SIGO-ECC, metodología bowtie y normativa SERNAGEOMIN. Protege 2.745 usuarios activos en 28 empresas con 112.598 controles realizados. ¿Le gustaría que le explique algún aspecto específico: la tecnología PVT/MAIRA, la alineación con estándares Codelco, la normativa DS132, o cómo SOMNI actúa como barrera en el bowtie de fatiga?'
+    }
+  ],
+
+  /* SOPORTE — respuestas comerciales */
+  r: [
+    {
+      keys: ['demo','demostracion','ver','mostrar','conocer'],
+      resp: 'Con mucho gusto coordinamos una demo personalizada para su operación. La demo es 100% gratuita, dura 30 minutos y la realizamos por videollamada con uno de nuestros especialistas. Puede agendarla ahora completando el formulario en esta página, o escribir directamente a contacto@somnicompany.com. También puede llamar al +56 9 6845 1264. Respondemos en menos de 24 horas hábiles.'
+    },
+    {
+      keys: ['piloto','prueba','gratis','sin costo','30 dias'],
+      resp: 'El piloto de SOMNI es completamente gratuito y sin compromisos. Incluye: instalación y configuración en 48 horas, onboarding para supervisores y operadores, soporte técnico dedicado durante 30 días, y un reporte ejecutivo al finalizar que muestra el impacto real en su operación. El único requisito es tener una dotación mínima de 5 personas. ¿Le gustaría que un ejecutivo le contacte para coordinar el inicio?'
+    },
+    {
+      keys: ['precio','costo','valor','cuanto','tarifa','plan'],
+      resp: 'Los planes de SOMNI se adaptan al tamaño de su dotación y las necesidades de su operación. El piloto de 30 días es sin costo. Para planes enterprise con más de 50 operadores, ofrecemos condiciones especiales. No publicamos precios en línea porque cada propuesta es a medida. Complete el formulario con el tamaño de su flota e industria y un ejecutivo le presentará una propuesta en menos de 24 horas.'
+    },
+    {
+      keys: ['experto','especialista','hablar','llamar','contactar','reunión'],
+      resp: 'Por supuesto. Nuestro equipo de especialistas en seguridad operacional está disponible para analizar su caso en detalle. Puede contactarnos por: Email: contacto@somnicompany.com · Teléfono principal: +56 9 6845 1264 · WhatsApp: +56 9 6845 1264. También puede agendar directamente completando el formulario de contacto en esta página. Un especialista le llamará dentro de las próximas 24 horas hábiles.'
+    },
+    {
+      keys: ['industria','mineria','transporte','construccion','sector','opera'],
+      resp: 'SOMNI opera en todas las industrias de alto riesgo: minería, transporte de carga y pasajeros, construcción, oil & gas, forestal y manufactura. Tenemos clientes como SKF, Ferrovial, Indemin, Axinntus, Geovita, Schwager y más de 20 empresas activas en Chile. Cada implementación es personalizada según el tipo de turno, jornada y requerimientos regulatorios de su industria. ¿En qué sector opera usted?'
+    },
+    {
+      keys: ['integracion','erp','sistema','api','conectar'],
+      resp: 'SOMNI cuenta con API REST para integración con sistemas ERP, TMS y plataformas HSEQ. La integración técnica es coordinada por nuestro equipo y generalmente toma entre 3 y 5 días hábiles. Para empresas que necesitan integración enterprise, ofrecemos soporte técnico dedicado y documentación completa de la API. Cuéntenos qué sistema utiliza actualmente y evaluamos la integración sin costo.'
+    },
+    {
+      keys: ['resultado','impacto','caso','exito','referencia'],
+      resp: 'En una operación minera de mediana escala, SOMNI logró -87% de incidentes por fatiga en 6 meses, 0 fatalidades desde la implementación, 100% de trazabilidad ante auditorías y la implementación fue en 48 horas sin hardware. Otros clientes reportan reducción de hasta 50% en tiempo administrativo de RRHH y cero observaciones en fiscalizaciones de la mutual. ¿Le interesa conectarlo con alguno de nuestros clientes actuales como referencia?'
+    },
+    {
+      keys: ['default'],
+      resp: 'Gracias por contactar a SOMNI. Somos la plataforma SaaS líder en Chile para prevención de fatiga operacional, con 28 empresas activas y más de 112.000 controles realizados. Para darle la atención que merece, le recomiendo completar el formulario de contacto en esta página o escribir a contacto@somnicompany.com. Un ejecutivo especializado en su industria le contactará en menos de 24 horas. ¿Hay algo específico que quiera que le transmita al equipo?'
+    }
+  ]
+};
+
+/* ── FUNCIONES DE CHAT ── */
+function openChat(s) {
+  chatOpen[s] = true;
+  document.getElementById('cw-' + s).classList.remove('hidden');
+  if (s === 'r') { const n = document.getElementById('notif-r'); if (n) n.style.display = 'none'; }
+  setTimeout(() => { const m = document.getElementById('cm-' + s); if (m) m.scrollTop = m.scrollHeight; }, 80);
+  // Mensaje proactivo del soporte después de 8s si no ha interactuado
+  if (s === 'r' && !chatOpen._rGreeted) {
+    chatOpen._rGreeted = true;
+    setTimeout(() => {
+      if (chatOpen.r) ukAddMsg('r', 'Por cierto: actualmente tenemos el piloto gratuito de 30 dias disponible para nuevas operaciones. Es una excelente oportunidad para evaluar SOMNI sin riesgo ni inversion inicial. ¿Le interesa conocer los detalles?');
+    }, 8000);
+  }
+}
+function closeChat(s) { chatOpen[s] = false; document.getElementById('cw-' + s).classList.add('hidden'); }
+
+function ukQ(s, t) {
+  document.getElementById('ci-' + s).value = t;
+  const qEl = document.getElementById('cq-' + s);
+  if (qEl) qEl.style.display = 'none';
+  ukSend(s);
+}
+
+function ukAddMsg(s, text) {
+  const msgs = document.getElementById('cm-' + s);
+  if (!msgs) return;
+  const bm = document.createElement('div');
+  bm.className = 'msg msg-b';
+  bm.textContent = text;
+  msgs.appendChild(bm);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function ukSend(s) {
+  const inp = document.getElementById('ci-' + s);
+  const txt = inp.value.trim();
+  if (!txt) return;
+  const msgs = document.getElementById('cm-' + s);
+
+  // Mensaje del usuario
+  const um = document.createElement('div');
+  um.className = 'msg msg-u';
+  um.textContent = txt;
+  msgs.appendChild(um);
+  inp.value = '';
+
+  // Indicador de escritura
+  const typing = document.createElement('div');
+  typing.className = 'msg-typing';
+  typing.innerHTML = '<span></span><span></span><span></span>';
+  msgs.appendChild(typing);
+  msgs.scrollTop = msgs.scrollHeight;
+
+  // Delay realista según longitud de respuesta
+  const delay = 900 + Math.random() * 600;
+
+  setTimeout(() => {
+    typing.remove();
+    const norm = txt.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const bank = SOMNI_KB[s];
+    let resp = bank.find(e => e.keys[0] === 'default').resp;
+
+    for (const entry of bank) {
+      if (entry.keys[0] === 'default') continue;
+      if (entry.keys.some(k => norm.includes(k))) {
+        resp = entry.resp;
+        break;
+      }
+    }
+
+    ukAddMsg(s, resp);
+
+    // Seguimiento automático del soporte
+    if (s === 'r' && Math.random() > 0.5) {
+      setTimeout(() => {
+        ukAddMsg('r', '¿Le puedo ayudar con algo más? Si prefiere, puedo conectarle ahora mismo con un especialista SOMNI que conoce su industria en detalle.');
+      }, 3500);
+    }
+  }, delay);
+}
+</script>
+</body>
+</html>

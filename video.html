@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>SOMNI en Acción – Ver Video</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:#05080F;color:#fff;min-height:100vh;display:flex;flex-direction:column}
+.top-bar{padding:20px 40px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}
+.top-bar img{height:42px}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);padding:10px 20px;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .25s}
+.back-btn:hover{background:rgba(255,255,255,.15);color:#fff}
+.back-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 40px;text-align:center}
+.hero-label{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:20px}
+.hero h1{font-size:clamp(2rem,4vw,3.5rem);font-weight:900;letter-spacing:-.04em;margin-bottom:16px;line-height:1.1}
+.hero h1 span{background:linear-gradient(135deg,#60a5fa,#2581FC);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:1rem;color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 44px;line-height:1.7}
+.video-container{width:100%;max-width:900px;position:relative;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 120px rgba(0,0,0,.7),0 0 0 1px rgba(37,129,252,.12)}
+.video-container video{width:100%;height:auto;display:block;background:#000}
+.video-fallback{background:#0d0e1a;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.video-fallback p{color:rgba(255,255,255,.4);font-size:.9rem}
+.bottom-cta{padding:60px 40px;text-align:center;border-top:1px solid rgba(255,255,255,.07)}
+.bottom-cta p{color:rgba(255,255,255,.5);margin-bottom:20px;font-size:.9rem}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-blue{display:inline-flex;align-items:center;gap:8px;background:#2581FC;color:#fff;padding:13px 26px;border-radius:9px;font-weight:700;font-size:.88rem;font-family:'Montserrat',sans-serif;text-decoration:none;transition:opacity .25s}
+.btn-blue:hover{opacity:.87}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.7);padding:12px 24px;border-radius:9px;font-weight:600;font-size:.88rem;font-family:'Montserrat',sans-serif;text-decoration:none;transition:all .25s}
+.btn-outline:hover{border-color:rgba(255,255,255,.5);color:#fff}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <img src="SOMNI blnco y celeste.png" alt="SOMNI"/>
+  <a href="index.html" class="back-btn"><svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Volver al sitio</a>
+</div>
+<div class="hero">
+  <p class="hero-label">SOMNI en acción</p>
+  <h1>Vea cómo <span>SOMNI</span> funciona<br/>en una operación real</h1>
+  <p>Un recorrido por el sistema que está cambiando la seguridad industrial en Chile — desde la detección de fatiga hasta la alerta al supervisor en menos de 2 segundos.</p>
+  <div class="video-container">
+    <video controls autoplay muted playsinline poster="">
+      <source src="video SOMNI.mp4" type="video/mp4"/>
+      <div class="video-fallback"><p>Su navegador no soporta video HTML5.</p></div>
+    </video>
+  </div>
+</div>
+<div class="bottom-cta">
+  <p>¿Le interesa lo que vio? Hablemos sobre su operación.</p>
+  <div class="cta-row">
+    <a href="index.html#piloto" class="btn-blue">Solicitar Prueba Piloto</a>
+    <a href="index.html#contacto" class="btn-outline">Contactar un experto</a>
+  </div>
+</div>
+</body>
+</html>
