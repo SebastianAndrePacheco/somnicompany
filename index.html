@@ -558,6 +558,9 @@ button{border:none;cursor:pointer;font-family:inherit}
 }
 .uk-wrap::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
 .uk-wrap::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
+@media(max-width:768px){
+  .uk-wrap::before,.uk-wrap::after{width:24px}
+}
 
 /* Track base */
 .uk-track{display:flex;gap:20px;align-items:center;transition:transform .65s cubic-bezier(.4,0,.2,1)}
