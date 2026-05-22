@@ -600,6 +600,11 @@ button{border:none;cursor:pointer;font-family:inherit}
 
 /* ── MOBILE: scroll nativo con snap ── */
 @media(max-width:768px){
+  /* uk-wrap dentro de .wrap — escapar padding lateral */
+  .wrap .uk-wrap{
+    margin-left:-20px;
+    margin-right:-20px;
+  }
   .uk-wrap{
     overflow-x:auto;
     overflow-y:hidden;
@@ -2918,16 +2923,20 @@ function ukInit(id, trackId, dotsId, defaultActive, intervalMs, noScroll) {
 
   ukRender(id);
 
-  // Auto-ciclo continuo — se reinicia si el usuario interactúa
+  // Auto-ciclo — desactivado en mobile (el usuario scrollea con el dedo)
   function startAuto() {
     clearInterval(ukState[id].timer);
+    if (isMobileCarousel()) return;
     ukState[id].timer = setInterval(() => {
       const s = ukState[id];
-      ukGo(id, (s.active + 1) % s.count, true); // true = no reiniciar timer
+      ukGo(id, (s.active + 1) % s.count, true);
     }, intervalMs);
   }
   startAuto();
   ukState[id].startAuto = startAuto;
+
+  // Reiniciar auto-ciclo si cambia de mobile a desktop
+  window.addEventListener('resize', () => startAuto(), { passive: true });
 }
 
 function ukMove(id, _unused, dir) {
