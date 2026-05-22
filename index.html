@@ -601,26 +601,23 @@ button{border:none;cursor:pointer;font-family:inherit}
 /* ── MOBILE: scroll nativo con snap ── */
 @media(max-width:768px){
   .uk-wrap{
-    overflow-x:auto;
-    overflow-y:visible;
-    padding:20px 0 16px;
-    scrollbar-width:none;
+    overflow:visible;
+    padding:16px 0 12px;
   }
-  .uk-wrap::-webkit-scrollbar{display:none}
   .uk-wrap::before,.uk-wrap::after{display:none}
   .uk-track{
     transform:none !important;
     transition:none;
     gap:12px;
-    padding:8px 20px 12px;
+    padding:8px 20px 16px;
     scroll-snap-type:x mandatory;
     overflow-x:auto;
     overflow-y:visible;
     scrollbar-width:none;
     align-items:stretch;
+    -webkit-overflow-scrolling:touch;
   }
   .uk-track::-webkit-scrollbar{display:none}
-  /* Todas las cards: tamaño cómodo, sin escala, completamente visibles */
   .step,.min-card,.capa-card,.est-card{
     opacity:1 !important;
     transform:none !important;
@@ -629,7 +626,6 @@ button{border:none;cursor:pointer;font-family:inherit}
     max-width:340px;
     flex-shrink:0;
   }
-  /* Card activa en mobile: solo highlight sutil, sin elevar */
   .step.uk-on,
   .min-card.uk-on,
   .capa-card.uk-on,
@@ -651,12 +647,13 @@ button{border:none;cursor:pointer;font-family:inherit}
     transform:none !important;
     transition:none;
     gap:12px;
-    padding:8px 20px 12px;
+    padding:8px 20px 16px;
     scroll-snap-type:x mandatory;
     overflow-x:auto;
     overflow-y:visible;
     scrollbar-width:none;
     align-items:stretch;
+    -webkit-overflow-scrolling:touch;
   }
   .pb-track::-webkit-scrollbar{display:none}
   .pb-card{
