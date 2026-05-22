@@ -601,23 +601,23 @@ button{border:none;cursor:pointer;font-family:inherit}
 /* ── MOBILE: scroll nativo con snap ── */
 @media(max-width:768px){
   .uk-wrap{
-    overflow:visible;
+    overflow-x:auto;
+    overflow-y:hidden;
     padding:16px 0 12px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
   }
+  .uk-wrap::-webkit-scrollbar{display:none}
   .uk-wrap::before,.uk-wrap::after{display:none}
   .uk-track{
     transform:none !important;
     transition:none;
     gap:12px;
     padding:8px 20px 16px;
-    scroll-snap-type:x mandatory;
-    overflow-x:auto;
-    overflow-y:visible;
-    scrollbar-width:none;
     align-items:stretch;
-    -webkit-overflow-scrolling:touch;
+    width:max-content;
   }
-  .uk-track::-webkit-scrollbar{display:none}
   .step,.min-card,.capa-card,.est-card{
     opacity:1 !important;
     transform:none !important;
@@ -648,14 +648,9 @@ button{border:none;cursor:pointer;font-family:inherit}
     transition:none;
     gap:12px;
     padding:8px 20px 16px;
-    scroll-snap-type:x mandatory;
-    overflow-x:auto;
-    overflow-y:visible;
-    scrollbar-width:none;
     align-items:stretch;
-    -webkit-overflow-scrolling:touch;
+    width:max-content;
   }
-  .pb-track::-webkit-scrollbar{display:none}
   .pb-card{
     opacity:1 !important;
     transform:none !important;
@@ -2971,13 +2966,14 @@ function ukRender(id) {
   }
 
   if (isMobileCarousel()) {
-    // Mobile: scroll nativo hacia la card activa
+    // Mobile: scroll nativo — el wrap es el scrollable
+    const wrap = track.parentElement;
     const card = items[s.active];
-    if (card) {
-      const trackRect = track.getBoundingClientRect();
+    if (wrap && card) {
+      const wrapRect = wrap.getBoundingClientRect();
       const cardRect = card.getBoundingClientRect();
-      const scrollTarget = track.scrollLeft + (cardRect.left - trackRect.left) - (track.offsetWidth - card.offsetWidth) / 2;
-      track.scrollTo({ left: scrollTarget, behavior: 'smooth' });
+      const scrollTarget = wrap.scrollLeft + (cardRect.left - wrapRect.left) - (wrap.offsetWidth - card.offsetWidth) / 2;
+      wrap.scrollTo({ left: scrollTarget, behavior: 'smooth' });
     }
   } else {
     // Desktop: transform centrado
@@ -3004,19 +3000,21 @@ window.addEventListener('load', () => {
   ukInit('capa',  'capa-track',  'capa-dots',  1, 5500);
   ukInit('est',   'est-track',   'est-dots',   1, 6000);
 
-  // Mobile: sincronizar dots con scroll nativo
+  // Mobile: sincronizar dots con scroll nativo (el wrap scrollea)
   ['pb-track','steps-track','min-track','capa-track','est-track'].forEach(trackId => {
     const track = document.getElementById(trackId);
     if (!track) return;
+    const wrap = track.parentElement;
+    if (!wrap) return;
     const id = Object.keys(ukState).find(k => ukState[k].trackId === trackId);
     if (!id) return;
     let scrollTimer;
-    track.addEventListener('scroll', () => {
+    wrap.addEventListener('scroll', () => {
       if (!isMobileCarousel()) return;
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         const items = Array.from(track.children);
-        const center = track.scrollLeft + track.offsetWidth / 2;
+        const center = wrap.scrollLeft + wrap.offsetWidth / 2;
         let closest = 0, minDist = Infinity;
         items.forEach((item, i) => {
           const dist = Math.abs(item.offsetLeft + item.offsetWidth / 2 - center);
