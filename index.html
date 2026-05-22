@@ -1501,7 +1501,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-logo">
-    <img src="SOMNI blnco y celeste.png" alt="SOMNI" onerror="this.style.display='none';document.querySelector('.nav-logo-text').style.display='block'"/>
+    <img src="SOMNI blnco y celeste.png" alt="SOMNI" fetchpriority="high" onerror="this.style.display='none';document.querySelector('.nav-logo-text').style.display='block'"/>
     <span class="nav-logo-text">SoMNi</span>
   </div>
   <div class="nav-links">
@@ -1545,7 +1545,8 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
 </div>
 
 <!-- HERO -->
-<section id="hero">
+<main>
+<section id="hero" aria-label="Inicio">
   <canvas id="c"></canvas>
   <div class="hero-glow"></div>
   <div class="hero-inner">
@@ -1926,87 +1927,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
     </div>
 
   </div>
-  <div style="display:none"><!-- legacy plat-mockup removed --><div class="imac-wrap" id="plat-mockup">
-          <div class="imac-body">
-            <div class="imac-menubar">
-              <div class="imac-dot" style="background:#ff5f57"></div>
-              <div class="imac-dot" style="background:#febc2e"></div>
-              <div class="imac-dot" style="background:#28c840"></div>
-            </div>
-            <div class="imac-screen-area">
-              <div class="dash">
-                <!-- Sidebar -->
-                <div class="dash-sidebar">
-                  <div class="dash-logo">
-                    <div class="dash-logo-text">S<em>O</em>MNI</div>
-                  </div>
-                  <div class="dash-nav-item">Sistema de turno</div>
-                  <div class="dash-nav-item">Nivel de criticidad</div>
-                  <div class="dash-nav-item">Jornada</div>
-                  <div class="dash-nav-item active">Nombre</div>
-                  <div class="dash-nav-item" style="margin-top:auto;color:rgba(255,255,255,.25)">Cerrar sesión</div>
-                </div>
-                <!-- Main content -->
-                <div class="dash-main">
-                  <div class="dash-topbar">
-                    <div class="dash-topbar-title">Histórico</div>
-                    <div class="dash-topbar-badge">Filtrar por fecha</div>
-                  </div>
-                  <div class="dash-body">
-                    <div class="dash-legend">
-                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:#22c55e"></div>Sin riesgo</div>
-                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:#ef4444"></div>Con riesgo</div>
-                      <div class="dash-leg-item"><div class="dash-leg-dot" style="background:var(--blue)"></div>Calificación promedio</div>
-                    </div>
-                    <div class="dash-chart-area" style="margin-top:18px">
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:18px"></div><div class="dash-bar-g" style="height:44px"></div></div><div class="dash-bar-lbl">oct</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:22px"></div><div class="dash-bar-g" style="height:58px"></div></div><div class="dash-bar-lbl">nov</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:16px"></div><div class="dash-bar-g" style="height:65px"></div></div><div class="dash-bar-lbl">dic</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:20px"></div><div class="dash-bar-g" style="height:72px"></div></div><div class="dash-bar-lbl">ene</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:14px"></div><div class="dash-bar-g" style="height:68px"></div></div><div class="dash-bar-lbl">feb</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:18px"></div><div class="dash-bar-g" style="height:76px"></div></div><div class="dash-bar-lbl">mar</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:28px"></div><div class="dash-bar-g" style="height:80px"></div></div><div class="dash-bar-lbl">abr</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:24px"></div><div class="dash-bar-g" style="height:74px"></div></div><div class="dash-bar-lbl">may</div></div>
-                      <div class="dash-bar-grp"><div class="dash-bar-stack"><div class="dash-bar-r" style="height:36px"></div><div class="dash-bar-g" style="height:62px"></div></div><div class="dash-bar-lbl">jun</div></div>
-                    </div>
-                  </div>
-                  <div class="dash-tabs">
-                    <div class="dash-tab">Calificación</div>
-                    <div class="dash-tab">Riesgo</div>
-                    <div class="dash-tab">Desempeño</div>
-                    <div class="dash-tab">Cumplimiento</div>
-                    <div class="dash-tab active">Histórico</div>
-                    <div class="dash-tab">Cronograma</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="imac-neck"></div>
-          <div class="imac-base"></div>
-          <!-- Phone overlay -->
-          <div class="phone-wrap">
-            <div class="phone-frame">
-              <div class="phone-notch"><div class="phone-notch-inner"></div></div>
-              <div class="phone-topbar">
-                <div class="phone-topbar-txt">Inicio</div>
-                <div style="width:24px;height:6px;background:rgba(255,255,255,.3);border-radius:2px"></div>
-              </div>
-              <div class="phone-screen">
-                <div style="margin:2px 0 1px;font-size:.42rem;color:#4a5568;text-align:center">Bienvenido a</div>
-                <div class="phone-logo-txt">S<em>O</em>MNI</div>
-                <div class="phone-welcome">Esta a punto de comenzar un control de fatiga.</div>
-                <div style="width:100%;height:1px;background:#e2e8f0;margin:2px 0"></div>
-                <div class="phone-step"><div class="phone-step-n">1</div><div class="phone-step-txt">Responder cuestionario fatiga</div></div>
-                <div class="phone-step"><div class="phone-step-n">2</div><div class="phone-step-txt">Realizar control fatiga de 3 minutos</div></div>
-                <div class="phone-step"><div class="phone-step-n">3</div><div class="phone-step-txt">Recibir estado de riesgo y consejos</div></div>
-                <div class="phone-btn">INICIAR CONTROL</div>
-              </div>
-              <div class="phone-home-bar"><div class="phone-home-dot"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 </section>
 
 <!-- Sección minería eliminada — contenido integrado en Qué es SOMNI y Plataforma -->
@@ -2511,13 +2432,13 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
 
             <!-- Resend via Netlify Function -->
 
-            <div class="fg"><label>Nombre</label><input type="text" name="nombre" placeholder="Su nombre" required/></div>
-            <div class="fg"><label>Empresa</label><input type="text" name="empresa" placeholder="Empresa" required/></div>
-            <div class="fg"><label>Correo</label><input type="email" name="email" placeholder="correo@empresa.cl" required/></div>
-            <div class="fg"><label>Industria</label>
-              <select name="industria"><option value="">Seleccione</option><option>Minería</option><option>Transporte y Logística</option><option>Construcción</option><option>Oil &amp; Gas</option><option>Forestal / Agroindustria</option><option>Industria y Manufactura</option><option>Energía y Puertos</option><option>Otra</option></select>
+            <div class="fg"><label for="f-nombre">Nombre</label><input id="f-nombre" type="text" name="nombre" placeholder="Su nombre" required/></div>
+            <div class="fg"><label for="f-empresa">Empresa</label><input id="f-empresa" type="text" name="empresa" placeholder="Empresa" required/></div>
+            <div class="fg"><label for="f-email">Correo</label><input id="f-email" type="email" name="email" placeholder="correo@empresa.cl" required/></div>
+            <div class="fg"><label for="f-industria">Industria</label>
+              <select id="f-industria" name="industria"><option value="">Seleccione</option><option>Minería</option><option>Transporte y Logística</option><option>Construcción</option><option>Oil &amp; Gas</option><option>Forestal / Agroindustria</option><option>Industria y Manufactura</option><option>Energía y Puertos</option><option>Otra</option></select>
             </div>
-            <div class="fg"><label>Mensaje</label><textarea name="message" placeholder="Cuéntenos sobre su operación y desafíos de seguridad..."></textarea></div>
+            <div class="fg"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="message" placeholder="Cuéntenos sobre su operación y desafíos de seguridad..."></textarea></div>
             <button type="submit" class="fsub" id="form-btn">Enviar mensaje</button>
           </form>
         </div>
@@ -2525,6 +2446,8 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- CORFO — Ley 21.516 Art.23 -->
 <div class="corfo-bar">
@@ -2833,17 +2756,6 @@ if (mSection) metricObs.observe(mSection);
 })();
 
 
-/* DASHBOARD REAL: mostrar si existe la imagen */
-(function(){
-  const img=new Image();
-  img.onload=function(){
-    const real=document.getElementById('plat-img-real');
-    const mock=document.getElementById('plat-mockup');
-    if(real&&mock){real.style.display='block';mock.style.display='none';}
-  };
-  img.src='plataforma-gestion.webp';
-})();
-
 /* FORM — Resend via Netlify Function */
 function w3fSubmit(e) {
   e.preventDefault();
@@ -3009,12 +2921,11 @@ function ukRender(id) {
 window.addEventListener('load', () => {
   ukInit('pb',    'pb-track',    'pb-dots',    2, 5500);
   ukInit('steps', 'steps-track', 'steps-dots', 2, 5000);
-  ukInit('min',   'min-track',   'min-dots',   2, 5000);
   ukInit('capa',  'capa-track',  'capa-dots',  1, 5500);
   ukInit('est',   'est-track',   'est-dots',   1, 6000);
 
   // Mobile: sincronizar dots con scroll nativo (el wrap scrollea)
-  ['pb-track','steps-track','min-track','capa-track','est-track'].forEach(trackId => {
+  ['pb-track','steps-track','capa-track','est-track'].forEach(trackId => {
     const track = document.getElementById(trackId);
     if (!track) return;
     const wrap = track.parentElement;
