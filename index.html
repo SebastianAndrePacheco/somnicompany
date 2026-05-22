@@ -1462,9 +1462,12 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
   .cli-grid{grid-template-columns:repeat(3,1fr)}
   .premios-badges{grid-template-columns:repeat(2,1fr)}
   .capa-grid{grid-template-columns:1fr}
-  .chat-wrap-l{left:14px;bottom:18px}
-  .chat-wrap-r{right:14px;bottom:18px}
-  .chat-win{width:270px}
+  /* Mobile: agente izquierdo oculto — solo WhatsApp y agente derecho */
+  .chat-wrap-l{display:none}
+  .chat-wrap-r{right:84px;bottom:18px}
+  .chat-win{width:calc(100vw - 32px);max-width:320px}
+  /* WhatsApp más pequeño en mobile */
+  .wa-btn{width:46px;height:46px;bottom:18px;right:24px}
 }
 @media(max-width:480px){
   .h1{font-size:2.3rem}
@@ -3204,12 +3207,16 @@ function openChat(s) {
   document.getElementById('cw-' + s).classList.remove('hidden');
   if (s === 'r') { const n = document.getElementById('notif-r'); if (n) n.style.display = 'none'; }
   setTimeout(() => { const m = document.getElementById('cm-' + s); if (m) m.scrollTop = m.scrollHeight; }, 80);
-  // Mensaje proactivo del soporte después de 8s si no ha interactuado
+  // Mensaje proactivo del soporte después de 10s — solo si el chat sigue abierto y no se ha enviado aún
   if (s === 'r' && !chatOpen._rGreeted) {
     chatOpen._rGreeted = true;
     setTimeout(() => {
-      if (chatOpen.r) ukAddMsg('r', 'Por cierto: actualmente tenemos el piloto gratuito de 30 dias disponible para nuevas operaciones. Es una excelente oportunidad para evaluar SOMNI sin riesgo ni inversion inicial. ¿Le interesa conocer los detalles?');
-    }, 8000);
+      if (!chatOpen.r) return;
+      const msgs = document.getElementById('cm-r');
+      if (msgs && msgs.children.length < 2) {
+        ukAddMsg('r', 'Por cierto: actualmente tenemos el piloto gratuito de 30 días disponible para nuevas operaciones. Sin riesgo ni inversión inicial. ¿Le interesa conocer los detalles?');
+      }
+    }, 10000);
   }
 }
 function closeChat(s) { chatOpen[s] = false; document.getElementById('cw-' + s).classList.add('hidden'); }
@@ -3269,13 +3276,6 @@ function ukSend(s) {
     }
 
     ukAddMsg(s, resp);
-
-    // Seguimiento automático del soporte
-    if (s === 'r' && Math.random() > 0.5) {
-      setTimeout(() => {
-        ukAddMsg('r', '¿Le puedo ayudar con algo más? Si prefiere, puedo conectarle ahora mismo con un especialista SOMNI que conoce su industria en detalle.');
-      }, 3500);
-    }
   }, delay);
 }
 </script>
