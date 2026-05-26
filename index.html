@@ -136,14 +136,16 @@
   --mono:'Montserrat',sans-serif;
   --sans:'Inter',sans-serif;
 }
-html{scroll-behavior:smooth;font-size:16px}
+html{scroll-behavior:smooth;font-size:16px;scroll-padding-top:80px}
+section[id]{scroll-margin-top:80px}
 body{font-family:var(--sans);background:var(--bg);color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6;background-image:radial-gradient(ellipse 120% 60% at 50% -10%,rgba(37,129,252,.13) 0%,transparent 70%)}
 img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit}
 button{border:none;cursor:pointer;font-family:inherit}
-::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar{width:7px}
 ::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px}
+::-webkit-scrollbar-thumb{background:rgba(37,129,252,.5);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--blue)}
 @media(max-width:768px){::-webkit-scrollbar{width:0;display:none}}
 
 /* ─ UTILS ─────────────────────────────── */
@@ -332,11 +334,43 @@ button{border:none;cursor:pointer;font-family:inherit}
 .hamburger span{width:20px;height:2px;background:#fff;border-radius:1px;transition:.3s}
 
 /* ─ MOBILE MENU ─────────────────────────── */
-.mob{position:fixed;inset:0;z-index:880;background:rgba(13,27,46,.97);backdrop-filter:blur(20px);transform:translateX(100%);transition:transform .38s var(--ease);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.mob{
+  position:fixed;top:0;right:0;bottom:0;z-index:880;
+  width:min(320px,88vw);
+  background:rgba(9,18,36,.98);backdrop-filter:blur(24px);
+  border-left:1px solid var(--border);
+  transform:translateX(100%);transition:transform .34s var(--ease);
+  display:flex;flex-direction:column;overflow-y:auto;
+}
 .mob.open{transform:none}
-.mob a{font-family:var(--mono);font-size:1.25rem;font-weight:700;color:var(--w60);padding:12px 36px;width:100%;text-align:center;transition:.2s}
-.mob a:hover{color:#fff}
-.mob-x{position:absolute;top:18px;right:18px;background:var(--w06);border:1px solid var(--border);border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--w60);font-size:1.1rem;font-family:var(--mono)}
+/* Overlay oscuro detrás del panel */
+.mob-overlay{
+  position:fixed;inset:0;z-index:879;
+  background:rgba(0,0,0,.55);
+  opacity:0;pointer-events:none;transition:opacity .34s;
+}
+.mob-overlay.open{opacity:1;pointer-events:auto}
+.mob-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 20px;border-bottom:1px solid var(--border);
+  flex-shrink:0;
+}
+.mob-logo{font-family:var(--mono);font-size:1rem;font-weight:900;color:#fff;letter-spacing:.04em}
+.mob-x{
+  background:var(--w06);border:1px solid var(--border);border-radius:8px;
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:var(--w60);font-size:1rem;font-family:var(--mono);
+  transition:.2s;flex-shrink:0;
+}
+.mob-x:hover{background:var(--w10);color:#fff}
+.mob-cta{padding:16px 20px;border-bottom:1px solid var(--border);flex-shrink:0}
+.mob-links{display:flex;flex-direction:column;padding:8px 0;flex:1}
+.mob a{
+  font-family:var(--mono);font-size:.88rem;font-weight:600;
+  color:var(--w60);padding:13px 20px;width:100%;text-align:left;
+  transition:.18s;border-left:2px solid transparent;
+}
+.mob a:hover{color:#fff;border-left-color:var(--blue);background:rgba(37,129,252,.06)}
 
 /* ─ HERO ──────────────────────────────────── */
 #hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:80px}
@@ -1528,20 +1562,28 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
   </div>
 </nav>
 
+<div class="mob-overlay" id="mob-overlay" onclick="toggleMob()"></div>
 <div class="mob" id="mob">
-  <div class="mob-x" onclick="toggleMob()">X</div>
-  <a href="#somni" onclick="toggleMob()">Qué es SOMNI</a>
-  <a href="#alertas" onclick="toggleMob()">Alertas</a>
-  <a href="#plataforma" onclick="toggleMob()">Dashboard</a>
-  <a href="#ciencia" onclick="toggleMob()">Base científica</a>
-  <a href="#clientes" onclick="toggleMob()">Clientes</a>
-  <a href="#estandares" onclick="toggleMob()">Estándares</a>
-  <a href="#capa" onclick="toggleMob()">Capa adicional</a>
-  <a href="#faq" onclick="toggleMob()">FAQ</a>
-  <a href="#contacto" onclick="toggleMob()">Contacto</a>
-  <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer"
-     class="btn btn-ghost btn-lg" style="margin-top:14px" onclick="toggleMob()">Acceso Plataforma</a>
-  <a href="#piloto" class="btn btn-primary btn-lg" style="margin-top:8px" onclick="toggleMob()">Solicitar Piloto</a>
+  <div class="mob-head">
+    <span class="mob-logo">SoMNi</span>
+    <div class="mob-x" onclick="toggleMob()" aria-label="Cerrar menú">✕</div>
+  </div>
+  <div class="mob-cta">
+    <a href="#piloto" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:8px" onclick="toggleMob()">Solicitar Piloto Gratis</a>
+    <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer"
+       class="btn btn-ghost" style="width:100%;justify-content:center" onclick="toggleMob()">Acceso Plataforma</a>
+  </div>
+  <div class="mob-links">
+    <a href="#somni" onclick="toggleMob()">Qué es SOMNI</a>
+    <a href="#alertas" onclick="toggleMob()">Alertas</a>
+    <a href="#plataforma" onclick="toggleMob()">Dashboard</a>
+    <a href="#video-somni" onclick="toggleMob()">Ver en acción</a>
+    <a href="#ciencia" onclick="toggleMob()">Base científica</a>
+    <a href="#clientes" onclick="toggleMob()">Clientes</a>
+    <a href="#estandares" onclick="toggleMob()">Estándares</a>
+    <a href="#faq" onclick="toggleMob()">FAQ</a>
+    <a href="#contacto" onclick="toggleMob()">Contacto</a>
+  </div>
 </div>
 
 <!-- HERO -->
@@ -1564,7 +1606,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
       <p class="hero-sub">Tecnología predictiva de gestión de fatiga y somnolencia para operaciones de alto riesgo.</p>
       <div class="hero-cta">
         <a href="#somni" class="btn btn-primary btn-xl">Ver más</a>
-        <a href="video.html" class="btn btn-ghost btn-xl">Ver en acción</a>
+        <a href="#video-somni" class="btn btn-ghost btn-xl">Ver en acción</a>
       </div>
     </div>
 
@@ -2390,7 +2432,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
       </div>
       <div class="piloto-ctas">
         <a href="#contacto" class="btn btn-primary btn-xl">Iniciar Prueba Piloto Gratis</a>
-        <a href="video.html" class="btn btn-ghost btn-xl">Ver Demostración</a>
+        <a href="#video-somni" class="btn btn-ghost btn-xl">Ver Demostración</a>
       </div>
       <p class="piloto-note">Disponible para operaciones con dotación mínima de 10 personas. Proceso confidencial.</p>
     </div>
@@ -2513,7 +2555,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
         <h4>Empresa</h4>
         <a href="#caso">Caso de Éxito</a>
         <a href="#clientes">Clientes</a>
-        <a href="video.html">Ver Video</a>
+        <a href="#video-somni">Ver Video</a>
         <a href="https://dashboard.somnitechs.com/auth/login" target="_blank" rel="noopener noreferrer">Acceso Plataforma</a>
         <a href="#piloto">Prueba Piloto</a>
         <a href="#faq">Preguntas Frecuentes</a>
@@ -2628,7 +2670,13 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>44),{passive:true});
 
 /* MOBILE */
-function toggleMob(){const m=document.getElementById('mob');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
+function toggleMob(){
+  const m=document.getElementById('mob');
+  const o=document.getElementById('mob-overlay');
+  const open=m.classList.toggle('open');
+  o.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+}
 
 /* FAQ accordion */
 function toggleFaq(btn){
