@@ -966,9 +966,8 @@ button{border:none;cursor:pointer;font-family:inherit}
 }
 @media(max-width:480px){
   .grid-4col{grid-template-columns:1fr}
-  /* Badges del dashboard */
-  .dash-badge-tl{top:-14px;left:12px !important;right:12px;text-align:center;justify-content:center}
-  .dash-badge-br{bottom:-14px;right:12px !important;left:12px;text-align:center;justify-content:center}
+  /* Badges del dashboard — centrar en mobile */
+  .dash-badge-tl,.dash-badge-br{justify-content:center;text-align:center}
 }
 
 /* ─ CLIENTES ───────────────────────────── */
@@ -1537,8 +1536,8 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-logo">
-    <img src="SOMNI blnco y celeste.png" alt="SOMNI" fetchpriority="high" onerror="this.style.display='none';document.querySelector('.nav-logo-text').style.display='block'"/>
-    <span class="nav-logo-text">SoMNi</span>
+    <img src="SoMNi.svg" alt="SOMNI" fetchpriority="high" onerror="this.src='somni-logo.png';this.onerror=null;"/>
+    <span class="nav-logo-text" style="display:none">SoMNi</span>
   </div>
   <div class="nav-links">
     <a href="#somni">Qué es SOMNI</a>
@@ -1933,16 +1932,20 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
     </div>
 
     <!-- Power BI a pantalla completa -->
-    <div class="fi" style="position:relative;max-width:1000px;margin:0 auto 56px">
+    <div class="fi" style="max-width:1000px;margin:0 auto 56px">
+      <!-- Badge superior -->
+      <div style="display:flex;justify-content:flex-start;margin-bottom:10px;padding-left:4px">
+        <div class="dash-badge-tl" style="background:rgba(13,27,46,.94);border:1px solid rgba(37,129,252,.45);border-radius:999px;padding:7px 18px;backdrop-filter:blur(12px);display:inline-flex;align-items:center;gap:8px">
+          <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
+          <span style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;letter-spacing:.06em">Datos reales · Operación activa Chile</span>
+        </div>
+      </div>
+      <!-- Imagen -->
       <div style="border-radius:16px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.65),0 0 0 1px rgba(37,129,252,.15)">
         <picture>
           <source srcset="reporte-ejecutivo.webp" type="image/webp"/>
           <img src="Reporte Ejecutivo PowerBi.png" alt="Reporte de controles SOMNI — Power BI en tiempo real" style="width:100%;display:block" loading="lazy"/>
         </picture>
-      </div>
-      <div class="dash-badge-tl" style="position:absolute;top:-14px;left:28px;background:rgba(13,27,46,.94);border:1px solid rgba(37,129,252,.45);border-radius:999px;padding:7px 18px;backdrop-filter:blur(12px);display:flex;align-items:center;gap:8px">
-        <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
-        <span style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;letter-spacing:.06em">Datos reales · Operación activa Chile</span>
       </div>
     </div>
 
@@ -1991,33 +1994,36 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
     </div>
 
     <!-- Imagen principal con marco premium -->
-    <div class="fi dash-img-wrap" style="position:relative;max-width:1020px;margin:0 auto;padding:0 24px">
+    <div class="fi dash-img-wrap" style="max-width:1020px;margin:0 auto;padding:0 24px">
 
-      <!-- Halo exterior -->
-      <div style="position:absolute;inset:-2px;border-radius:24px;background:linear-gradient(135deg,rgba(37,129,252,.4),rgba(37,129,252,.05) 40%,transparent 70%);z-index:0;pointer-events:none"></div>
-
-      <!-- Imagen -->
-      <div style="position:relative;z-index:1;border-radius:20px;overflow:hidden;box-shadow:0 60px 140px rgba(0,0,0,.75),0 0 0 1px rgba(37,129,252,.2)">
-        <picture>
-          <source srcset="plataforma-gestion.webp" type="image/webp"/>
-          <img src="Plataforma Gestión SOMNI.png" alt="Dashboard SOMNI — Plataforma de Gestión web en tiempo real" style="width:100%;display:block" loading="lazy"/>
-        </picture>
-      </div>
-
-      <!-- Badge superior izquierdo -->
-      <div class="dash-badge-tl" style="position:absolute;top:-18px;left:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.5);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
-        <div style="display:flex;align-items:center;gap:8px">
+      <!-- Badge superior -->
+      <div style="display:flex;justify-content:flex-start;margin-bottom:12px;padding-left:16px">
+        <div class="dash-badge-tl" style="background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.5);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4);display:inline-flex;align-items:center;gap:8px">
           <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:blink 1.6s ease-in-out infinite"></span>
           <span style="font-family:var(--mono);font-size:.68rem;font-weight:700;color:#fff;letter-spacing:.06em">Sistema activo · Monitoreo en tiempo real</span>
         </div>
       </div>
 
-      <!-- Badge inferior derecho -->
-      <div class="dash-badge-br" style="position:absolute;bottom:-18px;right:40px;z-index:2;background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.3);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4)">
-        <div style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--w60);letter-spacing:.06em">
-          Disponible en <span style="color:#fff">Web · Android · iOS</span> · Sin descarga
+      <!-- Imagen con halo -->
+      <div style="position:relative">
+        <div style="position:absolute;inset:-2px;border-radius:24px;background:linear-gradient(135deg,rgba(37,129,252,.4),rgba(37,129,252,.05) 40%,transparent 70%);z-index:0;pointer-events:none"></div>
+        <div style="position:relative;z-index:1;border-radius:20px;overflow:hidden;box-shadow:0 60px 140px rgba(0,0,0,.75),0 0 0 1px rgba(37,129,252,.2)">
+          <picture>
+            <source srcset="plataforma-gestion.webp" type="image/webp"/>
+            <img src="Plataforma Gestión SOMNI.png" alt="Dashboard SOMNI — Plataforma de Gestión web en tiempo real" style="width:100%;display:block" loading="lazy"/>
+          </picture>
         </div>
       </div>
+
+      <!-- Badge inferior -->
+      <div style="display:flex;justify-content:flex-end;margin-top:12px;padding-right:16px">
+        <div class="dash-badge-br" style="background:rgba(13,27,46,.96);border:1px solid rgba(37,129,252,.3);border-radius:12px;padding:10px 20px;backdrop-filter:blur(16px);box-shadow:0 8px 24px rgba(0,0,0,.4);display:inline-block">
+          <div style="font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--w60);letter-spacing:.06em">
+            Disponible en <span style="color:#fff">Web · Android · iOS</span> · Sin descarga
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -2520,7 +2526,7 @@ footer{background:rgba(8,18,34,.97);border-top:1px solid var(--border);padding:6
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="SOMNI blnco y celeste.png" alt="SOMNI" loading="lazy" onerror="this.style.display='none'"/>
+        <img src="SoMNi.svg" alt="SOMNI" loading="lazy" onerror="this.src='somni-logo.png';this.onerror=null;"/>
         <p>Tecnología predictiva de gestión de fatiga para operaciones industriales de alto riesgo. Hecho en Chile.</p>
         <div class="foot-social">
           <!-- LinkedIn -->
